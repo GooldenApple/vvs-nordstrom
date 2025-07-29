@@ -25,7 +25,70 @@ The website is designed with clarity, accessibility, and trust in mind — highl
 
 ## User Experience (UX)
 
-**(Section to be completed later — summarizing how user experience goals are addressed.)**
+Nordstroms VVS is a trusted local plumbing company providing professional services to homeowners and small businesses.  
+The company takes pride in serving the local community with dependable and friendly service.  
+
+The website was developed to offer a clear and user-friendly experience, helping first-time visitors quickly understand the range of services available.  
+The site is designed with simplicity in mind, ensuring that users of all technical skill levels can navigate and find information effortlessly.  
+
+Returning customers can easily find up-to-date contact information and access the site on any device thanks to its responsive design.  
+For frequent visitors, the site provides a straightforward way to reach out with inquiries or service recommendations.  
+
+Accessibility considerations ensure that the website is usable for all customers, including those with disabilities.  
+By focusing on clarity and accessibility, the site builds trust and encourages customer engagement, highlighting core service areas such as Water, Heating, and Sanitation.
+
+### Initial Discussion
+
+Nordstroms VVS is a local plumbing company offering reliable and professional services to homeowners and small businesses.  
+The website was created to provide an easy-to-navigate platform where users can quickly learn about the services offered and get in touch with the company.  
+The design focuses on accessibility, clarity, and responsiveness to ensure a seamless experience on any device.  
+By highlighting core services such as Water, Heating, and Sanitation, the site supports customer decision-making and engagement.
+
+### Key Information for the Site
+
+- Overview of plumbing services  
+- Contact options  
+- Access to image gallery  
+- Service categories: Water, Heating, Sanitation  
+- Clear navigation and mobile-friendly layout  
+
+### User Stories
+
+#### Client Goals
+
+- To be able to view the site on a range of device sizes.  
+- To make it easy for potential customers to find out what the company is and what services it offers.  
+- To make it clear for customers to see what services are offered.  
+- To allow people to contact the company to ask further questions or make requests.  
+- Present the business professionally.  
+- Attract new customers through online presence.  
+- Display past work and easy contact options.
+
+#### First Time Visitor Goals
+
+- I want to find out what the company does and how I can use their services.  
+- I want to be able to navigate the site easily to find information.  
+- I want to be able to find their social media profiles.  
+- Understand what services are offered.  
+- Get in touch or view past projects.
+
+#### Returning Visitor Goals
+
+- I want to find up-to-date information on the services offered.  
+- I want to be able to easily contact the company with questions I might have.  
+- Quickly find contact info.
+
+#### Frequent Visitor Goals
+
+- I want to be able to recommend the company to others.  
+- I want to be able to submit inquiries or requests efficiently.  
+- Revisit to submit new inquiries.
+
+#### Accessibility Considerations for Older Users
+
+- I want clear and simple navigation without clutter.  
+- I want contact information to be easy to find and use.  
+- I want buttons for easier clicking.
 
 ---
 
@@ -47,13 +110,42 @@ The website is designed with clarity, accessibility, and trust in mind — highl
 
 ## Features
 
-**(Details about implemented features to be added later.)**
+## Features
+
+### Page Overview
+
+The website consists of five main pages:
+
+- **Home:** An introduction to the company with a call-to-action leading to the services page.  
+- **Services:** Detailed descriptions of the plumbing services offered, including Water, Heating, and Sanitation.  
+- **Gallery:** A responsive image gallery showcasing past work and projects.  
+- **Contact:** A contact form that allows users to submit inquiries or service requests easily.  
+- **Thank You:** A confirmation page shown after successful form submission.
+
+### General Features on All Pages
+
+- A responsive navigation bar that adapts to different screen sizes, including a burger menu on mobile devices.  
+- A footer containing contact information and social media links for easy access.  
+- A favicon displayed in the browser tab for brand recognition.  
+- Consistent styling and layout to ensure a cohesive user experience throughout the site.
+
+### Specific Features
+
+- The **Home** page includes a responsive hero section with an image mockup and clear call-to-action buttons.  
+- The **Services** page presents the three main service categories with descriptive text sections and call-to-action buttons.  
+- The **Gallery** page features a grid layout that adjusts for various screen sizes to display images effectively.  
+- The **Contact** page contains a form with required fields, clickable buttons, and validation to improve usability.  
+- The **Thank You** page thanks users for their submission and provides reassurance that the company will respond.
 
 ---
 
 ## Accessibility
 
-**(Summary of accessibility measures to be added here.)**
+- Semantic HTML5 structure  
+- Descriptive `alt` attributes on all images  
+- Good colour contrast (WCAG compliant)  
+- Font choices supporting readability and accessibility  
+- Navigation via keyboard and screen readers 
 
 ---
 
@@ -75,8 +167,6 @@ The website is designed with clarity, accessibility, and trust in mind — highl
 - AmiResponsive (mockup tool)  
 
 ---
-
-## Deployment & Local Development
 
 ## Deployment & Local Development
 
