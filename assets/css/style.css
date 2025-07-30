@@ -9,20 +9,20 @@ body {
 
 /* Navbar styles */
 .navbar {
-  background-color: #2b2f2f; /* Dark gray-green color matching the hero image */
+  background-color: #000000; /* Black background to match logo */
 }
 
 /* Logo */
 .navbar-brand img {
   height: 40px; /* Ensures the logo has the correct height */
-  width: auto;  /* Maintains the logo's aspect ratio */
+  width: auto;  /* Maintain the logo ratio */
 }
 
 /* Navigation links inside navbar */
 .navbar-nav .nav-link {
   color: white; /* White text for dark navbar */
   margin-left: 15px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; /* Gradual color change effect lasting 0.3 seconds */
 }
 
 .navbar-nav .nav-link:hover,
@@ -30,18 +30,23 @@ body {
   color: #b36b2f; /* Copper color on hover and active */
 }
 
-/* Buttons inside navbar */
-.navbar .btn {
-  background-color: #b36b2f; /* Copper-colored button */
-  color: white;
-  border-radius: 5px;
-  margin-left: 15px;
-  padding: 6px 12px;
+/* Buttons */
+.btn-common {
+  background-color: #b36b2f;       /* Copper color */
+  color: white;                    /* White text */
+  border-radius: 5px;              /* Rounded corners */
+  padding: 12px 30px;              /* Padding */
+  font-size: 1.1rem;               /* Font size */
+  border: none;                   /* No border */
+  text-decoration: none;           /* Remove underline */
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-.navbar .btn:hover {
-  background-color: #995c1b; /* Darker copper shade on hover */
+.btn-common:hover,
+.btn-common:focus {
+  background-color: #995c1b;       /* Darker copper when hovered*/
+  outline: none;
 }
 
 /* Hamburger icon color */
@@ -49,7 +54,80 @@ body {
   filter: invert(1); /* Ensures icon is visible on dark background */
 }
 
+/* Hero section styles */
+.hero {
+  position: relative; /* Allows absolutely positioned child elements to be placed relative to this container */
+  max-height: 60vh;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden; /* Hides any content that overflows outside the hero container */
+  color: white;
+}
+
+.hero-image {
+  position: relative; /* For absolute positioning of text */
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;          /* Ensure height fills the container */
+  object-fit: cover;     /* Covers the container */
+  object-position: center top; /* Shift focus slightly down for more visible area */
+  display: block;
+}
+
+/* Overlay to dim hero image */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent black */
+  z-index: 5; /* Below hero text */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 10; /* text Above overlay */
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-  /* Adjust navbar or elements for smaller screens here */
+  .navbar-nav .nav-link {
+    margin-left: 10px; /* Reduce left margin on navbar links for smaller screens */
+  }
+
+  .btn-common {
+    padding: 10px 20px; /* Adjust padding for buttons to fit smaller screens better */
+    font-size: 1rem;    /* Slightly smaller font size for better readability on small devices */
+  }
+
+  .hero {
+    height: 50vh; /* Reduce hero section height for smaller viewports */
+  }
+
+  .hero-text h1 {
+    font-size: 2rem; /* Make hero heading smaller on small screens */
+  }
+
+  .hero-text p {
+    font-size: 1rem; /* Reduce font size of hero subtitle for mobile devices */
+  }
 }

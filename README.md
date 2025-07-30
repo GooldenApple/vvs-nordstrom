@@ -104,11 +104,11 @@ By highlighting core services such as Water, Heating, and Sanitation, the site s
 
 ### Imagery
 
-*(Placeholder: Describe sources and types of images used.)*
+The hero image shows flowing copper pipes with a dark green/gray tiled background.  
+This image was sourced from [StockCake](https://stockcake.com) and has been optimized for web performance using TinyPNG.  
+The image reflects the plumbing business's core services and matches the site's color palette for a cohesive design.
 
 ---
-
-## Features
 
 ## Features
 
@@ -143,7 +143,7 @@ The website consists of five main pages:
 
 - Semantic HTML5 structure  
 - Descriptive `alt` attributes on all images  
-- Good colour contrast (WCAG compliant)  
+- Good colour contrast   
 - Font choices supporting readability and accessibility  
 - Navigation via keyboard and screen readers 
 
@@ -219,8 +219,21 @@ The live version of the site can be accessed at:
 - All text and content created by me for the plumbing business
 
 ### Media
-- Images from Nordströms vvs i dalarna AB
-- Images sourced from [Unsplash](https://unsplash.com) and [Pexels](https://pexels.com)  
-- Images optimised with TinyPNG and resized with Birme  
 
+- **Hero Image:**  
+  "Flowing Copper Pipes" sourced from [Stockcake](https://stockcake.com/i/flowing-copper-pipes_1699161_1227474)  
+  - Royalty-free under Stockcake's license  
+  - Compressed with TinyPNG for faster loading  
+  - Resized for responsive display on the website
+
+- **Gallery Images:**  
+  Sourced from Nordströms VVS i Dalarna AB
+
+- **Additional Images:**  
+  Sourced from [Unsplash](https://unsplash.com) and [Pexels](https://pexels.com)  
+  - Optimized with TinyPNG  
+  - Resized using Birme
+
+
+  
 ### Acknowledgements
