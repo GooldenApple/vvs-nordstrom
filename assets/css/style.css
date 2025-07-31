@@ -232,7 +232,7 @@ body {
   flex-direction: column; /* Stack children vertically */
   justify-content: space-between; /* Spread children vertically */
   align-items: center; /* Center horizontally */
-  text-align: center; /* Center text */
+  text-align: left; /* Left align text */
   padding: 0 1rem; /* Horizontal padding */
   min-height: 280px; /* Match image height */
   margin: 0; /* Reset margins */
@@ -243,28 +243,23 @@ body {
   color: #5a3b1a; /* Warm brown heading */
   font-weight: 700;
   margin-bottom: 1.5rem; /* Space below heading */
-  width: 100%;
-  text-align: center; /* Center horizontally */
-}
-
-/* Paragraph container */
-.about-us-paragraphs {
-  text-align: left; /* Left align paragraphs */
-  width: 100%;
+  align-self: center; /* Center heading horizontally */
 }
 
 /* Paragraph styles */
-.about-us-paragraphs p {
+.about-us-text p {
   color: #4a3d3d;
   line-height: 1.6;
   margin-bottom: 1rem;
+  width: 100%; /* Full width */
+  text-align: left; /* Left align paragraphs */
 }
 
 /* Button container */
 .btn-container {
   width: 100%; /* Full width */
   display: flex;
-  justify-content: center; /* Center button horizontally */
+  justify-content: center; /* Center horizontally */
   align-items: flex-end; /* Align button bottom */
 }
 
@@ -279,13 +274,52 @@ body {
   flex: 0 0 280px; /* Fix image width */
 }
 
-/* Align image right edge with introduction list icons */
-.about-us-image {
-  margin-left: auto;
-}
-
 .about-us-image:hover {
   transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #000; /* Dark background */
+  color: #fff; /* White text */
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between columns */
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-contact,
+.footer-social {
+  flex: 1 1 300px; /* Responsive width */
+}
+
+/* Contact info styling */
+.footer-contact p {
+  margin: 0.25rem 0;
+  line-height: 1.5;
+}
+
+/* Social media links container */
+.footer-social a {
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  color: #8b4d2b; /* Copper color on hover */
 }
 
 /* Responsive adjustments */
@@ -344,32 +378,5 @@ body {
 
   .intro-icon-middle {
     flex: none;
-    font-size: 3rem;
-    margin: 0 auto;
+    font-size:
   }
-
-  .about-us-section {
-    max-width: 100%;
-    padding: 1.5rem 1rem;
-    text-align: center;
-    display: block; /* Reset flex for stacking */
-  }
-
-  .about-us-text {
-    min-height: auto; /* Reset fixed height */
-    padding: 0;
-    text-align: center;
-    align-items: center;
-  }
-
-  .btn-container {
-    justify-content: center; /* Center button */
-    align-items: center; /* Center vertically */
-  }
-
-  .about-us-image {
-    max-width: 100%;
-    margin-top: 1rem;
-    flex: none;
-  }
-}
