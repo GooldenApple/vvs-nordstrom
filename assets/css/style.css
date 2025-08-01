@@ -9,37 +9,56 @@ body {
 
 /* Navbar styles */
 .navbar {
-  background-color: #000000; /* Black background to match logo */
+  background-color: #ffffff; 
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Soft shadow */
+  border-bottom: 1px solid #d3d3d3; /* Light grey border bottom */
 }
 
 .navbar-brand img {
   height: 40px; /* Logo height */
   width: auto;  /* Maintain aspect ratio */
+  filter: brightness(0.8); /* Dim logo */
 }
 
+/* Navbar links styling */
 .navbar-nav .nav-link {
-  color: white; /* White text */
+  color: black; /* Black text */
   margin-left: 15px;
-  transition: color 0.3s ease; /* Smooth color change */
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  transition: color 0.3s ease;
+  border-right: 1px solid #ccc; /* Light grey vertical divider */
 }
 
+/* Remove border on last nav link */
+.navbar-nav .nav-link:last-child {
+  border-right: none;
+}
+
+/* hover and active links */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #8b4d2b; /* Copper color on hover/active */
+  color: #8b4d2b; /* Copper color */
+  text-decoration: underline;
+  text-decoration-color: #444; /* Dark grey underline */
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
-/* Buttons */
+/* Buttons with border and subtle shadow for better clickability */
 .btn-common {
   background-color: #8b4d2b; /* Copper color */
   color: white;
   border-radius: 5px;
   padding: 12px 30px;
   font-size: 1.1rem;
-  border: none;
+  border: 2px solid #7a4223; /* Slightly darker copper border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Soft shadow */
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
 
   /* Center button horizontally and push to bottom of flex container */
@@ -50,26 +69,23 @@ body {
 .btn-common:hover,
 .btn-common:focus {
   background-color: #b36b2f; /* Lighter copper on hover */
+  border-color: #9c5e2d; /* Slightly lighter border on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25); /* Slightly stronger shadow on hover */
   outline: none;
 }
 
-.navbar .btn-common {
-  padding: 6px 15px; /* Smaller button in navbar */
-  font-size: 0.9rem;
-}
-
 /* Hamburger icon */
-.navbar-dark .navbar-toggler-icon {
-  filter: invert(1); /* Visible on dark background */
+.navbar-light .navbar-toggler-icon {
+  filter: none; 
 }
 
 /* Hero section */
 .hero {
-  position: relative; /* For absolute children */
+  position: relative;
   max-height: 70vh;
   width: 100%;
   height: 70vh;
-  overflow: hidden; /* Hide overflow */
+  overflow: hidden;
   color: white;
 }
 
@@ -91,7 +107,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5); /* Dim overlay */
+  background-color: rgba(0,0,0,0.5);
   z-index: 5;
 }
 
@@ -129,11 +145,11 @@ body {
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: box-shadow 0.3s ease;
-  text-align: left; /* Left align text for columns */
+  text-align: left;
 }
 
 .introduction-section:hover {
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15); /* Slight lift on hover */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .intro-icon {
@@ -147,55 +163,55 @@ body {
 .intro-content-row {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Vertically center all */
-  gap: 1rem; /* Space between columns */
-  flex-wrap: nowrap; /* Keep on one line */
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
 }
 
 /* Paragraph column */
 .intro-paragraph {
-  flex: 1 1 45%; /* Grow and shrink with basis 45% */
-  font-size: 1rem; /* Match list text size */
+  flex: 1 1 45%;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 0;
-  text-align: right; /* Align text to the right */
-  margin-right: 1.5rem; /* Space between paragraph and icon */
+  text-align: right;
+  margin-right: 1.5rem;
 }
 
 /* Center icon between paragraph and list */
 .intro-icon-middle {
-  flex: 0 0 40px; /* Fixed width for icon */
+  flex: 0 0 40px;
   font-size: 2rem;
   color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 0; 
-  margin-left: 2rem; /* Space between icon and paragraph */
+  margin-left: 2rem;
 }
 
 /* Benefits list */
 .list-with-icons {
-  flex: 1 1 45%; /* Same width as paragraph */
-  list-style: none; /* Remove default bullets */
+  flex: 1 1 45%;
+  list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 1rem; /* Match paragraph text */
-  margin-left: 1.5rem; /* Space between list and icon */
+  font-size: 1rem;
+  margin-left: 1.5rem;
 }
 
 /* List items styling */
 .list-with-icons li {
-  display: flex; /* Flex container */
-  justify-content: space-between; /* Text left, icon right */
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0.3rem 0;
-  color: #4a3d3d; /* Softer text color */
+  color: #4a3d3d;
 }
 
 /* Text span in list items */
 .list-with-icons li .text {
-  flex: 1; /* Take remaining space */
+  flex: 1;
 }
 
 /* Font Awesome check icon */
@@ -214,112 +230,107 @@ body {
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: box-shadow 0.3s ease;
-  text-align: left; /* Default text align */
-  display: flex; /* Enable flex container */
-  align-items: stretch; /* Stretch children vertically */
-  gap: 2rem; /* Space between text and image */
-  flex-wrap: wrap; /* Wrap on small screens */
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; /* Stretch image and text vertically */
+  gap: 2rem;
 }
 
 .about-us-section:hover {
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15); /* Slight lift on hover */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-/* About Us text container */
+/* Text container - flex column to control vertical layout */
 .about-us-text {
   flex: 1 1 45%; /* Responsive width */
-  display: flex; /* Flex container for vertical alignment */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: space-between; /* Spread children vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Spread heading and button vertically */
   align-items: center; /* Center horizontally */
-  text-align: left; /* Left align text */
-  padding: 0 1rem; /* Horizontal padding */
-  min-height: 280px; /* Match image height */
-  margin: 0; /* Reset margins */
+  text-align: center; /* Center heading text */
+
+  padding: 0 1rem;
+  margin: 0;
 }
 
-/* About Us heading */
+/* Paragraphs aligned left inside text container */
+.about-us-paragraphs {
+  text-align: left;
+}
+
+/* Heading - center vertically aligned with image top */
 .about-us-heading {
   color: #5a3b1a; /* Warm brown heading */
   font-weight: 700;
-  margin-bottom: 1.5rem; /* Space below heading */
-  align-self: center; /* Center heading horizontally */
+  margin-bottom: 1.5rem;
+  align-self: center;
 }
 
-/* Paragraph styles */
+/* Paragraph styling */
 .about-us-text p {
   color: #4a3d3d;
   line-height: 1.6;
   margin-bottom: 1rem;
-  width: 100%; /* Full width */
-  text-align: left; /* Left align paragraphs */
+  width: 100%; /* Full width to align with paragraphs */
 }
 
-/* Button container */
+/* Button container - centered horizontally, bottom aligned with image bottom */
 .btn-container {
-  width: 100%; /* Full width */
+  width: 100%;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: flex-end; /* Align button bottom */
+  justify-content: center;
+  align-items: flex-end;
 }
 
-/* Image styles */
+/* Image container */
 .about-us-image {
+  flex-shrink: 0; /* Prevent shrinking */
+  margin-left: auto; /* Push image fully right to the edge */
   max-width: 280px;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  object-fit: contain;
-  transition: transform 0.3s ease;
   cursor: default;
-  flex: 0 0 280px; /* Fix image width */
+  transition: transform 0.3s ease;
 }
 
+/* Image hover zoom */
 .about-us-image:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05);
 }
 
 /* Footer styles */
-.footer {
-  background-color: #000; /* Dark background */
-  color: #fff; /* White text */
-  padding: 2rem 1.5rem;
-  text-align: center;
-  font-size: 1rem;
+footer {
+  background-color: #5a2e17;
+  color: #ffffff;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
 }
 
-.footer-container {
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Space between columns */
-  align-items: center;
-  gap: 1rem;
-}
-
-.footer-contact,
-.footer-social {
-  flex: 1 1 300px; /* Responsive width */
-}
-
-/* Contact info styling */
-.footer-contact p {
-  margin: 0.25rem 0;
-  line-height: 1.5;
-}
-
-/* Social media links container */
-.footer-social a {
-  color: #fff;
-  margin-right: 1rem;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
+footer a {
+  color: #ffffff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.footer-social a:hover,
-.footer-social a:focus {
-  color: #8b4d2b; /* Copper color on hover */
+footer a:hover,
+footer a:focus {
+  color: #b36b2f;
+  text-decoration: underline;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer p {
+  margin: 0.2rem 1rem 0.2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Responsive adjustments */
@@ -363,7 +374,6 @@ body {
     margin-bottom: 0;
   }
 
-  /* Center list text and icon on small screens */
   .list-with-icons {
     text-align: center;
   }
@@ -378,5 +388,32 @@ body {
 
   .intro-icon-middle {
     flex: none;
-    font-size:
+    font-size: 3rem;
+    margin: 0 auto;
   }
+
+  .about-us-section {
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    display: block;
+  }
+
+  .about-us-text {
+    min-height: auto;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .btn-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-image {
+    max-width: 100%;
+    margin-top: 1rem;
+    flex: none;
+  }
+}

@@ -96,7 +96,7 @@ By highlighting core services such as Water, Heating, and Sanitation, the site s
 
 ### Colour Scheme
 
-*(Placeholder: Description of the colour palette and reasons for choices. Add swatches/screenshots here.)*
+I chose a colour palette that reflects the professional, warm, and trustworthy nature of the plumbing business, inspired by natural copper and earth tones. The palette includes shades of brown and copper for warmth and reliability, complemented by clean whites and deep blacks for contrast and readability.
 
 ### Typography
 
