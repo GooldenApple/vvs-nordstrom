@@ -11,7 +11,7 @@
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/c1bbf5006a.js" crossorigin="anonymous"></script>
 
-    <!-- CSS file -->
+    <!-- Link to your custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css"/>
 
     <!-- Favicon -->
@@ -19,24 +19,24 @@
   </head>
 
   <body>
-    <!-- header start -->
+    <!-- Header -->
     <header>
-      <!-- navigation -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-          <!-- Logo -->
+          <!-- Brand logo link -->
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/favicon_io (3)/android-chrome-192x192.png" alt="Nordströms VVS logo" height="40"/>
           </a>
-          <!-- Navbar burger -->
+          <!-- Hamburger for collapsed navbar on small screens -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Navigation links -->
+          <!-- Navigation links container -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
+              <!-- links -->
               <li class="nav-item">
                 <a class="nav-link active" href="index.html">Home</a>
               </li>
@@ -55,125 +55,108 @@
       </nav>
     </header>
 
-    <!-- hero section start -->
-    <section class="hero">
-      <div class="hero-image">
-        <img src="assets/images/hero-images/StockCake-Flowing Copper Pipes_1753797567 (compressed).jpg" alt="Copper pipes in modern setting"/>
-        <div class="hero-overlay"></div> <!-- Overlay div for dimming -->
-      </div>
-      <div class="hero-text">
-        <h1>Nordströms VVS i Dalarna AB</h1>
-        <p>
-          Committed to quality and customer satisfaction, we handle everything from routine
-          maintenance to complex installations
-        </p>
+    <!-- Hero section -->
+    <section class="hero position-relative text-white">
+      <!-- Full-width hero image -->
+      <img src="assets/images/hero-images/StockCake-Flowing Copper Pipes_1753797567 (compressed).jpg" alt="Copper pipes in modern setting" class="hero-image img-fluid w-100"/>
+      <!-- Semi-transparent overlay to darken image for better text readability -->
+      <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+      <!-- Text content centered vertically and horizontally over hero image -->
+      <div class="hero-text position-absolute top-50 start-50 translate-middle px-3 text-center">
+        <h2>Nordströms VVS<br>i Dalarna AB</h2>
+        <p>Committed to quality and customer satisfaction, we handle everything from routine maintenance to complex installations</p>
         <p>— ensuring your plumbing works flawlessly with professionalism and care.</p>
-        <a href="services.html" class="btn btn-common" type="button">Our Services</a>
-      </div>
-    </section>
-    <!-- hero section end -->
-
-    <!-- Introduction Section -->
-    <section class="container my-5 introduction-section p-4 rounded shadow-sm">
-      <div class="row justify-content-center">
-        <div class="col-md-12 text-center">
-          <div class="mb-3">
-            <!-- Bootstrap icon -->
-            <i class="bi bi-wrench-adjustable-circle-fill intro-icon"></i>
-          </div>
-          <!-- Main intro heading -->
-          <h4 class="lead fw-semibold mb-4">
-            Looking for reliable, professional plumbing services in Dalarna?
-          </h4>
-        </div>
-      </div>
-      <!-- Flex container for paragraph, icon and list -->
-      <div class="intro-content-row d-flex justify-content-between align-items-center gap-3 flex-nowrap">
-        <p class="intro-paragraph flex-grow-1">
-          At Nordströms VVS, we bring years of hands-on expertise to every project — big or small.<br>
-          From repairs to new installations, we ensure quality workmanship with a personal touch.
-        </p>
-
-        <!-- Centered wrench icon -->
-        <div class="intro-icon-middle d-flex justify-content-center align-items-center flex-shrink-0">
-          <i class="fa-solid fa-wrench"></i>
-        </div>
-
-        <ul class="list-with-icons flex-grow-1 list-unstyled ms-3">
-          <li class="d-flex justify-content-between align-items-center py-1 text-muted">
-            <span class="text flex-grow-1">Friendly experts who care about your home</span>
-            <i class="fa-solid fa-check ms-3"></i>
-          </li>
-          <li class="d-flex justify-content-between align-items-center py-1 text-muted">
-            <span class="text flex-grow-1">Fast and reliable service</span>
-            <i class="fa-solid fa-check ms-3"></i>
-          </li>
-          <li class="d-flex justify-content-between align-items-center py-1 text-muted">
-            <span class="text flex-grow-1">Certified and experienced plumbers</span>
-            <i class="fa-solid fa-check ms-3"></i>
-          </li>
-        </ul>
+        <!-- Button service (smaller variant with btn-small class) -->
+        <a href="services.html" class="btn btn-common btn-small mt-3">Our Services</a>
       </div>
     </section>
 
-    <!-- About Us Section -->
-    <section class="container my-5 about-us-section p-4 rounded shadow-sm d-flex flex-wrap align-items-stretch gap-4">
-      <!-- Text content column -->
-      <div class="about-us-text d-flex flex-column justify-content-between text-center flex-grow-1 flex-md-grow-0">
-        <h2 class="mb-3 about-us-heading">About Us</h2>
-        <div class="about-us-paragraphs text-start">
-          <p>
-            Nordströms VVS is a trusted family-run plumbing business with deep roots in the community.
-          </p>
-          <p>
-            Our experienced team combines traditional craftsmanship with modern technology to deliver efficient, reliable service that keeps your home or business running smoothly.
-          </p>
-        </div>
-        <!-- Call-to-action button container -->
-        <div class="btn-container d-flex justify-content-center align-items-end w-100 mt-3">
-          <a href="contact.html" class="btn btn-common">Contact Us</a>
-        </div>
+    <!-- Introduction section -->
+    <section class="introduction-section container mt-3 p-4 rounded shadow-sm text-center">
+      <!-- Main heading -->
+      <h4 class="lead fw-semibold mb-4">Looking for reliable, professional plumbing services in Dalarna?</h4>
+      <!-- Wrench icon -->
+      <div class="intro-icon mb-3">
+        <i class="fa-solid fa-wrench"></i>
       </div>
-      <!-- Image column -->
-      <div class="about-us-image flex-shrink-0">
+      <!-- Introductory paragraph with max-width for better readability -->
+      <p class="intro-paragraph mb-3 mx-auto" style="max-width: 420px;">
+        At Nordströms VVS, we bring years of hands-on expertise to every project — big or small.<br>
+        From repairs to new installations, we ensure quality workmanship with a personal touch.
+      </p>
+      <!-- List of benefits with check icons -->
+      <ul class="list-with-icons list-unstyled mx-auto" style="max-width: 420px;">
+        <li class="d-flex justify-content-center align-items-center gap-2 text-muted">
+          <span>Friendly experts who care about your home</span>
+          <i class="fa-solid fa-check"></i>
+        </li>
+        <li class="d-flex justify-content-center align-items-center gap-2 text-muted">
+          <span>Fast and reliable service</span>
+          <i class="fa-solid fa-check"></i>
+        </li>
+        <li class="d-flex justify-content-center align-items-center gap-2 text-muted">
+          <span>Certified and experienced plumbers</span>
+          <i class="fa-solid fa-check"></i>
+        </li>
+      </ul>
+    </section>
+
+    <!-- About Us section -->
+    <section class="about-us-section container p-4 rounded shadow-sm d-flex flex-column align-items-center gap-4">
+      <!-- Image -->
+      <div class="about-us-image">
         <img src="assets/images/1000082857 (1).jpg" alt="Nordströms VVS car" class="img-fluid rounded shadow-sm"/>
       </div>
+
+      <!-- Text content container -->
+      <div class="about-us-text text-center" style="max-width: 400px;">
+        <h2 class="about-us-heading mb-3">About Us</h2>
+        <div class="about-us-paragraphs mb-3">
+          <p>Nordströms VVS is a trusted family-run plumbing business with deep roots in the community.</p>
+          <p>Our experienced team combines traditional craftsmanship with modern technology to deliver efficient, reliable service that keeps your home or business running smoothly.</p>
+        </div>
+        <!-- Contact button -->
+        <div class="btn-container">
+          <a href="contact.html" class="btn btn-common btn-small">Contact Us</a>
+        </div>
+      </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Footer start -->
-    <footer class="text-white py-4">
-      <div class="container d-flex justify-content-between align-items-center flex-wrap">
-        <!-- Contact info -->
-        <div class="d-flex gap-4 flex-wrap align-items-center">
-          <p class="mb-0 d-flex align-items-center gap-2">
+    <!-- Footer -->
+    <footer class="text-white py-4 bg-dark">
+      <div class="container d-flex flex-column align-items-center gap-3 text-center">
+        <!-- Contact information  -->
+        <div class="contact-info">
+          <h3 class="mb-2" style="color:#b36b2f;">Contact information</h3>
+          <p class="d-flex justify-content-center align-items-center gap-2 mb-1">
             <i class="fa-solid fa-phone"></i>
-            <a href="tel:+46707249697" class="text-decoration-none text-white">+46 707 249 697</a>
+            <a href="tel:+46707249697" class="text-white text-decoration-none">+46 707 249 697</a>
           </p>
-          <p class="mb-0 d-flex align-items-center gap-2">
+          <p class="d-flex justify-content-center align-items-center gap-2 mb-1">
             <i class="fa-solid fa-paper-plane"></i>
-            <a href="mailto:Nordstromsvvs@gmail.com" class="text-decoration-none text-white">Nordstromsvvs@gmail.com</a>
+            <a href="mailto:Nordstromsvvs@gmail.com" class="text-white text-decoration-none">Nordstromsvvs@gmail.com</a>
           </p>
-          <p class="mb-0 d-flex align-items-center gap-2">
+          <p class="d-flex justify-content-center align-items-center gap-2 mb-0">
             <i class="fa-solid fa-location-dot"></i>
-            <a href="https://www.google.com/maps/place/Dalarna,+Sweden" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-white" aria-label="Open Dalarna location on Google Maps">
-              Dalarna, Sweden
-            </a>
+            <a href="https://www.google.com/maps/place/Dalarna,+Sweden" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="Open Dalarna location on Google Maps">Dalarna, Sweden</a>
           </p>
         </div>
 
-        <!-- Social media links -->
-        <div class="d-flex gap-3">
-          <a href="https://www.facebook.com/people/Nordströms-Vvs-i-Dalarna-AB/61550777361174/" target="_blank" class="text-white" aria-label="Facebook">
-            <i class="fa-brands fa-facebook fa-lg"></i>
-          </a>
-          <a href="https://www.instagram.com/nordstromsvvs" target="_blank" class="text-white" aria-label="Instagram">
-            <i class="fa-brands fa-instagram fa-lg"></i>
-          </a>
+        <!-- Social media links  -->
+        <div class="social-links">
+          <p class="mb-1" style="color:#d3b18f;">Follow us</p>
+          <div class="d-flex gap-3 justify-content-center">
+            <a href="https://www.facebook.com/people/Nordströms-Vvs-i-Dalarna-AB/61550777361174/" target="_blank" class="text-white" aria-label="Facebook">
+              <i class="fa-brands fa-facebook fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/nordstromsvvs" target="_blank" class="text-white" aria-label="Instagram">
+              <i class="fa-brands fa-instagram fa-lg"></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
-    <!-- Footer end -->
+    <!-- Bootstrap JS bundle for navbar toggling -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
