@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 /* focus for all links */
-  a:focus {
+  a:focus, button:focus {
   outline: 3px solid #b36b2f;
   outline-offset: 2px;
 
@@ -72,7 +72,7 @@ body {
   background-color: #b36b2f; /* Lighter copper on hover */
   border-color: #9c5e2d; /* Slightly lighter border on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25); /* Slightly stronger shadow on hover */
-  outline: none;
+ 
 }
 
 /* Small button variant */
@@ -96,6 +96,7 @@ body {
   height: 30vh; 
   overflow: hidden;
   color: white;
+   min-height: 300px; /* Minimum height so text doesn't get cramped */
 }
 
 /* Smaller hero section for services page */
@@ -131,47 +132,69 @@ body {
 /* hero-text styles  */
 .hero-text {
   position: absolute;
-  top: 38%; 
+  top: 50%; 
   left: 50%; /* horizontally center */
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 1rem 2rem; 
-  border-radius: 0; /* no rounded corners */
-  background: none; /* remove background */
+  padding: 0.5rem 1.5rem; 
+  border-radius: 0.5rem; /* rounded corners */
+  background: rgba(0, 0, 0, 0.0); /* transparent background */
   z-index: 10;
   max-width: 95vw; /* almost full viewport width */
+  max-height: 80%;
   width: 95vw;
-  height: 40vh; /* text box */
+  height: auto; /* text box */
   display: flex;
   flex-direction: column;
   justify-content: center; /* center content vertically inside */
   color: white;
-  line-height: 1.4;
   box-sizing: border-box; 
 }
 
-.hero-text h2 {
-  font-size: 1.5rem; /* smaller heading */
+.hero-text h1 {
+  font-size: 1.3rem; /* smaller heading */
+  font-weight: 500;
   line-height: 1.2;
-  max-height: 3.6rem; /* max 2 lines */
-  overflow: hidden;
   white-space: normal;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  
 }
 
 .hero-text p {
   font-size: 0.7rem;
   max-width: 100%;
   margin-bottom: 1.5rem;
+  white-space: normal; 
+}
+
+
+
+.hero-text-s h1 {
+  font-size: 1.3rem; /* smaller heading */
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: normal;
+  margin-bottom: 1rem;
+}
+
+.hero-text-s p {
+  font-size: 0.7rem;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
   white-space: normal;
 }
+
+.hero-contact {
+
+}
+
 
 /* Introduction Section */
 .introduction-section {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0.5rem !important;
+  margin-bottom: 0.5rem;
   padding: 2rem 2.5rem;
   background-color: #fff;
   border-radius: 0.5rem;
@@ -207,8 +230,10 @@ body {
   flex-wrap: nowrap;
 }
 
-.intro-h4 {
+.intro-h2 {
  color: #311c0e; /* dark brown heading */
+ font-size: 1.25rem; /* bootstrap h4 size */
+ line-height: 1.2;
 }
 
 /* Paragraph column */
@@ -385,7 +410,7 @@ body {
 
 /* Footer styles */
 footer {
-  background-color: #5a2e17;
+  
   color: #ffffff;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
@@ -427,5 +452,21 @@ footer p {
 .follow {
   color: #b36b2f;
 } 
+
+.social-links i.fa-facebook,
+.social-links i.fa-instagram {
+  font-size: 2rem; /* bigger icon */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover */
+}
+
+.social-links i.fa-facebook:hover,
+.social-links i.fa-instagram:hover {
+  color: #b36b2f; /* copper hover */
+  transform: scale(1.2); /* bigger icon hover */
+}
+
+.social-links > div {
+  margin-left: -15px;
+}
 
 /* Responsive adjustments */
