@@ -200,6 +200,10 @@ body {
   flex-wrap: nowrap;
 }
 
+.intro-h4 {
+ color: #311c0e; /* dark brown heading */
+}
+
 /* Paragraph column */
 .intro-paragraph {
   flex: 1 1 45%;
@@ -296,10 +300,13 @@ body {
 
 /* Heading */
 .about-us-heading {
-  color: #5a341a; /* Warm brown heading */
+  color: #311c0e; /* dark brown heading */
   font-weight: 700;
   margin-bottom: 1.5rem;
-   align-self: center;
+  align-self: center;
+  border-bottom: 2px solid #311c0e;
+  padding-bottom: 0.3rem;
+  display: inline-block; 
 }
 
 /* Paragraph styling */
@@ -398,11 +405,20 @@ footer .container {
   flex-wrap: wrap;
 }
 
+footer h3 {
+  color: #b36b2f;
+}
+
 footer p {
   margin: 0.2rem 1rem 0.2rem 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: #b36b2f;
 }
+
+.follow {
+  color: #b36b2f;
+} 
 
 /* Responsive adjustments */
