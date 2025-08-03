@@ -68,7 +68,7 @@ body {
   outline: none;
 }
 
-/* Smaller buttons */
+/* Small button variant */
 .btn-small {
   padding: 8px 20px;
   font-size: 0.9rem;
@@ -86,9 +86,16 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 30vh; 
   overflow: hidden;
   color: white;
+}
+
+/* Smaller hero section for services page */
+.hero-services {
+  height: 30vh;
+  min-height: 220px;
+  margin-bottom: 0.5rem;
 }
 
 .hero-image {
@@ -127,7 +134,7 @@ body {
   z-index: 10;
   max-width: 95vw; /* almost full viewport width */
   width: 95vw;
-  height: 70vh; /* make text container cover hero height */
+  height: 40vh; /* text box */
   display: flex;
   flex-direction: column;
   justify-content: center; /* center content vertically inside */
@@ -137,7 +144,7 @@ body {
 }
 
 .hero-text h2 {
-  font-size: 1.6rem; /* smaller heading */
+  font-size: 1.5rem; /* smaller heading */
   line-height: 1.2;
   max-height: 3.6rem; /* max 2 lines */
   overflow: hidden;
@@ -146,35 +153,29 @@ body {
 }
 
 .hero-text p {
-  font-size: 1rem;
+  font-size: 0.7rem;
   max-width: 100%;
   margin-bottom: 1.5rem;
   white-space: normal;
 }
 
-.hero-text .btn-common {
-  padding: 8px 20px; /* smaller button */
-  font-size: 0.9rem;
-  max-width: 160px;
-  margin: 0 auto;
-  display: inline-block;
-}
-
 /* Introduction Section */
 .introduction-section {
   max-width: 900px;
-  margin: 1.5rem auto 0 auto; /* top margin to separate from hero */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem !important;
   padding: 2rem 2.5rem;
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: box-shadow 0.3s ease;
-  text-align: left;
+  text-align: left; /* Keep general left align */
 }
 
 /* Center paragraph text directly inside introduction section */
 .introduction-section > p {
-  text-align: center;
+  text-align: center;  /* Center only direct paragraphs */
   margin-bottom: 1.5rem;
 }
 
@@ -183,11 +184,11 @@ body {
 }
 
 .intro-icon {
-  font-size: 2rem;
-  color: #000000;
-  margin: 0 auto 1rem;
-  text-align: center;
-  display: block;
+  font-size: 2rem; /* icon size */
+  color: #000000; /* Black color */
+  margin: 0 auto 1rem; /* Center horizontally, margin-bottom for spacing */
+  text-align: center; /* Center content inside div */
+  display: block; /* Make div behave like a block element for centering */
 }
 
 /* Row layout for paragraph, icon and list */
@@ -217,7 +218,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 0;
+  margin-right: 0; 
   margin-left: 2rem;
 }
 
@@ -242,13 +243,13 @@ body {
 
 /* Text span in list items */
 .list-with-icons li span {
-  flex: 1 1 80%;
+  flex: 1 1 80%; /* text takes up 80% of width */
   text-align: left;
 }
 
 /* Font Awesome check icon */
 .list-with-icons li i.fa-check {
-  flex: 0 0 20px;
+  flex: 0 0 20px; /* fixed width for icon */
   font-size: 1.2rem;
   color: #4a3d3d;
 }
@@ -256,7 +257,7 @@ body {
 /* About Us Section */
 .about-us-section {
   max-width: 900px;
-  margin: 1rem auto 1rem auto; 
+  margin: 1rem auto 2rem auto; 
   padding-top: 1.5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -276,29 +277,29 @@ body {
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-/* Text container */
+/* Text container - flex column to control vertical layout */
 .about-us-text {
-  flex: 1 1 45%;
+  flex: 1 1 45%; /* Responsive width */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
+  justify-content: space-between; /* Spread heading and button vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center heading text */
   padding: 0 1rem;
   margin: 0;
 }
 
-/* Paragraphs centered inside text container */
+/* Paragraphs aligned center inside text container */
 .about-us-paragraphs {
-  text-align: center;
+  text-align: center; /* Center text */
 }
 
 /* Heading */
 .about-us-heading {
-  color: #5a3b1a;
+  color: #5a341a; /* Warm brown heading */
   font-weight: 700;
   margin-bottom: 1.5rem;
-  align-self: center;
+   align-self: center;
 }
 
 /* Paragraph styling */
@@ -306,10 +307,10 @@ body {
   color: #4a3d3d;
   line-height: 1.6;
   margin-bottom: 1rem;
-  width: 100%;
+  width: 100%; /* Full width to align with paragraphs */
 }
 
-/* Button container */
+/* Button container - centered horizontally, bottom aligned with image bottom */
 .btn-container {
   width: 100%;
   display: flex;
@@ -320,9 +321,9 @@ body {
 
 /* Image container */
 .about-us-image {
-  flex-shrink: 0;
+  flex-shrink: 0; /* Prevent shrinking */
   margin: 0 auto;
-  max-width: 200px; /* halfish size */
+  max-width: 140px; /* Halved image size */
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   cursor: default;
@@ -334,11 +335,47 @@ body {
   transform: scale(1.05);
 }
 
+/* Services.html */
+ .service-text {
+  font-size: smaller;
+}
+.service-card {
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+
+/* Service card icon styling */
+.service-card i.fa-water {
+  color: #1e90ff; /* Dodger blue for Water */
+}
+
+.service-card i.fa-fire-flame-curved {
+  color: #ff4500; /* OrangeRed for Heating */
+}
+
+.service-card i.fa-toilet {
+  color: #aeb6b1; /* SeaGreen for Sanitation */
+}
+
+/* Card body text center alignment */
+.service-card .card-body {
+  text-align: center;
+}
+
 /* Footer styles */
 footer {
   background-color: #5a2e17;
   color: #ffffff;
-  padding: 1.5rem 0;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  margin-top: 0;
   font-size: 0.9rem;
 }
 
@@ -367,6 +404,5 @@ footer p {
   align-items: center;
   gap: 0.5rem;
 }
-
 
 /* Responsive adjustments */
