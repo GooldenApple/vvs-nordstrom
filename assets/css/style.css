@@ -6,6 +6,12 @@ body {
   margin: 0;
   padding: 0;
 }
+/* focus for all links */
+  a:focus {
+  outline: 3px solid #b36b2f;
+  outline-offset: 2px;
+
+}
 
 /* Navbar styles */
 .navbar {
@@ -31,6 +37,7 @@ body {
   position: relative;
   transition: color 0.3s ease;
 }
+
 
 /* hover and active links */
 .navbar-nav .nav-link:hover,
