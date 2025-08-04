@@ -83,8 +83,8 @@ body {
 
 .btn-common:hover,
 .btn-common:focus {
-  background-color: #b36b2f; /* Lighter copper on hover */
-  border-color: #9c5e2d; /* Slightly lighter border on hover */
+  background-color: #7a3f1f; /* darker copper on hover */
+  border-color: #69361a; /* match darker copper border on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25); /* Slightly stronger shadow on hover */
  
 }
@@ -393,15 +393,15 @@ body {
 /* Service card icon styling */
 
 .service-card i.fa-water {
-  color: #1380ec4f; /* Dodger blue for Water */
+  color: #1380ec; 
 }
 
 .service-card i.fa-fire-flame-curved {
-  color: #ff440075; /* OrangeRed for Heating */
+  color: #f7804e; 
 }
 
 .service-card i.fa-toilet {
-  color: #aeb6b1; /* SeaGreen for Sanitation */
+  color: #aeb6b1; 
 }
 
 /* Card body text center alignment */
@@ -429,12 +429,25 @@ body {
 /* Footer styles */
 
 footer {
-  
+  background-color: rgba(40, 38, 38, 0.95);
   color: #ffffff;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
   margin-top: 0;
   font-size: 0.9rem;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer h3 {
+  color: #c68c4a;
 }
 
 footer a {
@@ -443,45 +456,33 @@ footer a {
   transition: color 0.3s ease;
 }
 
-footer a:hover,
-footer a:focus {
-  color: #b36b2f;
-  text-decoration: underline;
-}
-
-footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-footer h3 {
-  color: #b36b2f;
-}
-
 footer p {
   margin: 0.2rem 1rem 0.2rem 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #b36b2f;
+  color: #ffffff; 
 }
 
 .follow {
-  color: #b36b2f;
+  color: #c68c4a;
 } 
 
 .social-links i.fa-facebook,
 .social-links i.fa-instagram {
   font-size: 2rem; /* bigger icon */
+  color: #fff;
   transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover */
 }
 
 .social-links i.fa-facebook:hover,
 .social-links i.fa-instagram:hover {
-  color: #b36b2f; /* copper hover */
+  color: #d7893f; /* copper hover */
   transform: scale(1.2); /* bigger icon hover */
+}
+
+footer i {
+  color: #d7893f;
 }
 
 .social-links > div {
