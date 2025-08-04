@@ -25,24 +25,17 @@ The website is designed with clarity, accessibility, and trust in mind — highl
 
 ## User Experience (UX)
 
-Nordstroms VVS is a trusted local plumbing company providing professional services to homeowners and small businesses.  
-The company takes pride in serving the local community with dependable and friendly service.  
-
-The website was developed to offer a clear and user-friendly experience, helping first-time visitors quickly understand the range of services available.  
-The site is designed with simplicity in mind, ensuring that users of all technical skill levels can navigate and find information effortlessly.  
-
-Returning customers can easily find up-to-date contact information and access the site on any device thanks to its responsive design.  
-For frequent visitors, the site provides a straightforward way to reach out with inquiries or service recommendations.  
-
-Accessibility considerations ensure that the website is usable for all customers, including those with disabilities.  
-By focusing on clarity and accessibility, the site builds trust and encourages customer engagement, highlighting core service areas such as Water, Heating, and Sanitation.
 
 ### Initial Discussion
 
-Nordstroms VVS is a local plumbing company offering reliable and professional services to homeowners and small businesses.  
-The website was created to provide an easy-to-navigate platform where users can quickly learn about the services offered and get in touch with the company.  
-The design focuses on accessibility, clarity, and responsiveness to ensure a seamless experience on any device.  
-By highlighting core services such as Water, Heating, and Sanitation, the site supports customer decision-making and engagement.
+Nordstroms VVS is a trusted local plumbing company offering professional services to homeowners and small businesses. Proudly serving the community, the company emphasizes reliable and friendly customer service.
+
+This website has been developed to provide a clear and user-friendly experience, enabling first-time visitors to quickly understand the range of services offered. The design prioritizes simplicity and accessibility, ensuring that users of all technical levels can navigate the site with ease on any device thanks to its responsive layout.
+
+Returning customers benefit from easy access to up-to-date contact information, while frequent visitors can efficiently submit inquiries or recommendations. Accessibility features are integrated to make the website usable for all, including those with disabilities.
+
+By focusing on clarity and inclusivity, the site builds trust and encourages customer engagement, highlighting the core service areas of Water, Heating, and Sanitation.
+
 
 ### Key Information for the Site
 
@@ -63,6 +56,7 @@ By highlighting core services such as Water, Heating, and Sanitation, the site s
 - Present the business professionally.  
 - Attract new customers through online presence.  
 - Display past work and easy contact options.
+
 
 #### First Time Visitor Goals
 
@@ -96,18 +90,33 @@ By highlighting core services such as Water, Heating, and Sanitation, the site s
 
 ### Colour Scheme
 
-I chose a colour palette that reflects the professional, warm, and trustworthy nature of the plumbing business, inspired by natural copper and earth tones. The palette includes shades of brown and copper for warmth and reliability, complemented by clean whites and deep blacks for contrast and readability.
+[Color Palette](assets/images/readme/color-palette.png) 
+
+I chose a colour palette that reflects the professional, warm, and trustworthy nature of the plumbing business, inspired by natural copper and earth tones. 
+The palette includes shades of brown and copper for warmth and reliability, complemented by clean whites and deep blacks for contrast and readability.
 
 ### Typography
 
-*(Placeholder: Describe chosen fonts and rationale.)*
+The website uses Arial, sans-serif as the primary font to ensure high readability and simplicity across devices and screen sizes. 
+Font sizes and weights have been carefully chosen to create a clear visual hierarchy, with larger, bolder headings to capture attention and smaller, easy-to-read body text. 
+This choice supports accessibility and provides a clean, professional appearance fitting for the plumbing business.
 
 ### Imagery
 
-The hero image shows flowing copper pipes with a dark green/gray tiled background.  
-This image was sourced from [StockCake](https://stockcake.com) and has been optimized for web performance using TinyPNG.  
+**Hero Image:**  
+The hero image shows flowing copper pipes with a dark green/gray tiled background.   
 The image reflects the plumbing business's core services and matches the site's color palette for a cohesive design.
+This image was sourced from [StockCake](https://stockcake.com) and has been optimized for web performance using TinyPNG. 
 
+**About Us Image:**  
+The About Us section features a photo of the Nordströms VVS company vehicle, symbolizing the company's local presence and commitment to professional service. 
+Images have been optimized using TinyPNG.
+
+
+**Gallery Images:**  
+The gallery features a selection of high-quality images showcasing completed plumbing projects, highlighting craftsmanship and service variety. 
+These images were provided by Nordströms VVS i Dalarna AB. 
+All images have been optimized using TinyPNG.
 ---
 
 ## Features
@@ -116,36 +125,55 @@ The image reflects the plumbing business's core services and matches the site's 
 
 The website consists of five main pages:
 
-- **Home:** An introduction to the company with a call-to-action leading to the services page.  
-- **Services:** Detailed descriptions of the plumbing services offered, including Water, Heating, and Sanitation.  
-- **Gallery:** A responsive image gallery showcasing past work and projects.  
-- **Contact:** A contact form that allows users to submit inquiries or service requests easily.  
-- **Thank You:** A confirmation page shown after successful form submission.
+ **Home:** 
+ - An introduction to the company with a clear call-to-action button leading users to the Services page. The hero section features an engaging image and concise text to immediately communicate the company's expertise.
+**Services:** 
+- Detailed descriptions of the plumbing services offered, divided into three main categories: Water, Heating, and Sanitation. Each service card includes icons and descriptive text to enhance readability and user engagement.
+**Gallery:** 
+- A responsive and accessible image gallery showcasing past projects, demonstrating the company’s craftsmanship and service range. The gallery includes a carousel for mobile devices to optimize viewing on smaller screens.
+**Contact:**
+- A user-friendly contact form with required fields, input validation, and clear call-to-action buttons. The form facilitates easy submission of inquiries or service requests and improves communication between users and the company.
+**Thank You:**
+- A confirmation page displayed after successful form submission, providing users with reassurance that their message has been received and outlining what to expect next.
+
 
 ### General Features on All Pages
 
-- A responsive navigation bar that adapts to different screen sizes, including a burger menu on mobile devices.  
-- A footer containing contact information and social media links for easy access.  
-- A favicon displayed in the browser tab for brand recognition.  
-- Consistent styling and layout to ensure a cohesive user experience throughout the site.
+- A fully responsive navigation bar that adapts smoothly to different screen sizes, including a hamburger menu for mobile devices to maintain usability and aesthetics.
+- A consistent footer on all pages featuring contact information, including phone, email, physical location, and social media links for easy user access.
+- A favicon that appears in the browser tab to reinforce brand identity.
+- Uniform styling, layout, and color scheme throughout the website to provide a cohesive and professional user experience.
+- Semantic HTML5 structure to improve accessibility and SEO.
+- Proper use of ARIA attributes and focus indicators to support keyboard navigation.
 
 ### Specific Features
 
-- The **Home** page includes a responsive hero section with an image mockup and clear call-to-action buttons.  
-- The **Services** page presents the three main service categories with descriptive text sections and call-to-action buttons.  
-- The **Gallery** page features a grid layout that adjusts for various screen sizes to display images effectively.  
-- The **Contact** page contains a form with required fields, clickable buttons, and validation to improve usability.  
-- The **Thank You** page thanks users for their submission and provides reassurance that the company will respond.
+**Home:** 
+- Includes an attention-grabbing hero section with overlay and centered text, plus a prominent call-to-action button to guide users further into the site.
+**Services:**
+- Service cards use Font Awesome icons for visual appeal and quick comprehension, accompanied by concise descriptive text.
+**Gallery:**
+- Implements a responsive grid for desktop and a carousel for mobile users to display images effectively on all devices.
+**Contact:**
+- Features form validation with required fields to prevent incomplete submissions, and uses accessible labels and input types to enhance usability.
+**Thank You:**
+- Provides clear confirmation feedback to the user with a message of thanks and reassurance about follow-up.
 
 ---
 
 ## Accessibility
 
-- Semantic HTML5 structure  
-- Descriptive `alt` attributes on all images  
-- Good colour contrast   
-- Font choices supporting readability and accessibility  
-- Navigation via keyboard and screen readers 
+- Semantic HTML5 structure throughout the site
+
+- Proper use of alt attributes on all images
+
+- Verified and improved colour contrast ratios for text and interactive elements    using WebAIM’s Contrast Checker and Lighthouse
+
+- Added appropriate ARIA attributes where needed
+
+- Ensured keyboard navigation and focus styles are clear and usable
+
+- Form fields updated with autocomplete attributes for better user experience
 
 ---
 
@@ -158,13 +186,20 @@ The website consists of five main pages:
 
 ### Frameworks & Tools
 
-- Bootstrap 5  
-- VS Code  
-- Git & GitHub  
-- Google Fonts  
-- Font Awesome  
-- TinyPNG / Birme (image optimisation)  
-- AmiResponsive (mockup tool)  
+Bootstrap 5 - for responsive layout and UI components, including the navbar and grid system.
+
+VS Code - as the primary code editor, with extensions for HTML, CSS, and Git integration.
+
+Git & GitHub - for version control, repository hosting, and deployment via GitHub Pages.
+
+Google Fonts - for web-optimized typography, specifically Arial (system font fallback used).
+
+Font Awesome - for scalable vector icons and social media logos.
+
+TinyPNG - for image compression and resizing to optimize page load times.
+
+AmiResponsive — for creating responsive device mockups in project documentation.
+
 
 ---
 
@@ -204,7 +239,11 @@ The live version of the site can be accessed at:
 
 ## Testing
 
-**(Testing details and results to be documented later.)**
+- Accessibility audits performed using Lighthouse and WebAIM tools
+
+- Colour contrast improved to meet WCAG AA standards
+
+- Manual testing 
 
 ---
 

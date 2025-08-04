@@ -1,5 +1,4 @@
-/* Global styles */
-
+/* Global styles: basic font, colors, margin and padding reset */
 body {
   font-family: Arial, sans-serif;
   background-color: #fff;
@@ -7,34 +6,32 @@ body {
   margin: 0;
   padding: 0;
 }
-/* focus for all links */
 
-  a:focus, button:focus {
+/* Focus styles for accessibility - outlines on links and buttons */
+a:focus, button:focus {
   outline: 3px solid #b36b2f;
   outline-offset: 2px;
-
 }
 
-/* Navbar styles */
-
+/* Navbar background, padding, and subtle shadow for separation */
 .navbar {
   background-color: #ffffff; 
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Soft shadow */
-  border-bottom: 1px solid #d3d3d3; /* Light grey border bottom */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #d3d3d3;
 }
 
+/* Logo styling: fixed height and brightness filter for subtle dimming */
 .navbar-brand img {
-  height: 40px; /* Logo height */
-  width: auto;  /* Maintain aspect ratio */
-  filter: brightness(0.8); /* Dim logo */
+  height: 40px;
+  width: auto;
+  filter: brightness(0.8);
 }
 
-/* Navbar links styling */
-
+/* Navbar links: black color, spacing, and smooth color transition */
 .navbar-nav .nav-link {
-  color: black; /* Black text */
+  color: black;
   margin-left: 15px;
   padding-left: 10px;
   padding-right: 10px;
@@ -42,55 +39,46 @@ body {
   transition: color 0.3s ease;
 }
 
-
-/* hover and active links */
-
+/* Navbar hover and active state: copper color and underline effect */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #8b4d2b; /* Copper color */
+  color: #8b4d2b;
   text-decoration: underline;
-  text-decoration-color: #444; /* Dark grey underline */
+  text-decoration-color: #444;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
-} 
+}
 
-
-/* Hamburger icon */
-
+/* Hamburger icon - remove default filter for consistency */
 .navbar-light .navbar-toggler-icon {
   filter: none;
-} 
+}
 
-
-/* Buttons */
-
+/* Common button styling: copper background, white text, subtle shadow */
 .btn-common {
-  background-color: #8b4d2b; /* Copper color */
+  background-color: #8b4d2b;
   color: white;
   border-radius: 5px;
   padding: 12px 30px;
   font-size: 1.1rem;
-  border: 2px solid #7a4223; /* Slightly darker copper border */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  border: 2px solid #7a4223;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   text-decoration: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
-  /* Center button horizontally and push to bottom of flex container */
   align-self: center;
   margin-top: auto;
-} 
-
-
-.btn-common:hover,
-.btn-common:focus {
-  background-color: #7a3f1f; /* darker copper on hover */
-  border-color: #69361a; /* match darker copper border on hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25); /* Slightly stronger shadow on hover */
- 
 }
 
-/* Small button variant */
+/* Button hover and focus states: darker copper and stronger shadow */
+.btn-common:hover,
+.btn-common:focus {
+  background-color: #7a3f1f;
+  border-color: #69361a;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
 
+/* Small button variant for compact layout */
 .btn-small {
   padding: 8px 20px;
   font-size: 0.9rem;
@@ -99,9 +87,7 @@ body {
   display: inline-block;
 }
 
-
-/* Hero section */
-
+/* Hero section - container with fixed height and relative positioning for overlay and text */
 .hero {
   position: relative;
   width: 100%; 
@@ -109,23 +95,17 @@ body {
   margin-bottom: 0.5rem;
   overflow: hidden;
   color: white;
-  min-height: 300px; /* Minimum height so text doesn't get cramped */
+  min-height: 300px; /* Minimum height prevents cramped text */
 }
 
+/* Hero image fills container and maintains aspect ratio */
 .hero-image {
   position: relative;
-  height: 100%; /* Make sure it fills hero height */
+  height: 100%;
   display: block;
 }
 
-.hero-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center center;
-  display: block;
-}
-
+/* Overlay covers hero image with semi-transparent black for readability */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -136,46 +116,44 @@ body {
   z-index: 5;
 }
 
-/* hero-text styles  */
-
+/* Hero text: centered vertically and horizontally, flexible layout for spacing */
 .hero-text {
   position: absolute;
   top: 50%; 
-  left: 50%; /* horizontally center */
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 0.5rem 1.5rem; 
-  border-radius: 0.5rem; /* rounded corners */
-  background: rgba(0, 0, 0, 0.0); /* transparent background */
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.0);
   z-index: 10;
   max-height: 80%;
   width: 95vw;
-  height: auto; /* text box */
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* center content vertically inside */
+  justify-content: center;
   color: white;
   box-sizing: border-box; 
 }
 
+/* Hero heading - smaller font size and moderate line height for readability */
 .hero-text h1 {
-  font-size: 1.3rem; /* smaller heading */
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.2;
   white-space: normal;
   margin-bottom: 1.5rem;
-  
 }
 
+/* Hero paragraph text styling */
 .hero-text p {
   font-size: 0.7rem;
   margin-bottom: 1.5rem;
   white-space: normal; 
 }
 
-
-/* Introduction Section */
-
+/* Introduction Section - white background card with shadow and padding */
 .introduction-section {
   max-width: 900px;
   margin: 0 auto 0.5rem auto;
@@ -184,30 +162,30 @@ body {
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: box-shadow 0.3s ease;
-  text-align: left; /* Keep general left align */
+  text-align: left;
 }
 
-/* Center paragraph text directly inside introduction section */
-
+/* Center paragraphs inside introduction */
 .introduction-section > p {
-  text-align: center;  /* Center only direct paragraphs */
+  text-align: center;
   margin-bottom: 1.5rem;
 }
 
+/* Hover effect increases shadow for subtle depth */
 .introduction-section:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
+/* Icons inside introduction section: centered, sized for visibility */
 .intro-icon {
-  font-size: 2rem; /* icon size */
-  color: #000000; /* Black color */
-  margin: 0 auto 1rem auto; /* Center horizontally, margin-bottom for spacing */
-  text-align: center; /* Center content inside div */
-  display: block; /* Make div behave like a block element for centering */
+  font-size: 2rem;
+  color: #000000;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+  display: block;
 }
 
-/* Row layout for paragraph, icon and list */
-
+/* Flex container for intro content with icon and text aligned horizontally */
 .intro-content-row {
   display: flex;
   justify-content: space-between;
@@ -216,14 +194,14 @@ body {
   flex-wrap: nowrap;
 }
 
+/* Headings with dark brown color and defined font size */
 .intro-h2 {
- color: #311c0e; /* dark brown heading */
- font-size: 1.25rem; /* bootstrap h4 size */
+ color: #311c0e;
+ font-size: 1.25rem;
  line-height: 1.2;
 }
 
-/* Paragraph column */
-
+/* Paragraph next to icon with right aligned text */
 .intro-p {
   flex: 1 1 45%;
   font-size: 0.9rem;
@@ -233,8 +211,7 @@ body {
   max-width: 420px;
 }
 
-/* Center icon between paragraph and list */
-
+/* Center icon between text and list */
 .intro-icon-middle {
   flex: 0 0 40px;
   font-size: 2rem;
@@ -242,12 +219,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 0; 
+  margin-right: 0;
   margin-left: 2rem;
 }
 
-/* Benefits list */
-
+/* Benefits list styling with flex and spacing */
 .list-with-icons {
   flex: 1 1 45%;
   list-style: none;
@@ -258,8 +234,7 @@ body {
   max-width: 420px;
 }
 
-/* List items styling */
-
+/* List items are flex containers for icon and text */
 .list-with-icons li {
   display: flex;
   align-items: center;
@@ -268,26 +243,23 @@ body {
   gap: 1rem;
 }
 
-/* Text span in list items */
-
+/* Text span inside list items takes up most width */
 .list-with-icons li span {
-  flex: 1 1 80%; /* text takes up 80% of width */
+  flex: 1 1 80%;
   text-align: left;
 }
 
-/* Font Awesome check icon */
-
+/* Check icon styling for benefits list */
 .list-with-icons li i.fa-check {
-  flex: 0 0 20px; /* fixed width for icon */
+  flex: 0 0 20px;
   font-size: 1.2rem;
   color: #4a3d3d;
 }
 
-/* About Us Section */
-
+/* About Us Section: white card with padding, shadow, and flex layout */
 .about-us-section {
   max-width: 900px;
-  margin: 1rem auto 2rem auto; 
+  margin: 1rem auto 2rem auto;
   padding: 1.5rem 2.5rem 2rem 2.5rem;
   background-color: #fff;
   border-radius: 0.5rem;
@@ -300,49 +272,45 @@ body {
   justify-content: center;
 }
 
+/* Hover effect for About Us card */
 .about-us-section:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-/* Text container - flex column to control vertical layout */
-
+/* Text container uses flex column to space heading and button */
 .about-us-text {
-  flex: 1 1 45%; /* Responsive width */
+  flex: 1 1 45%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Spread heading and button vertically */
-  align-items: center; /* Center horizontally */
-  text-align: center; /* Center heading text */
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   padding: 0 1rem;
   margin: 0;
   max-width: 400px;
 }
 
-
-/* Heading */
-
+/* About Us heading with dark brown color and underline */
 .about-us-text h2 {
-  color: #311c0e; /* dark brown heading */
+  color: #311c0e;
   font-weight: 700;
   margin-bottom: 1.5rem;
   align-self: center;
   border-bottom: 2px solid #311c0e;
   padding-bottom: 0.3rem;
-  display: inline-block; 
+  display: inline-block;
 }
 
-/* Paragraph styling */
-
+/* About Us paragraph styling */
 .about-us-text p {
   color: #4a3d3d;
   line-height: 1.6;
   margin-bottom: 1rem;
-  width: 100%; 
-  text-align: center; /* Center text */
+  width: 100%;
+  text-align: center;
 }
 
-/* Button container - centered horizontally, bottom aligned with image bottom */
-
+/* Button container centers button horizontally and aligns bottom */
 .btn-container {
   width: 100%;
   display: flex;
@@ -351,33 +319,35 @@ body {
   margin-top: auto;
 }
 
-/* Image container */
-
+/* About Us image container prevents shrinking and adds shadow */
 .about-us-image {
-  flex-shrink: 0; /* Prevent shrinking */
+  flex-shrink: 0;
   margin: 0 auto;
-  max-width: 140px; /* Halved image size */
+  max-width: 140px;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   cursor: default;
   transition: transform 0.3s ease;
 }
 
-/* Image hover zoom */
-
+/* Slight zoom on hover for image */
 .about-us-image:hover {
   transform: scale(1.05);
 }
 
-/* Services.html */
+/* Services page specific styles */
 
+/* Service page heading color */
 .service-text h2 {
   color: #24150a;
 }
 
- .service-text p {
+/* Paragraph font size for service text */
+.service-text p {
   font-size: 0.9rem;
 }
+
+/* Service cards with shadow and rounded corners */
 .service-card {
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -385,49 +355,45 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
+/* Hover shadow effect on service cards */
 .service-card:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-
-/* Service card icon styling */
-
+/* Service card icons with specific colors for visual cues */
 .service-card i.fa-water {
-  color: #1380ec; 
+  color: #1380ec; /* blue for water */
 }
 
 .service-card i.fa-fire-flame-curved {
-  color: #f7804e; 
+  color: #f7804e; /* orange for heating */
 }
 
 .service-card i.fa-toilet {
-  color: #aeb6b1; 
+  color: #aeb6b1; /* gray for sanitation */
 }
 
-/* Card body text center alignment */
+/* Center text in card body */
 .service-card .card-body {
   text-align: center;
 }
 
-/* Gallery html */
-
+/* Gallery section paragraph font size */
 .gallery-section p {
   font-size: 0.9rem;
 }
 
-/* Success html */
-
+/* Success page heading color */
 .success h2 {
   color: #24150a;
 }
+
+/* Limit width of success page buttons */
 .success-btn {
   max-width: 120px;
 }
 
-
-
-/* Footer styles */
-
+/* Footer styles: dark background with white text */
 footer {
   background-color: rgba(40, 38, 38, 0.95);
   color: #ffffff;
@@ -437,6 +403,7 @@ footer {
   width: 100%;
 }
 
+/* Footer container uses flexbox for layout and responsiveness */
 footer .container {
   display: flex;
   justify-content: space-between;
@@ -446,16 +413,19 @@ footer .container {
   box-sizing: border-box;
 }
 
+/* Footer heading color */
 footer h3 {
   color: #c68c4a;
 }
 
+/* Footer links styling */
 footer a {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
+/* Footer paragraph styling for contact info */
 footer p {
   margin: 0.2rem 1rem 0.2rem 0;
   display: flex;
@@ -464,27 +434,32 @@ footer p {
   color: #ffffff; 
 }
 
+/* Follow text color in footer */
 .follow {
   color: #c68c4a;
 } 
 
+/* Social media icon styling with hover effects */
 .social-links i.fa-facebook,
 .social-links i.fa-instagram {
-  font-size: 2rem; /* bigger icon */
+  font-size: 2rem;
   color: #fff;
-  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover */
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* Social media icon hover effect */
 .social-links i.fa-facebook:hover,
 .social-links i.fa-instagram:hover {
-  color: #d7893f; /* copper hover */
-  transform: scale(1.2); /* bigger icon hover */
+  color: #d7893f;
+  transform: scale(1.2);
 }
 
+/* Footer icon color */
 footer i {
   color: #d7893f;
 }
 
+/* Adjust margin for social links container */
 .social-links > div {
   margin-left: -15px;
 }
