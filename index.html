@@ -8,11 +8,15 @@
     <meta name="author" content="Nordstroms VVS i Dalarna AB"/>
     <title>Nordstroms VVS i Dalarna AB</title>
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Preconnect for faster loading of external resources -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin/>
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin/>
 
-    <!-- Font Awesome Kit for icons -->
-    <script src="https://kit.fontawesome.com/c1bbf5006a.js" crossorigin="anonymous"></script>
+    <!-- Preload Bootstrap CSS to prioritize loading -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    </noscript>
 
     <!-- Link to custom stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css"/>
@@ -28,7 +32,10 @@
         <div class="container">
           <!-- Brand logo linking to homepage -->
           <a class="navbar-brand" href="index.html">
-            <img src="assets/images/favicon_io (3)/android-chrome-192x192.png" alt="Nordströms VVS logo" height="40"/>
+            <picture>
+              <source srcset="assets/images/favicon_io(3)/android-chrome-192x192.webp" type="image/webp"/>
+              <img src="assets/images/favicon_io(3)/android-chrome-192x192.png" alt="Nordströms VVS logo" width="192" height="192"/>
+            </picture>
           </a>
           <!-- Hamburger button for toggling menu on smaller screens -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -60,15 +67,22 @@
    
     <main>
       <!-- Hero section with background image and overlay for readability -->
-      <section class="hero position-relative text-white">
-        <!-- Full-width hero image -->
-        <img src="assets/images/hero-images/StockCake-Flowing Copper Pipes_1753797567 (compressed).jpg" alt="Copper pipes in modern setting" class="hero-image img-fluid w-100"/>
+      <section class="hero hero-index hero-section position-relative text-white">
+        <!-- WebP with JPEG fallback for better performance -->
+        <picture>
+          <source srcset="assets/images/hero-images/StockCakeFlowingCopperPipes480px.webp 480w, 
+                          assets\images\hero-images\StockCakeFlowingCopperPipe768px.webp 768w, 
+                          assets\images\hero-images\StockCakeFlowingCopperPipes1344px.webp 1344w" 
+                          sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1344px" 
+                          type="image/webp"/>
+          <img src="assets/images/hero-images/StockCake-Flowing-Copper-Pipes-145kb.jpg" alt="Copper pipes in modern setting" width="1344" height="768" class="hero-image img-fluid w-100"/>
+        </picture>
         <!-- Semi-transparent overlay to darken image for better text contrast -->
         <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
         <!-- Centered text content over hero image -->
         <div class="hero-text position-absolute top-50 start-50 translate-middle px-3 text-center">
           <h1 class="fw-bold">Nordströms VVS i Dalarna AB</h1>
-          <p class="small">
+          <p class="hero-p small">
             Committed to quality and customer satisfaction, we handle everything from routine maintenance to complex installations
             <br>— ensuring your plumbing works flawlessly with professionalism and care.
           </p>
@@ -82,10 +96,11 @@
         <!-- Main heading -->
         <h2 class="lead fw-semibold mb-4 intro-h2">Looking for reliable, professional plumbing services in Dalarna?</h2>
         <!-- Wrench icon representing plumbing -->
-        <div class="intro-icon mb-3">
+        <div class="intro-icon intro-icon-middle mb-3">
           <i class="fa-solid fa-wrench" aria-hidden="true"></i>
         </div>
         <!-- Introductory paragraph with max-width and centered text -->
+        
         <p class="intro-p mb-3 mx-auto">
           At Nordströms VVS, we bring years of hands-on expertise to every project — big or small.<br>
           From repairs to new installations, we ensure quality workmanship with a personal touch.
@@ -109,19 +124,23 @@
             <i class="fa-solid fa-check"></i>
           </li>
         </ul>
+        
       </section>
 
       <!-- About Us section with image and company info -->
-      <section class="about-us-section container my-1 rounded shadow-sm d-flex flex-column align-items-center">
-        <!-- Company vehicle image with rounded corners and shadow -->
+      <section class="about-us-section container my-1 rounded shadow-sm d-flex align-items-center">
+        <!-- Company vehicle image WebP with JPEG fallback -->
         <div class="about-us-image">
-          <img src="assets/images/1000082857 (1).jpg" alt="Nordströms VVS car" class="img-fluid rounded shadow-sm"/>
+          <picture>
+            <source srcset="assets/images/1000082857.webp" type="image/webp"/>
+            <img src="assets/images/10000828571300px.jpg" width="300" height="400" alt="Nordströms VVS car" class="img-fluid rounded shadow-sm"/>
+          </picture>
         </div>
 
         <!-- Text content container centered and spaced -->
         <div class="about-us-text text-center">
           <h2 class="mb-3">About Us</h2>
-          <br>
+          <br/>
           <div class="mb-3">
             <p>Nordströms VVS is a trusted family-run plumbing business with deep roots in the community.</p>
             <p>Our experienced team combines traditional craftsmanship with modern technology to deliver efficient, reliable service that keeps your home or business running smoothly.</p>
@@ -137,22 +156,24 @@
     <!-- Footer with contact info and social media links -->
     <footer class="py-4 bg-dark">
       <div class="container d-flex flex-column align-items-center gap-3 text-center">
-        <!-- Contact information section -->
-        <div class="contact-info">
-          <h3 class="mb-2">Contact information</h3>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+46707249697" class="text-white text-decoration-none">+46 707 249 697</a>
-          </p>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-paper-plane"></i>
-            <a href="mailto:Nordstromsvvs@gmail.com" class="text-white text-decoration-none">Nordstromsvvs@gmail.com</a>
-          </p>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-0">
-            <i class="fa-solid fa-location-dot"></i>
-            <a href="https://www.google.com/maps/place/Dalarna,+Sweden" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="Open Dalarna location on Google Maps">Dalarna, Sweden</a>
-          </p>
+        <div class="footer-heading-container">
+          <h3 class="footer-heading mb-2">Contact information</h3>
         </div>
+        <!-- Contact information section -->
+      <div class="contact-info d-flex justify-content-center gap-5 flex-wrap">
+          <p class="d-flex align-items-center gap-2 mb-0">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+46707249697" class="text-white text-decoration-none">+46 707 249 697</a>
+        </p>
+        <p class="d-flex align-items-center gap-2 mb-0">
+          <i class="fa-solid fa-paper-plane"></i>
+          <a href="mailto:Nordstromsvvs@gmail.com" class="text-white text-decoration-none">Nordstromsvvs@gmail.com</a>
+        </p>
+        <p class="d-flex align-items-center gap-2 mb-0">
+          <i class="fa-solid fa-location-dot"></i>
+          <a href="https://www.google.com/maps/place/Dalarna,+Sweden" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="Open Dalarna location on Google Maps">Dalarna, Sweden</a>
+        </p>
+      </div>
 
         <!-- Social media links with accessible labels -->
         <div class="social-links justify-content-center">
@@ -168,7 +189,10 @@
         </div>
       </div>
     </footer>
+
     <!-- Bootstrap JS bundle for navbar toggling -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Font Awesome Kit for icons -->
+    <script src="https://kit.fontawesome.com/c1bbf5006a.js" crossorigin="anonymous" defer></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-/* Global styles: basic font, colors, margin and padding reset */
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #fff;
@@ -6,79 +6,77 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* Focus styles for accessibility - outlines on links and buttons */
+/* Focus styles for links and buttons for accessibility */
 a:focus, button:focus {
-  outline: 3px solid #b36b2f;
-  outline-offset: 2px;
+  outline: 3px solid #b36b2f; /* Copper colored outline */
+  outline-offset: 2px; /* Space between outline and element */
 }
 
-/* Navbar background, padding, and subtle shadow for separation */
+/* Navbar styles */
 .navbar {
   background-color: #ffffff; 
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  border-bottom: 1px solid #d3d3d3;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  border-bottom: 1px solid #d3d3d3; /* Subtle bottom border */
 }
 
-/* Logo styling: fixed height and brightness filter for subtle dimming */
 .navbar-brand img {
-  height: 40px;
-  width: auto;
-  filter: brightness(0.8);
+  height: 40px; /* Fixed height for logo */
+  width: auto;  /* Maintain aspect ratio */
+  filter: brightness(0.8); /* Slightly dim logo to blend with navbar */
 }
 
-/* Navbar links: black color, spacing, and smooth color transition */
+/* Navbar links styling */
 .navbar-nav .nav-link {
-  color: black;
-  margin-left: 15px;
+  color: black; /* Standard black text */
+  margin-left: 15px; /* Space between links */
   padding-left: 10px;
   padding-right: 10px;
-  position: relative;
-  transition: color 0.3s ease;
+  position: relative; /* For potential positioning of pseudo-elements */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
-/* Navbar hover and active state: copper color and underline effect */
+/* Hover and active link styles */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #8b4d2b;
-  text-decoration: underline;
-  text-decoration-color: #444;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-}
+  color: #8b4d2b; /* Copper color */
+  text-decoration: underline; /* Underline for emphasis */
+  text-decoration-color: #444; /* Dark grey underline */
+  text-decoration-thickness: 2px; /* Thickness of underline */
+  text-underline-offset: 4px; /* Distance between text and underline */
+} 
 
-/* Hamburger icon - remove default filter for consistency */
+/* Hamburger icon reset filter to default */
 .navbar-light .navbar-toggler-icon {
   filter: none;
-}
+} 
 
-/* Common button styling: copper background, white text, subtle shadow */
+/* Buttons */
 .btn-common {
-  background-color: #8b4d2b;
+  background-color: #8b4d2b; /* Copper color */
   color: white;
   border-radius: 5px;
   padding: 12px 30px;
   font-size: 1.1rem;
-  border: 2px solid #7a4223;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  border: 2px solid #7a4223; /* Slightly darker copper border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
   text-decoration: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
+  /* Flexbox alignment: centers button horizontally and pushes it to bottom in flex container */
   align-self: center;
   margin-top: auto;
-}
+} 
 
-/* Button hover and focus states: darker copper and stronger shadow */
 .btn-common:hover,
 .btn-common:focus {
-  background-color: #7a3f1f;
-  border-color: #69361a;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+  background-color: #7a3f1f; /* Darker copper on hover/focus */
+  border-color: #69361a; /* Match darker border */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
 }
 
-/* Small button variant for compact layout */
+/* Small button variant for reduced padding and size */
 .btn-small {
   padding: 8px 20px;
   font-size: 0.9rem;
@@ -87,121 +85,132 @@ a:focus, button:focus {
   display: inline-block;
 }
 
-/* Hero section - container with fixed height and relative positioning for overlay and text */
+/* Hero section */
 .hero {
   position: relative;
   width: 100%; 
   height: 30vh;
   margin-bottom: 0.5rem;
-  overflow: hidden;
+  overflow: hidden; /* Prevent content overflow */
   color: white;
-  min-height: 300px; /* Minimum height prevents cramped text */
+  min-height: 300px; /* Ensures enough space for text */
 }
 
-/* Hero image fills container and maintains aspect ratio */
+/* Hero image container */
 .hero-image {
   position: relative;
-  height: 100%;
+  height: 100%; /* Fill full height of hero */
   display: block;
 }
 
-/* Overlay covers hero image with semi-transparent black for readability */
+/* Specific image styling within hero */
+.hero-image img {
+  width: 100%; /* Full width responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Image covers area, may crop */
+  object-position: center center; /* Center the image */
+  display: block; /* Remove inline spacing */
+}
+
+/* Overlay layer on hero image for darkening */
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 5;
+  background-color: rgba(0,0,0,0.5); /* 50% black overlay for text contrast */
+  z-index: 5; /* Place overlay above image but below text */
 }
 
-/* Hero text: centered vertically and horizontally, flexible layout for spacing */
+/* Hero text container */
 .hero-text {
   position: absolute;
   top: 50%; 
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center vertically and horizontally */
   text-align: center;
-  padding: 0.5rem 1.5rem; 
-  border-radius: 0.5rem;
-  background: rgba(0, 0, 0, 0.0);
-  z-index: 10;
-  max-height: 80%;
-  width: 95vw;
+  padding: 1rem 1.5rem; 
+  border-radius: 0.5rem; /* Rounded corners */
+  background: rgba(0, 0, 0, 0.0); /* Transparent background */
+  z-index: 10; /* Above overlay */
+  max-height: 80%; /* Prevent overflow */
+  width: 95vw; /* Responsive width */
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Center content vertically */
   color: white;
   box-sizing: border-box; 
 }
 
-/* Hero heading - smaller font size and moderate line height for readability */
+/* Hero heading */
 .hero-text h1 {
-  font-size: 1.3rem;
+  font-size: 1.3rem; /* smaller than default h1 */
   font-weight: 500;
   line-height: 1.2;
-  white-space: normal;
-  margin-bottom: 1.5rem;
+  white-space: normal; /* Wrap text */
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for better readability */
 }
 
-/* Hero paragraph text styling */
+/* Hero paragraph */
 .hero-text p {
-  font-size: 0.7rem;
+  font-size: 0.7rem; /* Smaller font for subtitle */
   margin-bottom: 1.5rem;
-  white-space: normal; 
+  white-space: normal; /* Wrap text */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Subtle shadow for readability */
 }
 
-/* Introduction Section - white background card with shadow and padding */
+/* Introduction Section */
 .introduction-section {
   max-width: 900px;
-  margin: 0 auto 0.5rem auto;
+  margin: 0 auto 0.5rem auto; /* Centered with bottom margin */
   padding: 2rem 2.5rem;
   background-color: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: box-shadow 0.3s ease;
-  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Light shadow */
+  transition: box-shadow 0.3s ease; /* Smooth hover effect */
+  text-align: left; /* Text left aligned by default */
 }
 
-/* Center paragraphs inside introduction */
+/* Paragraphs directly inside introduction section centered */
 .introduction-section > p {
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-/* Hover effect increases shadow for subtle depth */
+/* Hover effect for introduction */
 .introduction-section:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-/* Icons inside introduction section: centered, sized for visibility */
+/* Icon styling inside introduction */
 .intro-icon {
   font-size: 2rem;
   color: #000000;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 1rem auto; /* Center horizontally, margin below */
   text-align: center;
-  display: block;
+  display: block; /* Make block for centering */
 }
 
-/* Flex container for intro content with icon and text aligned horizontally */
+/* Row layout for intro content */
 .intro-content-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; /* Prevent wrapping */
 }
 
-/* Headings with dark brown color and defined font size */
+/* Intro heading style */
 .intro-h2 {
- color: #311c0e;
- font-size: 1.25rem;
- line-height: 1.2;
+  color: #311c0e; /* Dark brown */
+  font-size: 1.25rem; /* Similar to h4 */
+  line-height: 1.2;
 }
 
-/* Paragraph next to icon with right aligned text */
+/* Paragraph column with flexible width */
 .intro-p {
   flex: 1 1 45%;
   font-size: 0.9rem;
@@ -211,22 +220,22 @@ a:focus, button:focus {
   max-width: 420px;
 }
 
-/* Center icon between text and list */
+/* Icon centered between paragraph and list */
 .intro-icon-middle {
-  flex: 0 0 40px;
+  flex: 0 0 40px; /* Fixed width */
   font-size: 2rem;
   color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 0;
+  margin-right: 0; 
   margin-left: 2rem;
 }
 
-/* Benefits list styling with flex and spacing */
+/* List of benefits */
 .list-with-icons {
   flex: 1 1 45%;
-  list-style: none;
+  list-style: none; /* Remove bullets */
   padding: 0;
   margin: 0;
   font-size: 0.9rem;
@@ -234,29 +243,29 @@ a:focus, button:focus {
   max-width: 420px;
 }
 
-/* List items are flex containers for icon and text */
+/* List items flex layout with gap */
 .list-with-icons li {
   display: flex;
   align-items: center;
   padding: 0.3rem 0;
-  color: #4a3d3d;
+  color: #311c0e; 
   gap: 1rem;
 }
 
-/* Text span inside list items takes up most width */
+/* Text spans in list items take most of width */
 .list-with-icons li span {
   flex: 1 1 80%;
   text-align: left;
 }
 
-/* Check icon styling for benefits list */
+/* Check icon styling */
 .list-with-icons li i.fa-check {
-  flex: 0 0 20px;
+  flex: 0 0 20px; /* Fixed width for icons */
   font-size: 1.2rem;
-  color: #4a3d3d;
+  color: #311c0e;
 }
 
-/* About Us Section: white card with padding, shadow, and flex layout */
+/* About Us Section */
 .about-us-section {
   max-width: 900px;
   margin: 1rem auto 2rem auto;
@@ -266,23 +275,22 @@ a:focus, button:focus {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: box-shadow 0.3s ease;
   display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  gap: 2rem;
+  flex-wrap: wrap; /* Wrap on small screens */
+  align-items: stretch; /* Stretch items vertically */
+  gap: 2rem; /* Space between items */
   justify-content: center;
 }
 
-/* Hover effect for About Us card */
 .about-us-section:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-/* Text container uses flex column to space heading and button */
+/* Text container inside About Us */
 .about-us-text {
-  flex: 1 1 45%;
+  flex: 1 1 45%; /* Responsive width */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between heading and button */
   align-items: center;
   text-align: center;
   padding: 0 1rem;
@@ -290,18 +298,18 @@ a:focus, button:focus {
   max-width: 400px;
 }
 
-/* About Us heading with dark brown color and underline */
+/* Heading style in About Us */
 .about-us-text h2 {
-  color: #311c0e;
+  color: #311c0e; /* Dark brown */
   font-weight: 700;
   margin-bottom: 1.5rem;
   align-self: center;
-  border-bottom: 2px solid #311c0e;
+  border-bottom: 2px solid #311c0e; /* Underline */
   padding-bottom: 0.3rem;
   display: inline-block;
 }
 
-/* About Us paragraph styling */
+/* Paragraph styling in About Us */
 .about-us-text p {
   color: #4a3d3d;
   line-height: 1.6;
@@ -310,44 +318,63 @@ a:focus, button:focus {
   text-align: center;
 }
 
-/* Button container centers button horizontally and aligns bottom */
+/* Button container aligned center and bottom */
 .btn-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-end; /* Align button bottom */
   margin-top: auto;
 }
 
-/* About Us image container prevents shrinking and adds shadow */
+/* Image container in About Us */
 .about-us-image {
-  flex-shrink: 0;
+  flex-shrink: 0; /* Prevent shrinking */
   margin: 0 auto;
-  max-width: 140px;
+  max-width: 140px; /* Limit size */
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   cursor: default;
   transition: transform 0.3s ease;
 }
 
-/* Slight zoom on hover for image */
+/* Zoom effect on image hover */
 .about-us-image:hover {
   transform: scale(1.05);
 }
 
-/* Services page specific styles */
+/* --- Services page styles --- */
 
-/* Service page heading color */
+
+
+.hero-services h1 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-services .hero-n {
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero.service hero-p {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.hero-services .btn-common {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
 .service-text h2 {
   color: #24150a;
 }
 
-/* Paragraph font size for service text */
 .service-text p {
   font-size: 0.9rem;
 }
 
-/* Service cards with shadow and rounded corners */
 .service-card {
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -355,47 +382,109 @@ a:focus, button:focus {
   transition: box-shadow 0.3s ease;
 }
 
-/* Hover shadow effect on service cards */
 .service-card:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-/* Service card icons with specific colors for visual cues */
+/* Icon colors for service cards */
 .service-card i.fa-water {
-  color: #1380ec; /* blue for water */
+  color: #1380ec; /* Blue for water */
 }
 
 .service-card i.fa-fire-flame-curved {
-  color: #f7804e; /* orange for heating */
+  color: #f7804e; /* Orange for heating */
 }
 
 .service-card i.fa-toilet {
-  color: #aeb6b1; /* gray for sanitation */
+  color: #aeb6b1; /* Grey for sanitation */
 }
 
-/* Center text in card body */
+/* Card body text center alignment */
 .service-card .card-body {
   text-align: center;
 }
 
-/* Gallery section paragraph font size */
-.gallery-section p {
-  font-size: 0.9rem;
+/*--- contact.html ---*/
+
+.hero-contact h1 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+
 }
 
-/* Success page heading color */
+.hero-contact .hero-n {
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-contact .hero-c {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.hero-contact .btn-common {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+/* --- Gallery.html --- */
+
+.hero-gallery h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-gallery .hero-n {
+  
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-gallery .hero-p {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+.hero-gallery .btn-common {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Mobile Gallery Carousel - Responsive Image Styling */
+#mobileGalleryCarousel {
+  width: 90vw;          /* Limit carousel width to 90% of viewport width */
+  max-height: 320px;    /* Limit max height of carousel */
+  margin: 0 auto;       /* Center carousel horizontally */
+  overflow: hidden;     /* Hide overflow to keep clean edges */
+}
+
+#mobileGalleryCarousel .carousel-item img {
+  width: 100%;          /* Image fills full width of carousel */
+  max-height: 300px;    /* Limit max height to prevent overly tall images */
+  object-fit: cover;    /* Cover entire container area, cropping if needed */
+  object-position: center center; /* Center image cropping */
+  display: block;       /* Remove inline spacing */
+  cursor: pointer; /* Changes mouse cursor to a hand when hovering */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+#mobileGalleryCarousel .carousel-item img:hover {
+  transform: scale(1.05); /* zoom effect on hover */
+}
+
+/* --- Success.html --- */
 .success h2 {
   color: #24150a;
 }
 
-/* Limit width of success page buttons */
+/* Success page button max width */
 .success-btn {
   max-width: 120px;
 }
 
-/* Footer styles: dark background with white text */
+/* Footer styles */
 footer {
-  background-color: rgba(40, 38, 38, 0.95);
+  background-color: rgba(40, 38, 38, 0.95); /* Almost opaque dark background */
   color: #ffffff;
   margin-top: 0;
   font-size: 0.9rem;
@@ -403,29 +492,31 @@ footer {
   width: 100%;
 }
 
-/* Footer container uses flexbox for layout and responsiveness */
+/* Footer container flexbox layout */
 footer .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  box-sizing: border-box;
+  flex-wrap: wrap; /* Wrap on small screens */
+  
 }
 
 /* Footer heading color */
-footer h3 {
+.footer-heading {
+  color: #c68c4a; 
+  text-align: center;
+  width: 100%;
   color: #c68c4a;
+  margin-bottom: 1rem;
 }
 
-/* Footer links styling */
+/* Footer link styling */
 footer a {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-/* Footer paragraph styling for contact info */
+/* Footer paragraph with icon and text */
 footer p {
   margin: 0.2rem 1rem 0.2rem 0;
   display: flex;
@@ -434,24 +525,25 @@ footer p {
   color: #ffffff; 
 }
 
-/* Follow text color in footer */
+/* Follow text color */
 .follow {
   color: #c68c4a;
+  
 } 
 
-/* Social media icon styling with hover effects */
+/* Social media icons */
 .social-links i.fa-facebook,
 .social-links i.fa-instagram {
-  font-size: 2rem;
+  font-size: 2rem; /* Larger icons */
   color: #fff;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effects */
 }
 
-/* Social media icon hover effect */
+/* Social media hover effects */
 .social-links i.fa-facebook:hover,
 .social-links i.fa-instagram:hover {
-  color: #d7893f;
-  transform: scale(1.2);
+  color: #d7893f; /* Copper hover color */
+  transform: scale(1.2); /* Slightly enlarge icon */
 }
 
 /* Footer icon color */
@@ -459,9 +551,465 @@ footer i {
   color: #d7893f;
 }
 
-/* Adjust margin for social links container */
+/* Social links container margin reset */
 .social-links > div {
   margin-left: -15px;
 }
 
-/* Responsive adjustments */
+/* --- responsive adjustments ---*/
+
+/* Small devices (≥576px) */
+
+@media screen and (max-width: 767px) {
+
+   /* Limit the overall width of the hero section and center it */
+    .hero {
+    max-width: 100%; /* Maximum width of hero */
+    margin: 0 auto; /* Center the hero section horizontally */
+    height: 40vh; /* Make hero section taller to balance image */
+  }
+
+  /* Reduce horizontal stretch of hero image to avoid distortion */
+  .hero-image img {
+    max-width: 80vw; /* Max 80% of viewport width */
+    height: auto; /* Adjust height to maintain ratio */
+    object-fit: contain; /* Show entire image without cropping */
+    object-position: center center; /* Center the image */
+  }
+
+  /* Increase all hero text sizes for better readability */
+  .hero-text h1 {
+    font-size: 1.6rem;  /* Larger heading font size */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for better readability */
+  }
+  .hero-text p {
+    font-size: 0.9rem;  /* Larger paragraph font size */
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;   /* Push paragraph down to align with button */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Subtle shadow for readability */
+  }
+
+  /*--- introduction section ---*/
+
+  /* Ensure benefit list is nicely spaced and centered */
+  .list-with-icons {
+    padding-left: 1rem;  
+    max-width: 90%;      /* Prevents list from stretching too wide */
+    margin: 0 auto;      /* Centers the list horizontally */
+  }
+  /* --- about us section --- */
+
+  .about-us-section {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    align-items: center;    /* Center items */
+    gap: 1.5rem;            /* Space between image and text */
+    text-align: center;     /* Center text */
+  }
+
+  .about-us-text {
+    max-width: 100%;        /* Full width for text */
+    margin-right: 0;        /* Remove right margin */
+    padding: 1rem 0;        /* Add vertical padding */
+  }
+
+  .about-us-image {
+    max-width: 200px;       /* Smaller image */
+    margin-bottom: 1rem;    /* Space below image */
+  }
+
+  /* About us text smaller font and less margin */
+  .about-us-text p {
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+  }
+
+
+  /* Reduce card padding and font size in services */
+  .service-card .card-body {
+    padding: 1rem;
+  }
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+  .service-card p {
+    font-size: 0.85rem;
+  }
+
+  /*--- Footer ---*/
+
+  .contact-info { 
+  display: flex !important; 
+  flex-direction: column !important; /* Stack vertically */
+  align-items: center !important;  /* Center horizontally */
+  gap: 0.3rem !important;   /* Tighten gap */
+  margin-bottom: 0.5rem !important;
+  padding: 0 !important;           
+}
+
+.contact-info p {
+  margin: 0 !important;            
+  padding: 0 !important;
+  line-height: 1.2 !important;    
+  font-size: 0.9rem !important;   
+}
+
+.social-links p.follow {
+  margin: 0 0 2rem 0 !important;  /* Margin under Follow us */
+  font-size: 1rem !important;   
+}
+
+
+
+  /*--- contact page ---*/
+
+  
+
+}
+
+
+
+
+/* Medium devices (≥768px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Always show navbar links horizontally on tablets */
+  .navbar-collapse {
+    display: flex !important;  /* Force show the menu */
+    flex-basis: auto;
+  }
+
+  .navbar-nav {
+    flex-direction: row;       /* Arrange links in a row */
+    gap: 1rem;                 /* Space between links */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;      /* padding for better click area */
+    font-size: 1.1rem;         /* Slightly larger font size */
+  }
+
+  /* Hide hamburger toggle button */
+  .navbar-toggler {
+    display: none;
+  }
+
+   /* hero section */
+
+  .hero-section {
+    height: 45vh; /* Increase hero height for better balance */
+    max-width: 90vw; /* Limit max width to 90% of viewport */
+    margin: 1rem auto; /* Center horizontally with vertical margin */
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+  }
+
+  .hero-section .hero-image img {
+    width: 100%; /* Fill entire width */
+    height: 100%; /* Fill entire height */
+    object-fit: cover; /* Crop image to cover area */
+    object-position: center center; /* Center image */
+  }
+
+  /* Hero text container */
+  .hero-section .hero-text {
+    max-width: 100%; /* Limit width */
+    padding: 1rem; /* Padding around text */
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    text-align: center; /* Centered text */
+    color: white;
+    position: absolute;
+    z-index: 10; /* Above overlay */
+  }
+
+  /* Hero heading */
+  .hero-section .hero-text {
+  max-width: 90vw;           /* Make text container wider horizontally */
+  width: 600px;              /* Set a max width */
+  padding: 1rem 2rem;        /* Add more horizontal padding */
+  left: 50%;                 /* Center horizontally */
+  top: 60%;                  /* Move text container slightly down */
+  transform: translate(-50%, -60%); /* Adjust transform to match new top */
+  text-align: center;        /* Center text inside container */
+  position: absolute;        /* Position absolutely within hero */
+  color: white;              /* White text color */
+  z-index: 10;               /* Ensure text is above overlay */
+}
+
+  .hero-section .hero-text h1 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: auto;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for better readability */
+  }
+
+  .hero-section .hero-p  {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0 auto 2rem;
+    line-height: 1.5;
+    white-space: normal;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Subtle shadow for readability */
+  }
+
+  .hero-section .btn-common {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* --- styles for Introduction Section --- */
+
+
+  .introduction-section p {
+    line-height: 1.6; /* more space between lines for better readability */
+  }
+
+  
+  .intro-icon {
+    margin-top: 1rem; /* space above icons */
+    margin-bottom: 1rem; /*  space below icons */
+    font-size: 2.5rem;   /* Slightly larger icons for better visibility */
+  }
+
+  .list-with-icons li i.fa-check {
+    color: #311c0e; 
+  }
+
+  /* --- about us section --- */
+
+  .about-us-section {
+    justify-content: flex-start; /* Center horizontally */
+    flex-direction: row;
+    max-width: 700px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about-us-text {
+    display: flex;
+    flex-direction: column;       /* Arrange children vertically */
+    justify-content: space-between; /* Spread heading and button to top & bottom */
+    align-items: center;          /* Center horizontally */
+    max-width: 400px;
+    margin-right: 2rem;
+    height: 400px;                
+    text-align: center;
+  }
+
+  .about-us-text h2 {
+    margin-bottom: 0;             /* Remove bottom margin for precise top alignment */
+  }
+
+  .about-us-text .btn-container {
+    margin-top: 0;                /* Remove top margin to align button to bottom */
+  }
+
+  .about-us-image {
+    max-width: 250px; /* Limit image width */
+    flex-shrink: 0; /* Prevent image from shrinking */
+    margin: 0; /* Remove centering margin */
+    margin-left: 1rem;
+  }
+  
+ /* Increase carousel image height for tablets */
+  #mobileGalleryCarousel .carousel-item img {
+    height: 700px; /* Make images taller */
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    width: 100%; /* Keep full width */
+  }
+   
+}
+
+  
+
+/* Large devices (≥992px) */
+@media screen and (min-width: 992px) {
+ .hero {
+  position: relative;
+  width: 100%; /* Full width of the container */
+  height: 50vh;   /* Height adjusts based on content */
+  min-height: 300px;
+  max-height: 600px; /* Limit max height to avoid oversized hero */
+  overflow: hidden; /* Hide overflow to crop excess image */
+}
+
+.hero-image img {
+  width: auto;  
+  height: 100%;  
+  max-width: 100%;
+  object-fit: cover; /* Crop image to fill area without distortion */
+  object-position: center center; /* Center image within container */
+}
+
+/* Hero text container styling */
+.hero-text {
+  position: absolute;
+  top: 60%; /* Push text slightly down */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -60%); /* Center with offset */
+  max-width: 600px; /* Limit width for better readability */
+  width: 90vw; /* Responsive width */
+  padding: 1rem 2rem; /* Horizontal and vertical padding */
+  text-align: center;
+  color: white;
+  z-index: 10; /* Ensure text is above image overlay */
+ 
+  border-radius: 8px; /* Rounded corners for better visual */
+  box-sizing: border-box;
+}
+
+/* Hero heading */
+.hero-text h1 {
+  font-size: 3.2rem; /* Larger heading */
+  font-weight: 700;
+  line-height: 1.2; /* Tight line height for heading */
+  margin-bottom: 1.5rem; /* Space below heading */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for better readability */
+}
+
+/* Styling for the main company name */
+.hero-n {
+  font-size: 2rem !important; 
+  font-weight: 700 !important; /* Bold text */
+  margin-bottom: 1rem !important;
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for readability */
+}
+
+/* Styling for the paragraph below */
+.hero-p {
+  font-size: 1.1rem !important; /* Smaller font size */
+  font-weight: 400 !important; /* Normal weight */
+  margin-bottom: 1rem !important;
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for readability */
+}
+
+/* Hero button styling */
+.hero-text .btn-common {
+  margin-top: 1rem;
+  padding: 12px 32px;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for readability */
+}
+
+  /* Introduction section adjustments */
+  .introduction-section {
+    text-align: center; /* Center all text by default */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .introduction-section h2.intro-h2 {
+    font-size: 1.8rem;  /* Larger heading */
+    display: block;
+    text-align: center; /* Center the heading text */     
+    margin-bottom: 2rem;    /* More spacing below heading */
+    white-space: nowrap;
+    width: 100%;   /* Ensure it takes full width */
+    margin-left: 0;   /* Reset any margin that might push it */
+    margin-right: 0;
+  }
+
+  .introduction-section p.intro-p {
+    font-size: 1.25rem;     /* Larger paragraph text */
+    max-width: 800px;       /* Wider paragraph container */
+    margin-left: auto;      /* Center horizontally */
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+
+  .introduction-section ul.list-with-icons {
+    font-size: 1.25rem;     /* Larger list text */
+    max-width: 800px;       /* Wider list container */
+    margin-left: auto;      /* Center horizontally */
+    margin-right: auto;
+    padding-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  /* Center and enlarge icons between text and list */
+  .intro-icon {
+    font-size: 3rem;
+    margin: 1rem auto 2rem auto; /* Center with vertical spacing */
+    display: block;
+  }
+
+
+  /* About Us section adjustments */
+  .about-us-section {
+    max-width: 900px;
+    display: flex;
+    gap: 3rem;             /* Add space between image and text */
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .about-us-image {
+    max-width: 300px;      /* Make image bigger */
+    flex-shrink: 0;
+  }
+
+  .about-us-text {
+    max-width: 700px;
+    text-align: center;    /* Center all text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Align About Us heading with image top and enlarge */
+  .about-us-text h2 {
+    font-size: 2.5rem;
+    margin-top: 0;              /* Remove default top margin */
+    margin-bottom: 1.5rem;
+    border-bottom: none;        /* Remove full underline */
+    padding-bottom: 0.3rem;
+    width: fit-content;         /* Shrink underline width */
+    border-bottom: 3px solid #311c0e; /* Line only under text */
+    align-self: center;     /* Align heading to left within container */
+  }
+
+  .about-us-text p {
+    font-size: 1.2rem;     /* Larger paragraph */
+    max-width: 700px;
+    margin-bottom: 2rem;
+    
+  }
+
+  /* Center the contact button and align with text */
+  .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-us-section .btn-common {
+  margin-top: 1rem;
+  padding: 12px 32px;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for readability */
+ }
+
+/* Footer container  */
+
+}
+
+
+
+
+
+/* Extra large devices (≥1200px) */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* XXL devices (≥1400px) */
+@media screen and (min-width: 1400px) {
+
+}

@@ -200,7 +200,7 @@ TinyPNG - for image compression and resizing to optimize page load times.
 
 AmiResponsive — for creating responsive device mockups in project documentation.
 
-
+https://squoosh.app/editor
 ---
 
 ## Deployment & Local Development
