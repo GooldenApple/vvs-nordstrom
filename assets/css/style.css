@@ -838,16 +838,12 @@ footer i {
 @media screen and (min-width: 992px) {
 
   .navbar-nav .nav-link {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-left: 50px;
     padding-left: 20px;
     padding-right: 20px;
   }
   
-  
-
-
-
   .hero {
     position: relative;
     width: 100%; /* Full width of the container */
@@ -1154,8 +1150,13 @@ footer i {
 /* Extra large devices (≥1200px) */
 @media screen and (min-width: 1200px) {
 
+  .navbar-nav {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+
   .navbar-nav .nav-link {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 50px;
     padding-left: 20px;
     padding-right: 20px;
