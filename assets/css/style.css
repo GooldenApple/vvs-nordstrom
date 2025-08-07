@@ -7,23 +7,24 @@ body {
   padding: 0;
 }
 /* Focus styles for links and buttons for accessibility */
-a:focus, button:focus {
+a:focus,
+button:focus {
   outline: 3px solid #b36b2f; /* Copper colored outline */
   outline-offset: 2px; /* Space between outline and element */
 }
 
 /* Navbar styles */
 .navbar {
-  background-color: #ffffff; 
+  background-color: #ffffff;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   border-bottom: 1px solid #d3d3d3; /* Subtle bottom border */
 }
 
 .navbar-brand img {
   height: 40px; /* Fixed height for logo */
-  width: auto;  /* Maintain aspect ratio */
+  width: auto; /* Maintain aspect ratio */
   filter: brightness(0.8); /* Slightly dim logo to blend with navbar */
 }
 
@@ -35,6 +36,7 @@ a:focus, button:focus {
   padding-right: 10px;
   position: relative; /* For potential positioning of pseudo-elements */
   transition: color 0.3s ease; /* Smooth color transition on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
 /* Hover and active link styles */
@@ -45,12 +47,12 @@ a:focus, button:focus {
   text-decoration-color: #444; /* Dark grey underline */
   text-decoration-thickness: 2px; /* Thickness of underline */
   text-underline-offset: 4px; /* Distance between text and underline */
-} 
+}
 
 /* Hamburger icon reset filter to default */
 .navbar-light .navbar-toggler-icon {
   filter: none;
-} 
+}
 
 /* Buttons */
 .btn-common {
@@ -60,14 +62,14 @@ a:focus, button:focus {
   padding: 12px 30px;
   font-size: 1.1rem;
   border: 2px solid #7a4223; /* Slightly darker copper border */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
   text-decoration: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
   /* Flexbox alignment: centers button horizontally and pushes it to bottom in flex container */
   align-self: center;
   margin-top: auto;
-} 
+}
 
 .btn-common:hover,
 .btn-common:focus {
@@ -83,12 +85,13 @@ a:focus, button:focus {
   max-width: 160px;
   margin: 0 auto;
   display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* Hero section */
 .hero {
   position: relative;
-  width: 100%; 
+  width: 100%;
   height: 30vh;
   margin-bottom: 0.5rem;
   overflow: hidden; /* Prevent content overflow */
@@ -119,20 +122,20 @@ a:focus, button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5); /* 50% black overlay for text contrast */
+  background-color: rgba( 0, 0, 0, 0.5); /* 50% black overlay for text contrast */
   z-index: 5; /* Place overlay above image but below text */
 }
 
 /* Hero text container */
 .hero-text {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Center vertically and horizontally */
   text-align: center;
-  padding: 1rem 1.5rem; 
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem; /* Rounded corners */
-  background: rgba(0, 0, 0, 0.0); /* Transparent background */
+  background: rgba(0, 0, 0, 0); /* Transparent background */
   z-index: 10; /* Above overlay */
   max-height: 80%; /* Prevent overflow */
   width: 95vw; /* Responsive width */
@@ -141,7 +144,7 @@ a:focus, button:focus {
   flex-direction: column;
   justify-content: center; /* Center content vertically */
   color: white;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 /* Hero heading */
@@ -151,7 +154,7 @@ a:focus, button:focus {
   line-height: 1.2;
   white-space: normal; /* Wrap text */
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for better readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63); /* Subtle shadow for better readability */
 }
 
 /* Hero paragraph */
@@ -159,7 +162,27 @@ a:focus, button:focus {
   font-size: 0.7rem; /* Smaller font for subtitle */
   margin-bottom: 1.5rem;
   white-space: normal; /* Wrap text */
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Subtle shadow for readability */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); 
+}
+
+.hero-h1 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-n {
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-p {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.hero .btn-common {
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
 }
 
 /* Introduction Section */
@@ -169,9 +192,10 @@ a:focus, button:focus {
   padding: 2rem 2.5rem;
   background-color: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Light shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
   transition: box-shadow 0.3s ease; /* Smooth hover effect */
   text-align: left; /* Text left aligned by default */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
 /* Paragraphs directly inside introduction section centered */
@@ -182,7 +206,7 @@ a:focus, button:focus {
 
 /* Hover effect for introduction */
 .introduction-section:hover {
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Icon styling inside introduction */
@@ -205,8 +229,8 @@ a:focus, button:focus {
 
 /* Intro heading style */
 .intro-h2 {
-  color: #311c0e; /* Dark brown */
-  font-size: 1.25rem; /* Similar to h4 */
+  color: #000000; 
+  font-size: 1.25rem; 
   line-height: 1.2;
 }
 
@@ -228,7 +252,7 @@ a:focus, button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 0; 
+  margin-right: 0;
   margin-left: 2rem;
 }
 
@@ -248,7 +272,7 @@ a:focus, button:focus {
   display: flex;
   align-items: center;
   padding: 0.3rem 0;
-  color: #311c0e; 
+  color: #000000;
   gap: 1rem;
 }
 
@@ -262,7 +286,7 @@ a:focus, button:focus {
 .list-with-icons li i.fa-check {
   flex: 0 0 20px; /* Fixed width for icons */
   font-size: 1.2rem;
-  color: #311c0e;
+  color: #000000;
 }
 
 /* About Us Section */
@@ -272,17 +296,18 @@ a:focus, button:focus {
   padding: 1.5rem 2.5rem 2rem 2.5rem;
   background-color: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   display: flex;
   flex-wrap: wrap; /* Wrap on small screens */
   align-items: stretch; /* Stretch items vertically */
   gap: 2rem; /* Space between items */
   justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
 .about-us-section:hover {
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Text container inside About Us */
@@ -300,7 +325,7 @@ a:focus, button:focus {
 
 /* Heading style in About Us */
 .about-us-text h2 {
-  color: #311c0e; /* Dark brown */
+  color: #000000; 
   font-weight: 700;
   margin-bottom: 1.5rem;
   align-self: center;
@@ -311,7 +336,7 @@ a:focus, button:focus {
 
 /* Paragraph styling in About Us */
 .about-us-text p {
-  color: #4a3d3d;
+  color: #000000;
   line-height: 1.6;
   margin-bottom: 1rem;
   width: 100%;
@@ -333,7 +358,7 @@ a:focus, button:focus {
   margin: 0 auto;
   max-width: 140px; /* Limit size */
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: default;
   transition: transform 0.3s ease;
 }
@@ -345,71 +370,53 @@ a:focus, button:focus {
 
 /* --- Services page styles --- */
 
-
-
-.hero-services h1 {
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero-services .hero-n {
-  margin-top: 0.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero.service hero-p {
-  margin-top: 0.5rem;
-  margin-bottom: 3rem;
-}
-
-.hero-services .btn-common {
-  margin-top: 0.5rem;
-  margin-bottom: 3rem;
-}
-
 .service-text h2 {
   color: #24150a;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
 .service-text p {
-  font-size: 0.9rem;
+  color: #24150a;
+  font-size: 1rem;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
+}
+
+.service-card h3 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
+}
+
+.service-card p {
+  text-align: center;
+  font-size: medium;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
 .service-card {
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  border-radius: 0.5rem;
-  transition: box-shadow 0.3s ease;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
 }
 
 .service-card:hover {
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transform: scale(1.1);
 }
 
-/* Icon colors for service cards */
-.service-card i.fa-water {
-  color: #1380ec; /* Blue for water */
-}
-
-.service-card i.fa-fire-flame-curved {
-  color: #f7804e; /* Orange for heating */
-}
-
-.service-card i.fa-toilet {
-  color: #aeb6b1; /* Grey for sanitation */
-}
-
-/* Card body text center alignment */
-.service-card .card-body {
-  text-align: center;
+.serv-btn {
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /*--- contact.html ---*/
 
-.hero-contact h1 {
+.hero-contact .hero-h1 {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
-
 }
 
 .hero-contact .hero-n {
@@ -427,43 +434,40 @@ a:focus, button:focus {
   margin-bottom: 3rem;
 }
 
+.con-h2 {
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
+}
+
+.form-label {
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
+}
+
 /* --- Gallery.html --- */
 
-.hero-gallery h1 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.gallery-section h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
-.hero-gallery .hero-n {
-  
-  margin-top: 0.1rem;
-  margin-bottom: 1rem;
-}
-
-.hero-gallery .hero-p {
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
-}
-
-.hero-gallery .btn-common {
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
+.gallery-section p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
 /* Mobile Gallery Carousel - Responsive Image Styling */
 #mobileGalleryCarousel {
-  width: 90vw;          /* Limit carousel width to 90% of viewport width */
-  max-height: 320px;    /* Limit max height of carousel */
-  margin: 0 auto;       /* Center carousel horizontally */
-  overflow: hidden;     /* Hide overflow to keep clean edges */
+  width: 90vw; /* Limit carousel width to 90% of viewport width */
+  max-height: 320px; /* Limit max height of carousel */
+  margin: 0 auto; /* Center carousel horizontally */
+  overflow: hidden; /* Hide overflow to keep clean edges */
 }
 
 #mobileGalleryCarousel .carousel-item img {
-  width: 100%;          /* Image fills full width of carousel */
-  max-height: 300px;    /* Limit max height to prevent overly tall images */
-  object-fit: cover;    /* Cover entire container area, cropping if needed */
+  width: 100%; /* Image fills full width of carousel */
+  max-height: 300px; /* Limit max height to prevent overly tall images */
+  object-fit: cover; /* Cover entire container area, cropping if needed */
   object-position: center center; /* Center image cropping */
-  display: block;       /* Remove inline spacing */
+  display: block; /* Remove inline spacing */
   cursor: pointer; /* Changes mouse cursor to a hand when hovering */
   transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
@@ -475,11 +479,15 @@ a:focus, button:focus {
 /* --- Success.html --- */
 .success h2 {
   color: #24150a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
-
-/* Success page button max width */
+.success p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
+}
+/* button max width */
 .success-btn {
   max-width: 120px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
 /* Footer styles */
@@ -487,9 +495,9 @@ footer {
   background-color: rgba(40, 38, 38, 0.95); /* Almost opaque dark background */
   color: #ffffff;
   margin-top: 0;
-  font-size: 0.9rem;
-  padding: 1rem 2rem;
+  font-size: 0.5rem;
   width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
 /* Footer container flexbox layout */
@@ -497,16 +505,16 @@ footer .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; /* Wrap on small screens */
-  
 }
 
 /* Footer heading color */
 .footer-heading {
-  color: #c68c4a; 
+  color: #c68c4a;
   text-align: center;
   width: 100%;
   color: #c68c4a;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  
 }
 
 /* Footer link styling */
@@ -518,18 +526,19 @@ footer a {
 
 /* Footer paragraph with icon and text */
 footer p {
-  margin: 0.2rem 1rem 0.2rem 0;
+  margin: 0.2rem 0.2rem 0.2rem 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #ffffff; 
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
 /* Follow text color */
 .follow {
   color: #c68c4a;
-  
-} 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
+}
 
 /* Social media icons */
 .social-links i.fa-facebook,
@@ -543,7 +552,7 @@ footer p {
 .social-links i.fa-facebook:hover,
 .social-links i.fa-instagram:hover {
   color: #d7893f; /* Copper hover color */
-  transform: scale(1.2); /* Slightly enlarge icon */
+  transform: scale(1.2); /* enlarge icon */
 }
 
 /* Footer icon color */
@@ -561,12 +570,11 @@ footer i {
 /* Small devices (≥576px) */
 
 @media screen and (max-width: 767px) {
-
-   /* Limit the overall width of the hero section and center it */
-    .hero {
+  /* Limit the overall width of the hero section and center it */
+  .hero {
     max-width: 100%; /* Maximum width of hero */
     margin: 0 auto; /* Center the hero section horizontally */
-    height: 40vh; /* Make hero section taller to balance image */
+    height: 30vh; 
   }
 
   /* Reduce horizontal stretch of hero image to avoid distortion */
@@ -579,43 +587,44 @@ footer i {
 
   /* Increase all hero text sizes for better readability */
   .hero-text h1 {
-    font-size: 1.6rem;  /* Larger heading font size */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for better readability */
+    font-size: 1.6rem; /* Larger heading font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
   }
   .hero-text p {
-    font-size: 0.9rem;  /* Larger paragraph font size */
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;   /* Push paragraph down to align with button */
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Subtle shadow for readability */
+    font-size: 0.9rem; /* Larger paragraph font size */
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem; /* Push paragraph down to align with button */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
   }
+  
 
   /*--- introduction section ---*/
 
   /* Ensure benefit list is nicely spaced and centered */
   .list-with-icons {
-    padding-left: 1rem;  
-    max-width: 90%;      /* Prevents list from stretching too wide */
-    margin: 0 auto;      /* Centers the list horizontally */
+    padding-left: 1rem;
+    max-width: 90%; /* Prevents list from stretching too wide */
+    margin: 0 auto; /* Centers the list horizontally */
   }
   /* --- about us section --- */
 
   .about-us-section {
     display: flex;
     flex-direction: column; /* stack items vertically */
-    align-items: center;    /* Center items */
-    gap: 1.5rem;            /* Space between image and text */
-    text-align: center;     /* Center text */
+    align-items: center; /* Center items */
+    gap: 1.5rem; /* Space between image and text */
+    text-align: center; /* Center text */
   }
 
   .about-us-text {
-    max-width: 100%;        /* Full width for text */
-    margin-right: 0;        /* Remove right margin */
-    padding: 1rem 0;        /* Add vertical padding */
+    max-width: 100%; /* Full width for text */
+    margin-right: 0; /* Remove right margin */
+    padding: 1rem 0; /* vertical padding */
   }
 
   .about-us-image {
-    max-width: 200px;       /* Smaller image */
-    margin-bottom: 1rem;    /* Space below image */
+    max-width: 200px; /* Smaller image */
+    margin-bottom: 1rem; /* Space below image */
   }
 
   /* About us text smaller font and less margin */
@@ -624,68 +633,50 @@ footer i {
     margin-bottom: 0.8rem;
   }
 
-
-  /* Reduce card padding and font size in services */
-  .service-card .card-body {
-    padding: 1rem;
-  }
-  .service-card h3 {
-    font-size: 1.1rem;
-  }
-  .service-card p {
-    font-size: 0.85rem;
-  }
-
   /*--- Footer ---*/
 
-  .contact-info { 
-  display: flex !important; 
-  flex-direction: column !important; /* Stack vertically */
-  align-items: center !important;  /* Center horizontally */
-  gap: 0.3rem !important;   /* Tighten gap */
-  margin-bottom: 0.5rem !important;
-  padding: 0 !important;           
-}
+  .contact-info {
+    display: flex !important;
+    flex-direction: column !important; /* Stack vertically */
+    align-items: center !important; /* Center horizontally */
+    gap: 0.3rem !important; /* Tighten gap */
+    margin-bottom: 0.5rem !important;
+    padding: 0 !important;
+  }
 
-.contact-info p {
-  margin: 0 !important;            
-  padding: 0 !important;
-  line-height: 1.2 !important;    
-  font-size: 0.9rem !important;   
-}
+  .contact-info p {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.2 !important;
+    font-size: 0.9rem !important;
+  }
 
-.social-links p.follow {
-  margin: 0 0 2rem 0 !important;  /* Margin under Follow us */
-  font-size: 1rem !important;   
-}
+  .social-links p.follow {
+    margin: 0 0 2rem 0 !important; /* Margin under Follow us */
+    font-size: 1rem !important;
+  }
 
-
-
-  /*--- contact page ---*/
-
+  /*--- gallery.html ---*/
   
-
 }
-
-
-
 
 /* Medium devices (≥768px) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /* Always show navbar links horizontally on tablets */
   .navbar-collapse {
-    display: flex !important;  /* Force show the menu */
+    display: flex !important; /* Force show the menu */
     flex-basis: auto;
   }
 
   .navbar-nav {
-    flex-direction: row;       /* Arrange links in a row */
-    gap: 1rem;                 /* Space between links */
+    flex-direction: row; /* Arrange links in a row */
+    gap: 1rem; /* Space between links */
   }
 
   .navbar-nav .nav-link {
-    padding: 0.5rem 1rem;      /* padding for better click area */
-    font-size: 1.1rem;         /* Slightly larger font size */
+    padding: 0.5rem 1rem; /* padding for better click area */
+    font-size: 1rem; /* Slightly larger font size */
+    
   }
 
   /* Hide hamburger toggle button */
@@ -693,17 +684,17 @@ footer i {
     display: none;
   }
 
-   /* hero section */
+  /* hero section */
 
-  .hero-section {
-    height: 45vh; /* Increase hero height for better balance */
-    max-width: 90vw; /* Limit max width to 90% of viewport */
-    margin: 1rem auto; /* Center horizontally with vertical margin */
+  .hero {
     position: relative;
-    overflow: hidden; /* Hide overflow */
+    width: 100%; /* Full width of the container */
+    height: 45vh;
+    max-height: 350px; /* Limit max height to avoid oversized hero */
+    overflow: hidden; /* Hide overflow to crop excess image */
   }
 
-  .hero-section .hero-image img {
+  .hero-image img {
     width: 100%; /* Fill entire width */
     height: 100%; /* Fill entire height */
     object-fit: cover; /* Crop image to cover area */
@@ -711,7 +702,7 @@ footer i {
   }
 
   /* Hero text container */
-  .hero-section .hero-text {
+  .hero-text {
     max-width: 100%; /* Limit width */
     padding: 1rem; /* Padding around text */
     transform: translate(-50%, -50%); /* Center horizontally and vertically */
@@ -721,35 +712,35 @@ footer i {
     z-index: 10; /* Above overlay */
   }
 
-  /* Hero heading */
-  .hero-section .hero-text {
-  max-width: 90vw;           /* Make text container wider horizontally */
-  width: 600px;              /* Set a max width */
-  padding: 1rem 2rem;        /* Add more horizontal padding */
-  left: 50%;                 /* Center horizontally */
-  top: 60%;                  /* Move text container slightly down */
-  transform: translate(-50%, -60%); /* Adjust transform to match new top */
-  text-align: center;        /* Center text inside container */
-  position: absolute;        /* Position absolutely within hero */
-  color: white;              /* White text color */
-  z-index: 10;               /* Ensure text is above overlay */
-}
+  .hero-text {
+    
+    max-width: 90vw; /* Make text container wider horizontally */
+    width: 600px;
+    padding: 1rem 2rem; /* horizontal padding */
+    left: 50%; /* Center horizontally */
+    top: 60%; /* Move text container slightly down */
+    transform: translate(-50%, -60%); /* transform to match new top */
+    text-align: center; /* Center text inside container */
+    position: absolute; /* Position absolutely within hero */
+    color: white;
+    z-index: 10; /* Ensure text is above overlay */
+  }
 
-  .hero-section .hero-text h1 {
-    font-size: 2.5rem; /* Larger heading */
+  .hero-text h1 {
+    font-size: 2rem; /* Larger heading */
     font-weight: 700;
     margin-bottom: 2rem;
     margin-top: auto;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for better readability */
   }
 
-  .hero-section .hero-p  {
+  .hero-text p {
     font-size: 1rem;
     max-width: 100%;
     margin: 0 auto 2rem;
     line-height: 1.5;
     white-space: normal;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Subtle shadow for readability */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow */
   }
 
   .hero-section .btn-common {
@@ -757,22 +748,31 @@ footer i {
     margin-bottom: 2rem;
   }
 
-  /* --- styles for Introduction Section --- */
+  /* footer styling */
 
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .fa-brands {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  /* --- styles for Introduction Section --- */
 
   .introduction-section p {
     line-height: 1.6; /* more space between lines for better readability */
   }
 
-  
   .intro-icon {
     margin-top: 1rem; /* space above icons */
-    margin-bottom: 1rem; /*  space below icons */
-    font-size: 2.5rem;   /* Slightly larger icons for better visibility */
+    margin-bottom: 1rem; /* space below icons */
+    font-size: 2.5rem; /* larger icons for better visibility */
   }
 
   .list-with-icons li i.fa-check {
-    color: #311c0e; 
+    color: #311c0e;
   }
 
   /* --- about us section --- */
@@ -787,21 +787,21 @@ footer i {
 
   .about-us-text {
     display: flex;
-    flex-direction: column;       /* Arrange children vertically */
+    flex-direction: column; /* Arrange children vertically */
     justify-content: space-between; /* Spread heading and button to top & bottom */
-    align-items: center;          /* Center horizontally */
+    align-items: center; /* Center horizontally */
     max-width: 400px;
     margin-right: 2rem;
-    height: 400px;                
+    height: 400px;
     text-align: center;
   }
 
   .about-us-text h2 {
-    margin-bottom: 0;             /* Remove bottom margin for precise top alignment */
+    margin-bottom: 0; /* Remove bottom margin for precise top alignment */
   }
 
   .about-us-text .btn-container {
-    margin-top: 0;                /* Remove top margin to align button to bottom */
+    margin-top: 0; /* Remove top margin to align button to bottom */
   }
 
   .about-us-image {
@@ -810,90 +810,143 @@ footer i {
     margin: 0; /* Remove centering margin */
     margin-left: 1rem;
   }
-  
- /* Increase carousel image height for tablets */
+
+  /*----service.html ---*/
+
+  .service-card {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+  }
+
+  .service-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  /*----gallery.html ---*/
+
+  /* Increase carousel image height for tablets */
   #mobileGalleryCarousel .carousel-item img {
     height: 700px; /* Make images taller */
     object-fit: cover; /* Ensure images cover the container without distortion */
     width: 100%; /* Keep full width */
   }
-   
 }
-
-  
 
 /* Large devices (≥992px) */
 @media screen and (min-width: 992px) {
- .hero {
-  position: relative;
-  width: 100%; /* Full width of the container */
-  height: 50vh;   /* Height adjusts based on content */
-  min-height: 300px;
-  max-height: 600px; /* Limit max height to avoid oversized hero */
-  overflow: hidden; /* Hide overflow to crop excess image */
-}
 
-.hero-image img {
-  width: auto;  
-  height: 100%;  
-  max-width: 100%;
-  object-fit: cover; /* Crop image to fill area without distortion */
-  object-position: center center; /* Center image within container */
-}
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  
 
-/* Hero text container styling */
-.hero-text {
-  position: absolute;
-  top: 60%; /* Push text slightly down */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -60%); /* Center with offset */
-  max-width: 600px; /* Limit width for better readability */
-  width: 90vw; /* Responsive width */
-  padding: 1rem 2rem; /* Horizontal and vertical padding */
-  text-align: center;
-  color: white;
-  z-index: 10; /* Ensure text is above image overlay */
- 
-  border-radius: 8px; /* Rounded corners for better visual */
-  box-sizing: border-box;
-}
 
-/* Hero heading */
-.hero-text h1 {
-  font-size: 3.2rem; /* Larger heading */
-  font-weight: 700;
-  line-height: 1.2; /* Tight line height for heading */
-  margin-bottom: 1.5rem; /* Space below heading */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for better readability */
-}
 
-/* Styling for the main company name */
-.hero-n {
-  font-size: 2rem !important; 
-  font-weight: 700 !important; /* Bold text */
-  margin-bottom: 1rem !important;
-  color: white !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for readability */
-}
+  .hero {
+    position: relative;
+    width: 100%; /* Full width of the container */
+    height: 50vh;
+    min-height: 300px;
+    max-height: 350px; /* Limit max height to avoid oversized hero */
+    overflow: hidden; /* Hide overflow to crop excess image */
+  }
 
-/* Styling for the paragraph below */
-.hero-p {
-  font-size: 1.1rem !important; /* Smaller font size */
-  font-weight: 400 !important; /* Normal weight */
-  margin-bottom: 1rem !important;
-  color: white !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for readability */
-}
+  .hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
 
-/* Hero button styling */
-.hero-text .btn-common {
-  margin-top: 1rem;
-  padding: 12px 32px;
-  font-size: 1rem;
-  white-space: nowrap;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for readability */
-}
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
 
+  
+  .hero-text {
+    position: absolute;
+    top: 60%; /* Push text slightly down */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -60%); /* Center with offset */
+    max-width: 600px; /* Limit width for better readability */
+    width: 90vw; /* Responsive width */
+    padding: 1rem 2rem; /* Horizontal and vertical padding */
+    text-align: center;
+    color: white;
+    z-index: 10; /* Ensure text is above image overlay */
+
+    border-radius: 8px; /* Rounded corners for better visual */
+    box-sizing: border-box;
+  }
+
+  
+  .hero-text h1 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: 700;
+    line-height: 1.2; /* Tight line height for heading */
+    margin-bottom: 1.5rem; /* Space below heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for better readability */
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0 auto 2rem;
+    line-height: 1.5;
+    white-space: normal;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow */
+  }
+
+  
+  .hero-n {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important; /* Bold text */
+    margin-bottom: 1rem !important;
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+
+  .hero-p {
+    font-size: 1rem !important; /* Smaller font size */
+    font-weight: 400 !important; /* Normal weight */
+    margin-bottom: 1rem !important;
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Hero button styling */
+  .hero-text .btn-common {
+    margin-top: 1rem;
+    padding: 10px 30px;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  /* footer styling */
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .fa-brands {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+  }
+  
   /* Introduction section adjustments */
   .introduction-section {
     text-align: center; /* Center all text by default */
@@ -905,28 +958,28 @@ footer i {
   }
 
   .introduction-section h2.intro-h2 {
-    font-size: 1.8rem;  /* Larger heading */
+    font-size: 1.8rem; /* Larger heading */
     display: block;
-    text-align: center; /* Center the heading text */     
-    margin-bottom: 2rem;    /* More spacing below heading */
+    text-align: center; /* Center the heading text */
+    margin-bottom: 2rem; /* More spacing below heading */
     white-space: nowrap;
-    width: 100%;   /* Ensure it takes full width */
-    margin-left: 0;   /* Reset any margin that might push it */
+    width: 100%;
+    margin-left: 0; /* Reset margin */
     margin-right: 0;
   }
 
   .introduction-section p.intro-p {
-    font-size: 1.25rem;     /* Larger paragraph text */
-    max-width: 800px;       /* Wider paragraph container */
-    margin-left: auto;      /* Center horizontally */
+    font-size: 1.25rem; /* Larger paragraph text */
+    max-width: 800px; /* Wider paragraph container */
+    margin-left: auto; /* Center horizontally */
     margin-right: auto;
     margin-bottom: 2rem;
   }
 
   .introduction-section ul.list-with-icons {
-    font-size: 1.25rem;     /* Larger list text */
-    max-width: 800px;       /* Wider list container */
-    margin-left: auto;      /* Center horizontally */
+    font-size: 1.25rem; /* Larger list text */
+    max-width: 800px; /* Wider list container */
+    margin-left: auto; /* Center horizontally */
     margin-right: auto;
     padding-left: 0;
     margin-bottom: 2rem;
@@ -939,46 +992,44 @@ footer i {
     display: block;
   }
 
-
-  /* About Us section adjustments */
+  /* --- About Us section --- */
   .about-us-section {
     max-width: 900px;
     display: flex;
-    gap: 3rem;             /* Add space between image and text */
+    gap: 3rem; /* space between image and text */
     justify-content: center;
     align-items: flex-start;
   }
 
   .about-us-image {
-    max-width: 300px;      /* Make image bigger */
+    max-width: 300px; /* Make image bigger */
     flex-shrink: 0;
   }
 
   .about-us-text {
     max-width: 700px;
-    text-align: center;    /* Center all text */
+    text-align: center; /* Center all text */
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  /* Align About Us heading with image top and enlarge */
+  /* Align  heading with image top and enlarge */
   .about-us-text h2 {
     font-size: 2.5rem;
-    margin-top: 0;              /* Remove default top margin */
+    margin-top: 0; /* Remove default top margin */
     margin-bottom: 1.5rem;
-    border-bottom: none;        /* Remove full underline */
+    border-bottom: none; /* Remove full underline */
     padding-bottom: 0.3rem;
-    width: fit-content;         /* Shrink underline width */
+    width: fit-content; /* Shrink underline width */
     border-bottom: 3px solid #311c0e; /* Line only under text */
-    align-self: center;     /* Align heading to left within container */
+    align-self: center; /* Align heading to left within container */
   }
 
   .about-us-text p {
-    font-size: 1.2rem;     /* Larger paragraph */
+    font-size: 1.2rem; /* Larger text */
     max-width: 700px;
     margin-bottom: 2rem;
-    
   }
 
   /* Center the contact button and align with text */
@@ -989,27 +1040,230 @@ footer i {
   }
 
   .about-us-section .btn-common {
-  margin-top: 1rem;
-  padding: 12px 32px;
-  font-size: 1rem;
-  white-space: nowrap;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Subtle shadow for readability */
- }
+    margin-top: 1rem;
+    padding: 12px 32px;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for readability */
+  }
 
-/* Footer container  */
+  /* --- service.html --- */
 
+  .service-card {
+    max-width: none;
+    margin-left: 0; /* reset centering */
+    margin-right: 0;
+  }
+
+  /* --- gallery.html --- */
+
+  
+  .gallery-image {
+    max-width: 300px; /* Max width for images */
+    width: 250px; /* dixed width */
+    height: 250px; /* fixed height */
+    object-fit: cover; /* Crop images to fill box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    cursor: pointer; /* Pointer cursor */
+    transition: transform 0.3s ease; /* Smooth zoom */
+    margin-bottom: 1rem; /* Space below images */
+  }
+
+  .gallery-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+
+  /* Modal content should be centered */
+  .modal-content {
+    background-color: transparent !important; /* Ensure transparent background */
+    border: none !important; /* Remove border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Modal image styles */
+  #lightboxImage {
+    max-width: 90vw; /* Max width: 90% of viewport width */
+    max-height: 80vh; /* Max height: 80% of viewport height */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* --- contact.html ---*/
+
+  .con-h2 {
+    font-size: 2rem;
+  }
+
+  .con-p {
+    font-size: 1rem;
+  }
+
+  /* Form as flex container with wrapping and centered content */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Spacing between form groups */
+    justify-content: center;
+  }
+
+  /* First three input groups arranged vertically and centered */
+  form > div.mb-3:nth-child(-n + 3) {
+    display: flex;
+    flex-direction: column; /* Stack label and input */
+    align-items: center; /* Center horizontally */
+    flex: 1 1 30%; /* Flexible width */
+    min-width: 250px; /* Prevent too narrow */
+  }
+
+  /* Center labels of first three inputs */
+  form > div.mb-3:nth-child(-n + 3) > label {
+    text-align: center; /* Center text */
+    width: 100%; /* Full container width */
+    margin-bottom: 0.5rem; /* Space below label */
+  }
+
+  /* Message field group as vertical flex container */
+  form > div.mb-3:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 70%; /* Wider than others */
+    max-width: 700px; /* Limit max width */
+    margin: 0 auto; /* Center horizontally */
+  }
+
+  /* Center label of message field */
+  form > div.mb-3:nth-child(4) > label {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Submit button container full width and centered */
+  form > div.d-flex {
+    flex-basis: 100%; /* Take full row */
+    justify-content: center; /* Center button */
+  }
 }
-
-
-
-
 
 /* Extra large devices (≥1200px) */
 @media screen and (min-width: 1200px) {
+
+  .navbar-nav .nav-link {
+    font-size: 2rem;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero {
+    height: 350px;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
 
 }
 
 /* XXL devices (≥1400px) */
 @media screen and (min-width: 1400px) {
+
+  .navbar-brand img {
+    height: 50px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.5rem;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  
+  .hero {
+    height: 450px;
+  }
+
+  .hero-image,
+  .hero-image img {
+    width: 100vw;
+    max-width: 100vw;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    white-space: nowrap;
+  }
+
+  .hero-text p {
+    font-size: 1.25rem;
+    
+  }
+
+  .hero-text .btn-common {
+    font-size: 1rem;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+
+  .social-links i.fa-facebook,
+  .social-links i.fa-instagram {
+    font-size: 2.5rem;
+  }
+
+  .serv-btn .btn-common {
+    font-size: 1rem;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .s-btn .btn-common {
+    font-size: 1rem;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .suc-btn .btn-common {
+    font-size: 1rem;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
 }

@@ -14,7 +14,6 @@
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-
     <!-- Font Awesome Kit for icons -->
     <script src="https://kit.fontawesome.com/c1bbf5006a.js" crossorigin="anonymous"></script>
 
@@ -32,10 +31,10 @@
         <div class="container">
           <!-- Brand logo linked to homepage -->
           <a class="navbar-brand" href="index.html">
-          <picture>
-            <source srcset="assets/images/fav" type="image/webp">
-            <img src="assets/images/hero-images/StockCake-Flowing-Copper-Pipes-1753797567(compressed).jpg" alt="Copper pipes in modern setting" width="1344" height="768" class="hero-image img-fluid w-100"/>
-          </picture>
+            <picture>
+              <source srcset="assets/images/fav" type="image/webp">
+              <img src="assets/images/hero-images/StockCake-Flowing-Copper-Pipes-1753797567(compressed).jpg" alt="Copper pipes in modern setting" width="1344" height="768" class="hero-image img-fluid w-100"/>
+            </picture>
           </a>
           <!-- Hamburger menu button for smaller screens -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -47,14 +46,14 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="services.html">Services</a>
               </li>
               <li class="nav-item">
                 <!-- Current page marked with aria-current -->
-                <a class="nav-link" href="gallery.html" aria-current="page">Gallery</a>
+                <a class="nav-link active" href="gallery.html" aria-current="page">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -64,106 +63,106 @@
         </div>
       </nav>
     </header>
-
+    <main>
     <!-- Hero section with background image and overlay -->
     <section class="hero hero-gallery hero-section position-relative text-white">
-<!-- WebP with JPEG fallback for better performance -->
-        <picture>
-          <source srcset="assets/images/hero-images/StockCakeFlowingCopperPipes480px.webp 480w, 
-                          assets/images/hero-images/StockCakeFlowingCopperPipe768px.webp 768w, 
-                          assets/images/hero-images/StockCakeFlowingCopperPipes1344px.webp 1344w" 
-                          sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1344px" 
-                          type="image/webp">
-          <img src="assets/images/hero-images/StockCake-Flowing-Copper-Pipes-145kb.jpg" alt="Copper pipes in modern setting" width="1344" height="768" class="hero-image img-fluid w-100"/>
-        </picture>
+      <!-- WebP with JPEG fallback for better performance -->
+      <picture>
+        <source srcset="assets/images/hero-images/StockCakeFlowingCopperPipes480px.webp 480w, 
+                        assets/images/hero-images/StockCakeFlowingCopperPipe768px.webp 768w, 
+                        assets/images/hero-images/StockCakeFlowingCopperPipes1344px.webp 1344w" 
+                        sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1344px" 
+                        type="image/webp">
+        <img src="assets/images/hero-images/StockCake-Flowing-Copper-Pipes-145kb.jpg" alt="Copper pipes in modern setting" width="1344" height="768" class="hero-image img-fluid w-100"/>
+      </picture>
       <!-- Overlay to improve text readability -->
       <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
       <!-- Centered text content -->
-      <div class="hero-text-g hero-text position-absolute top-50 start-50 translate-middle px-3 text-center">
-        <h1 class="fw-bold">Gallery</h1>
+      <div class="hero-text position-absolute top-50 start-50 translate-middle px-3 text-center">
+        <h1 class="hero-h1 fw-bold">Gallery</h1>
         <p class="hero-n fw-bold fs-6">Nordströms VVS i Dalarna AB</p>
         <p class="hero-p small mb-3">
           Take a look at some of our recent projects. At Nordströms VVS i Dalarna AB, quality and care are always in focus.
-        </p>
-        <p class="hero-p">Feel free to contact us if you want to know more!</p>
+        <br>
+        Feel free to contact us if you want to know more!</p>
         <!-- Button linking to contact page -->
         <a href="contact.html" class="btn btn-common btn-small mt-3">Contact us</a>
       </div>
     </section>
 
     <!-- Main gallery content -->
-    <main class="gallery-section container my-4">
+    <div class="gallery-section container my-4">
       <h2 class="text-center mb-3 fw-bold">Our Work Gallery</h2>
       <p class="text-center mb-4">A showcase of our craftsmanship and completed projects, demonstrating our commitment to quality and customer satisfaction.</p>
       
-      <!-- Bootstrap Carousel for mobile devices only (visible under md breakpoint) -->
+      <!-- Bootstrap Carousel for mobile and tablet: visible only under lg breakpoint -->
       <div id="mobileGalleryCarousel" class="carousel slide d-block d-lg-none" data-bs-ride="carousel" aria-label="Gallery carousel showing our completed projects">
         <div class="carousel-inner">
-          <!-- Each carousel-item contains one image -->
+          <!-- carousel items... (keep your existing carousel items here) -->
           <div class="carousel-item active">
             <picture>
-            <source srcset="assets/images/gallery/badkar.webp" type="image/webp">
-            <img src="assets/images/gallery/badkar.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/badkar.jpg" class="d-block w-100" width="1500" height="2000" alt="Freestanding white bathtub in elegant beige bathroom with wall lighting.">
+              <source srcset="assets/images/gallery/badkar.webp" type="image/webp" />
+              <img src="assets/images/gallery/badkar.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/badkar.jpg" class="d-block w-100" width="1500" height="2000" alt="Freestanding white bathtub in elegant beige bathroom with wall lighting." />
             </picture>
           </div>
           <div class="carousel-item">
             <picture>
-            <source srcset="assets/images/gallery/badrum.webp" type="image/webp">
-            <img src="assets/images/gallery/badrum.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/badrum.jpg" class="d-block w-100" width="1500" height="2000" alt="Bathroom with round mirror, toilet and floating vanity with wooden cabinet.">
-            </picture>
-            </div>
-          <div class="carousel-item">
-            <picture>
-            <source srcset="assets/images/gallery/dubbelhand.webp" type="image/webp">
-            <img src="assets/images/gallery/dubbelhandfat.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/dubbelhandfat.jpg" class="d-block w-100" width="1500" height="2000" alt="Concrete bathroom countertop with double sinks and wooden cabinets">
+              <source srcset="assets/images/gallery/badrum.webp" type="image/webp" />
+              <img src="assets/images/gallery/badrum.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/badrum.jpg" class="d-block w-100" width="1500" height="2000" alt="Bathroom with round mirror, toilet and floating vanity with wooden cabinet." />
             </picture>
           </div>
           <div class="carousel-item">
             <picture>
-            <source srcset="assets/images/gallery/dusch.webp" type="image/webp">
-            <img src="assets/images/gallery/dusch.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/dusch.jpg" class="d-block w-100" width="1500" height="2000" alt="Modern shower with glass wall and rain showerhead in beige bathroom.">
+              <source srcset="assets/images/gallery/dubbelhand.webp" type="image/webp" />
+              <img src="assets/images/gallery/dubbelhandfat.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/dubbelhandfat.jpg" class="d-block w-100" width="1500" height="2000" alt="Concrete bathroom countertop with double sinks and wooden cabinets" />
             </picture>
           </div>
           <div class="carousel-item">
             <picture>
-            <source srcset="assets/images/gallery/golvvarme.webp" type="image/webp">
-            <img src="assets/images/gallery/golvvarme.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/golvvarme.jpg" class="d-block w-100" width="2000" height="1500" alt="Underfloor heating pipes installed in foundation before concrete pouring.">
+              <source srcset="assets/images/gallery/dusch.webp" type="image/webp" />
+              <img src="assets/images/gallery/dusch.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/dusch.jpg" class="d-block w-100" width="1500" height="2000" alt="Modern shower with glass wall and rain showerhead in beige bathroom." />
             </picture>
           </div>
           <div class="carousel-item">
             <picture>
-            <source srcset="assets/images/gallery/grejor.webp" type="image/webp">
-            <img src="assets/images/gallery/grejer.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/grejer.jpg" class="d-block w-100" width="1500" height="2000" alt="Chrome pipe manifolds mounted on wall with grey stone tiles">
+              <source srcset="assets/images/gallery/golvvarme.webp" type="image/webp" />
+              <img src="assets/images/gallery/golvvarme.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/golvvarme.jpg" class="d-block w-100" width="2000" height="1500" alt="Underfloor heating pipes installed in foundation before concrete pouring." />
             </picture>
           </div>
           <div class="carousel-item">
             <picture>
-            <source srcset="assets/images/gallery/handfat.webp" type="image/webp">
-            <img src="assets/images/gallery/handfat.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/handfat.jpg" class="d-block w-100" width="1440" height="1440" alt="Small white sink with copper faucet and visible copper pipes on white tiled wall.">
+              <source srcset="assets/images/gallery/grejor.webp" type="image/webp" />
+              <img src="assets/images/gallery/grejer.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/grejer.jpg" class="d-block w-100" width="1500" height="2000" alt="Chrome pipe manifolds mounted on wall with grey stone tiles" />
             </picture>
           </div>
           <div class="carousel-item">
             <picture>
-            <source srcset="assets/images/gallery/inbyggddusch.webp" type="image/webp">
-            <img src="assets/images/gallery/inbyggddusch.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/inbyggddusch.jpg" class="d-block w-100" width="1500" height="2000" alt="Stylish shower corner with rain shower and handheld shower in beige stone tiles.">
+              <source srcset="assets/images/gallery/handfat.webp" type="image/webp" />
+              <img src="assets/images/gallery/handfat.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/handfat.jpg" class="d-block w-100" width="1440" height="1440" alt="Small white sink with copper faucet and visible copper pipes on white tiled wall." />
             </picture>
           </div>
           <div class="carousel-item">
             <picture>
-            <source srcset="assets/images/gallery/kok.webp" type="image/webp">
-            <img src="assets/images/gallery/kok.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/kok.jpg" class="d-block w-100" width="1500" height="2000" alt="Wooden kitchen cabinets with smooth finish and white floor.">
+              <source srcset="assets/images/gallery/inbyggddusch.webp" type="image/webp" />
+              <img src="assets/images/gallery/inbyggddusch.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/inbyggddusch.jpg" class="d-block w-100" width="1500" height="2000" alt="Stylish shower corner with rain shower and handheld shower in beige stone tiles." />
             </picture>
           </div>
           <div class="carousel-item">
             <picture>
-            <source srcset="assets/images/gallery/kokblandare.webp" type="image/webp">
-            <img src="assets/images/gallery/koksblandare.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/koksblandare.jpg" class="d-block w-100" width="1500" height="1500" alt="Modern black kitchen faucet with black sink in white countertop.">
+              <source srcset="assets/images/gallery/kok.webp" type="image/webp" />
+              <img src="assets/images/gallery/kok.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/kok.jpg" class="d-block w-100" width="1500" height="2000" alt="Wooden kitchen cabinets with smooth finish and white floor." />
             </picture>
           </div>
           <div class="carousel-item">
             <picture>
-            <source srcset="assets/images/gallery/ror.webp" type="image/webp">
-            <img src="assets/images/gallery/ror.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/ror.jpg" class="d-block w-100" width="1600" height="1200" alt="Copper piping system and heat pump in technical room">
+              <source srcset="assets/images/gallery/kokblandare.webp" type="image/webp" />
+              <img src="assets/images/gallery/koksblandare.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/koksblandare.jpg" class="d-block w-100" width="1500" height="1500" alt="Modern black kitchen faucet with black sink in white countertop." />
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source srcset="assets/images/gallery/ror.webp" type="image/webp" />
+              <img src="assets/images/gallery/ror.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/ror.jpg" class="d-block w-100" width="1600" height="1200" alt="Copper piping system and heat pump in technical room" />
             </picture>
           </div>
         </div>
@@ -175,34 +174,86 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
       </div>
-        <!-- Modal for enlarged image -->
-      <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content bg-transparent border-0">
-            <div class="modal-body p-0">
-              <img src="" id="lightboxImage" class="img-fluid rounded" alt="Expanded image">
-            </div>
-            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      <!-- Grid gallery for laptop and up hidden on smaller screens, flexbox with wrapping -->
+      <div class="d-none d-lg-flex flex-wrap justify-content-center gap-3 mt-4" aria-label="Grid gallery showing our completed projects">
+        <picture>
+          <source srcset="assets/images/gallery/badkar.webp" type="image/webp"/>
+          <img src="assets/images/gallery/badkar.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/badkar.jpg" alt="Freestanding white bathtub in elegant beige bathroom with wall lighting." class="gallery-image rounded" />
+        </picture>
+        <picture>
+          <source srcset="assets/images/gallery/badrum.webp" type="image/webp"/>
+          <img src="assets/images/gallery/badrum.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/badrum.jpg" alt="Bathroom with round mirror, toilet and floating vanity with wooden cabinet." class="gallery-image rounded" />
+        </picture>
+        <picture>
+          <source srcset="assets/images/gallery/dubbelhand.webp" type="image/webp"/>
+          <img src="assets/images/gallery/dubbelhandfat.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/dubbelhandfat.jpg" alt="Concrete bathroom countertop with double sinks and wooden cabinets" class="gallery-image rounded" />
+        </picture>
+        <picture>
+          <source srcset="assets/images/gallery/dusch.webp" type="image/webp"/>
+          <img src="assets/images/gallery/dusch.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/dusch.jpg" alt="Modern shower with glass wall and rain showerhead in beige bathroom." class="gallery-image rounded" />
+        </picture>
+        <picture>
+          <source srcset="assets/images/gallery/golvvarme.webp" type="image/webp" />
+          <img src="assets/images/gallery/golvvarme.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/golvvarme.jpg" alt="Underfloor heating pipes installed in foundation before concrete pouring." class="gallery-image rounded" />
+        </picture>
+        <picture>
+          <source srcset="assets/images/gallery/grejor.webp" type="image/webp" />
+          <img src="assets/images/gallery/grejer.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/grejer.jpg" alt="Chrome pipe manifolds mounted on wall with grey stone tiles" class="gallery-image rounded"/>
+        </picture>
+        <picture>
+          <source srcset="assets/images/gallery/handfat.webp" type="image/webp" />
+          <img src="assets/images/gallery/handfat.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/handfat.jpg" alt="Small white sink with copper faucet and visible copper pipes on white tiled wall." class="gallery-image rounded"/>
+        </picture>
+        <picture>
+          <source srcset="assets/images/gallery/inbyggddusch.webp" type="image/webp"/>
+          <img src="assets/images/gallery/inbyggddusch.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/inbyggddusch.jpg" alt="Stylish shower corner with rain shower and handheld shower in beige stone tiles." class="gallery-image rounded" />
+        </picture>
+        <picture>
+          <source srcset="assets/images/gallery/kok.webp" type="image/webp"/>
+          <img src="assets/images/gallery/kok.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/kok.jpg" alt="Wooden kitchen cabinets with smooth finish and white floor." class="gallery-image rounded"/>
+        </picture>
+        <picture>
+          <source srcset="assets/images/gallery/kokblandare.webp" type="image/webp"/>
+          <img src="assets/images/gallery/koksblandare.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/koksblandare.jpg" alt="Modern black kitchen faucet with black sink in white countertop." class="gallery-image rounded"/>
+        </picture>
+        <picture>
+          <source srcset="assets/images/gallery/ror.webp" type="image/webp"/>
+          <img src="assets/images/gallery/ror.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/ror.jpg" alt="Copper piping system and heat pump in technical room" class="gallery-image rounded"/>
+        </picture>
+      </div>
+    </div>
+
+    <!-- Modal for enlarged image -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0">
+            <img src="" id="lightboxImage" class="img-fluid rounded" alt="Expanded image"/>
           </div>
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- Footer with contact and social links -->
-    <footer class="text-white py-4 bg-dark">
+    <!-- Footer with contact info and social media links -->
+    <footer class="py-1 bg-dark">
       <div class="container d-flex flex-column align-items-center gap-3 text-center">
-        <!-- Contact information -->
-        <div class="contact-info">
-          <h3 class="mb-2">Contact information</h3>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-1">
+        <div class="footer-heading-container">
+          <h3 class="footer-heading mb-1">Contact information</h3>
+        </div>
+        <!-- Contact information section -->
+        <div class="contact-info d-flex justify-content-center gap-5 flex-wrap">
+          <p class="d-flex align-items-center gap-2 mb-0">
             <i class="fa-solid fa-phone"></i>
             <a href="tel:+46707249697" class="text-white text-decoration-none">+46 707 249 697</a>
           </p>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-1">
+          <p class="d-flex align-items-center gap-2 mb-0">
             <i class="fa-solid fa-paper-plane"></i>
             <a href="mailto:Nordstromsvvs@gmail.com" class="text-white text-decoration-none">Nordstromsvvs@gmail.com</a>
           </p>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-0">
+          <p class="d-flex align-items-center gap-2 mb-0">
             <i class="fa-solid fa-location-dot"></i>
             <a href="https://www.google.com/maps/place/Dalarna,+Sweden" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="Open Dalarna location on Google Maps">Dalarna, Sweden</a>
           </p>
@@ -210,37 +261,58 @@
 
         <!-- Social media links with accessible labels -->
         <div class="social-links justify-content-center">
-          <p class="mb-3 follow">Follow us now</p>
+          <p class="mb-3 fs-6 follow">Follow us now</p>
           <div class="d-flex gap-4 justify-content-center">
-            <a href="https://www.facebook.com/people/Nordströms-Vvs-i-Dalarna-AB/61550777361174/" target="_blank" class="text-white" aria-label="Facebook">
+            <a href="https://www.facebook.com/people/Nordströms-Vvs-i-Dalarna-AB/61550777361174/" target="_blank" class="text-white" aria-label="Facebook link">
               <i class="fa-brands fa-facebook fa-lg"></i>
             </a>
-            <a href="https://www.instagram.com/nordstromsvvs" target="_blank" class="text-white" aria-label="Instagram">
+            <a href="https://www.instagram.com/nordstromsvvs" target="_blank" class="text-white" aria-label="Instagram link">
               <i class="fa-brands fa-instagram fa-lg"></i>
             </a>
           </div>
         </div>
       </div>
     </footer>
-    
-    <!-- Bootstrap JS bundle for navbar and carousel -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Bootstrap JS bundle for navbar toggling -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Font Awesome Kit for icons -->
+    <script src="https://kit.fontawesome.com/c1bbf5006a.js" crossorigin="anonymous" defer></script>
 
-    <script>
-    // Select all carousel images inside the mobile carousel, Implemented with help from ChatGPT by OpenAI
-    const carouselImages = document.querySelectorAll('#mobileGalleryCarousel .carousel-item img');
-    const lightboxModal = new bootstrap.Modal(document.getElementById('lightboxModal'));
-    const lightboxImage = document.getElementById('lightboxImage');
-    // Add click event listener to each image
-    carouselImages.forEach(img => {
-    img.style.cursor = 'pointer'; // Cursor changes to pointer on hover
-    img.addEventListener('click', () => {
-    lightboxImage.src = img.src;  // Set modal image src to clicked image src
-    lightboxImage.alt = img.alt || '';  // Copy alt text for accessibility
-    lightboxModal.show();  // Show the modal
+    <script> // Implemented with help from ChatGPT by OpenAI
+      // Wait until DOM is fully loaded before executing script
+      document.addEventListener('DOMContentLoaded', () => {
+        // Select all carousel images inside the mobile carousel
+        const carouselImages = document.querySelectorAll('#mobileGalleryCarousel .carousel-item img');
+        // Initialize Bootstrap modal instance for the lightbox
+        const lightboxModal = new bootstrap.Modal(document.getElementById('lightboxModal'));
+        const lightboxImage = document.getElementById('lightboxImage');
+
+        // Add click event listener to each carousel image for mobile/tablet
+        carouselImages.forEach(img => {
+          img.style.cursor = 'pointer'; // Change cursor to pointer on hover
+          img.addEventListener('click', () => {
+            const imageSrc = img.getAttribute('data-bs-image') || img.src;
+            lightboxImage.src = imageSrc;  // Set modal image source
+            lightboxImage.alt = img.alt || '';  // Set alt text for accessibility
+            lightboxModal.show();  // Show the modal
+          });
+        });
+
+        // Select all grid gallery images for desktop view
+        const desktopGalleryImages = document.querySelectorAll('.d-none.d-lg-flex .gallery-image');
+
+        // Add click event listener to each grid image for desktop
+        desktopGalleryImages.forEach(img => {
+          img.style.cursor = 'pointer'; // Change cursor to pointer on hover
+          img.addEventListener('click', () => {
+            const imageSrc = img.getAttribute('data-bs-image') || img.src;
+            lightboxImage.src = imageSrc;  // Update modal image source
+            lightboxImage.alt = img.alt || '';  // Update alt text
+            lightboxModal.show();  // Show the modal
+          });
+        });
       });
-    });
     </script>
 
   </body>

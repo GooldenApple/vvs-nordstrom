@@ -65,7 +65,7 @@
         </div>
       </nav>
     </header>
-
+    <main>
     <!-- Hero section with background image and overlay -->
     <section class="hero hero-contact hero-section position-relative text-white">
       <!-- WebP with JPEG fallback for better performance -->
@@ -80,7 +80,7 @@
       <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
       <!-- Centered hero text -->
       <div class="hero-text-c hero-text hero-text-g position-absolute top-50 start-50 translate-middle px-3 text-center">
-        <h1 class="fw-bold">Contact us</h1>
+        <h1 class="hero-h1 fw-bold">Contact us</h1>
         <p class="hero-n fw-bold fs-6">Nordströms VVS i Dalarna AB</p>
         <p class="hero-c hero-p small mb-3">
           Quality Water, Heating, and Sanitation Services.<br>
@@ -92,9 +92,9 @@
     </section>
 
     <!-- Main content: Contact form -->
-    <main class="container my-4">
-      <h2 class="small fw-bold text-center mb-4">Have any questions or concerns?</h2>
-      <p class="small text-center mb-4">
+    <div class="container my-4">
+      <h2 class="con-h2 small fw-bold text-center mb-4">Have any questions or concerns?</h2>
+      <p class="con-p small text-center mb-4">
         Please fill out the form below and we will get back to you as soon as possible.
       </p>
       <section>
@@ -121,41 +121,43 @@
             <textarea id="message" name="message" autocomplete="off" class="form-control" rows="5" required aria-required="true"></textarea>
           </div>
           <!-- Submit button -->
-          <div class="d-flex justify-content-center">
+          <div class="s-btn d-flex justify-content-center">
             <button type="submit" class="btn btn-common btn-small" aria-label="Send message">Send</button>
           </div>
         </form>
       </section>
-    </main>
-
+    </div>
+  </main>
     <!-- Footer with contact info and social media links -->
-    <footer class="text-white py-4 bg-dark">
+    <footer class="py-4 bg-dark">
       <div class="container d-flex flex-column align-items-center gap-3 text-center">
-        <!-- Contact information section -->
-        <div class="contact-info">
-          <h3 class="mb-2">Contact information</h3>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+46707249697" class="text-white text-decoration-none">+46 707 249 697</a>
-          </p>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-paper-plane"></i>
-            <a href="mailto:Nordstromsvvs@gmail.com" class="text-white text-decoration-none">Nordstromsvvs@gmail.com</a>
-          </p>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-0">
-            <i class="fa-solid fa-location-dot"></i>
-            <a href="https://www.google.com/maps/place/Dalarna,+Sweden" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="Open Dalarna location on Google Maps">Dalarna, Sweden</a>
-          </p>
+        <div class="footer-heading-container">
+          <h3 class="footer-heading mb-2">Contact information</h3>
         </div>
+        <!-- Contact information section -->
+      <div class="contact-info d-flex justify-content-center gap-5 flex-wrap">
+          <p class="d-flex align-items-center gap-2 mb-0">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+46707249697" class="text-white text-decoration-none">+46 707 249 697</a>
+        </p>
+        <p class="d-flex align-items-center gap-2 mb-0">
+          <i class="fa-solid fa-paper-plane"></i>
+          <a href="mailto:Nordstromsvvs@gmail.com" class="text-white text-decoration-none">Nordstromsvvs@gmail.com</a>
+        </p>
+        <p class="d-flex align-items-center gap-2 mb-0">
+          <i class="fa-solid fa-location-dot"></i>
+          <a href="https://www.google.com/maps/place/Dalarna,+Sweden" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="Open Dalarna location on Google Maps">Dalarna, Sweden</a>
+        </p>
+      </div>
 
-        <!-- Social media links with aria-labels for accessibility -->
+        <!-- Social media links with accessible labels -->
         <div class="social-links justify-content-center">
-          <p class="mb-3 follow">Follow us now</p>
+          <p class="mb-3 fs-6 follow">Follow us now</p>
           <div class="d-flex gap-4 justify-content-center">
-            <a href="https://www.facebook.com/people/Nordströms-Vvs-i-Dalarna-AB/61550777361174/" target="_blank" class="text-white" aria-label="Facebook">
+            <a href="https://www.facebook.com/people/Nordströms-Vvs-i-Dalarna-AB/61550777361174/" target="_blank" class="text-white" aria-label="Facebook link">
               <i class="fa-brands fa-facebook fa-lg"></i>
             </a>
-            <a href="https://www.instagram.com/nordstromsvvs" target="_blank" class="text-white" aria-label="Instagram">
+            <a href="https://www.instagram.com/nordstromsvvs" target="_blank" class="text-white" aria-label="Instagram link">
               <i class="fa-brands fa-instagram fa-lg"></i>
             </a>
           </div>
@@ -164,6 +166,8 @@
     </footer>
 
     <!-- Bootstrap JS bundle for navbar toggling -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Font Awesome Kit for icons -->
+    <script src="https://kit.fontawesome.com/c1bbf5006a.js" crossorigin="anonymous" defer></script>
   </body>
 </html>

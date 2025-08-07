@@ -64,7 +64,7 @@
         </div>
       </nav>
     </header>
-    
+  <main> 
     <!-- Hero section with background image and overlay -->
     <section class="hero hero-services hero-section position-relative text-white">
 <!-- WebP with JPEG fallback for better performance -->
@@ -80,83 +80,98 @@
       <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
       <!-- Centered hero text -->
       <div class="hero-text-s hero-text position-absolute top-50 start-50 translate-middle px-3 text-center">
-        <h1 class="fw-bold">Services</h1>
-        <p class="hero-n fw-bold fs-6">Nordströms VVS i Dalarna AB</p>
-        <p class="hero-p small mb-3">Quality Water, Heating, and Sanitation Services. <br>Contact us if you have any questions or need further information<br>– we’re here to assist you!</p>
+        <h1 class="hero-h1 fw-bold">Services</h1>
+        <p class="hero-n mt-1 fw-bold fs-6">Nordströms VVS i Dalarna AB</p>
+        <p class="hero-p small mt-1 mb-3">Quality Water, Heating, and Sanitation Services. <br>Contact us if you have any questions or need further information<br>– we’re here to assist you!</p>
         <!-- Call to action button linking to contact page -->
         <a href="contact.html" class="btn btn-common btn-small">Contact Us</a>
       </div>
     </section>
 
-    <!-- Main content: service cards -->
-    <main class="container service-text my-3">
-      <h2 class="text-center fw-bold mb-4">Our Plumbing Services</h2>
-      <p class="text-center mb-4">We offer comprehensive plumbing services in the following areas:</p>
-      
-      <!-- Service card for Water -->
-      <div class="card service-card">
-        <div class="card-body text-center">
-          <!-- Water icon -->
-          <i class="fa-solid fa-water fa-4x mb-3" aria-hidden="true"></i>
-          <h3 class="card-title fw-bold">Water</h3>
-          <p class="card-text service-text">Installation, repair, and maintenance of water systems to keep your supply flowing smoothly.</p>
+<div class="container my-3"> <!-- Bootstrap container, margin top/bottom -->    
+  <div class="service-text">
+    <!-- Section heading, centered text, bold font, large size, margin bottom -->
+    <h2 class="text-center fw-bold display-6 mb-3">Our Plumbing Services</h2>
+    <p class="text-center mb-3">We offer comprehensive plumbing services in the following areas:</p>
+  </div>
+
+  <!-- Bootstrap row with gutters (spacing) and center alignment -->
+  <div class="service-card row g-4 justify-content-center"> <!-- g-4 adds equal gutters horizontally & vertically -->
+
+    <!-- full width on mobile/tablet (col-12), 1/3 width on large screens (col-lg-4) -->
+    <div class="col-12 col-lg-4">
+      <!-- Card with full height, flex column for vertical layout, padding -->
+      <div class="card h-100 d-flex flex-column text-center p-3"> <!-- d-flex flex-column for vertical flex layout -->
+        <!-- Card body grows to fill height and centers content vertically -->
+        <div class="card-body flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+          <!-- Font Awesome icon, large size, margin bottom, color -->
+          <i class="fa-solid fa-water fa-4x mb-3 text-primary"></i>
+          <!-- Card title, bold -->
+          <h3 class="fw-bold">Water</h3>
+          <!-- Card text -->
+          <p>Installation, repair, and maintenance of water systems.</p>
         </div>
       </div>
+    </div>
+  </div>
 
-      <!-- Service card for Heating -->
-      <div class="card service-card">
-        <div class="card-body text-center">
-          <!-- Heating icon -->
-          <i class="fa-solid fa-fire-flame-curved fa-4x mb-3" aria-hidden="true"></i>
-          <h3 class="card-title fw-bold">Heating</h3>
-          <p class="card-text service-text">Efficient heating solutions, including installations and emergency repairs for your comfort.</p>
+    <div class="col-12 col-lg-4">
+      <div class="card h-100 d-flex flex-column text-center p-3">
+        <div class="card-body flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+          <i class="fa-solid fa-fire-flame-curved fa-4x mb-3 text-warning"></i>
+          <h3 class="fw-bold">Heating</h3>
+          <p>Efficient heating solutions and emergency repairs.</p>
         </div>
       </div>
+    </div>
 
-      <!-- Service card for Sanitation -->
-      <div class="card service-card">
-        <div class="card-body text-center">
-          <!-- Toilet icon -->
-          <i class="fa-solid fa-toilet fa-4x mb-3" aria-hidden="true"></i>
-          <h3 class="card-title fw-bold">Sanitation</h3>
-          <p class="card-text service-text">Comprehensive sanitation services ensuring hygienic and safe environments.</p>
+    <div class="mb-2 col-12 col-lg-4">
+      <div class="card h-100 d-flex flex-column text-center p-3">
+        <div class="card-body flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+          <i class="fa-solid fa-toilet fa-4x mb-3 text-secondary"></i>
+          <h3 class="fw-bold">Sanitation</h3>
+          <p>Comprehensive sanitation services ensuring hygienic environments.</p>
         </div>
       </div>
+    </div>
+  </div>
 
-      <!-- Contact Us button for easy access -->
-      <div class="text-center mb-4">
-        <a href="contact.html" class="btn btn-common btn-small">Contact Us</a>
-      </div>
-    </main>
+  <!-- Centered contact button -->
+  <div class="serv-btn text-center">
+    <a href="contact.html" class="btn btn-common btn-small">Contact Us</a>
+  </div>
+</main>
 
     <!-- Footer with contact info and social media links -->
-    <footer class="text-white py-4 bg-dark">
+    <footer class="py-4 bg-dark">
       <div class="container d-flex flex-column align-items-center gap-3 text-center">
-        <!-- Contact information section -->
-        <div class="contact-info">
-          <h3 class="mb-2">Contact information</h3>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:+46707249697" class="text-white text-decoration-none">+46 707 249 697</a>
-          </p>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-1">
-            <i class="fa-solid fa-paper-plane"></i>
-            <a href="mailto:Nordstromsvvs@gmail.com" class="text-white text-decoration-none">Nordstromsvvs@gmail.com</a>
-          </p>
-          <p class="d-flex justify-content-center align-items-center gap-2 mb-0">
-            <i class="fa-solid fa-location-dot"></i>
-            <a href="https://www.google.com/maps/place/Dalarna,+Sweden" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="Open Dalarna location on Google Maps">Dalarna, Sweden</a>
-          </p>
+        <div class="footer-heading-container">
+          <h3 class="footer-heading mb-2">Contact information</h3>
         </div>
+        <!-- Contact information section -->
+      <div class="contact-info d-flex justify-content-center gap-5 flex-wrap">
+          <p class="d-flex align-items-center gap-2 mb-0">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+46707249697" class="text-white text-decoration-none">+46 707 249 697</a>
+        </p>
+        <p class="d-flex align-items-center gap-2 mb-0">
+          <i class="fa-solid fa-paper-plane"></i>
+          <a href="mailto:Nordstromsvvs@gmail.com" class="text-white text-decoration-none">Nordstromsvvs@gmail.com</a>
+        </p>
+        <p class="d-flex align-items-center gap-2 mb-0">
+          <i class="fa-solid fa-location-dot"></i>
+          <a href="https://www.google.com/maps/place/Dalarna,+Sweden" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="Open Dalarna location on Google Maps">Dalarna, Sweden</a>
+        </p>
+      </div>
 
         <!-- Social media links with accessible labels -->
         <div class="social-links justify-content-center">
-          <p class="mb-3 follow">Follow us now</p>
+          <p class="mb-3 fs-6 follow">Follow us now</p>
           <div class="d-flex gap-4 justify-content-center">
-            <a href="https://www.facebook.com/people/Nordströms-Vvs-i-Dalarna-AB/61550777361174/" target="_blank" class="text-white" aria-label="Facebook">
+            <a href="https://www.facebook.com/people/Nordströms-Vvs-i-Dalarna-AB/61550777361174/" target="_blank" class="text-white" aria-label="Facebook link">
               <i class="fa-brands fa-facebook fa-lg"></i>
             </a>
-            <a href="https://www.instagram.com/nordstromsvvs" target="_blank" class="text-white" aria-label="Instagram">
+            <a href="https://www.instagram.com/nordstromsvvs" target="_blank" class="text-white" aria-label="Instagram link">
               <i class="fa-brands fa-instagram fa-lg"></i>
             </a>
           </div>
@@ -164,7 +179,9 @@
       </div>
     </footer>
 
-    <!-- Bootstrap JS bundle for responsive nav toggling -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS bundle for navbar toggling -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- Font Awesome Kit for icons -->
+    <script src="https://kit.fontawesome.com/c1bbf5006a.js" crossorigin="anonymous" defer></script>
   </body>
 </html>
