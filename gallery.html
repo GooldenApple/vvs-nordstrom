@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content=" default-src 'self';  connect-src 'self' https://ka-f.fontawesome.com;  style-src 'self' https://cdn.jsdelivr.net https://kit.fontawesome.com 'unsafe-inline';  script-src 'self' https://cdn.jsdelivr.net https://kit.fontawesome.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net https://kit.fontawesome.com https://ka-f.fontawesome.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Nordstroms VVS in Dalarna AB offers reliable and professional plumbing services with focus on quality and customer satisfaction.">
     <meta name="keywords" content="plumbing, plumber, Dalarna, water installation, heating, sanitation, plumbing services, water leak, broken pipes, pipes, toilet, bathroom, kitchen, shower ,renovation ">
@@ -25,6 +26,7 @@
   </head>
 
   <body>
+    <div class="wrapper-main">
     <!-- Header with responsive navbar -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
@@ -78,15 +80,15 @@
       <!-- Overlay to improve text readability -->
       <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
       <!-- Centered text content -->
-      <div class="hero-text position-absolute top-50 start-50 translate-middle px-3 text-center">
-        <h1 class="hero-h1 fw-bold">Gallery</h1>
-        <p class="hero-n fw-bold fs-6">Nordströms VVS i Dalarna AB</p>
-        <p class="hero-p small mb-3">
+      <div class="hero-text position-absolute text-center">
+        <h1 class="fw-bold">Gallery</h1>
+        <p class="hero-n fw-bold">Nordströms VVS i Dalarna AB</p>
+        <p class="hero-p small">
           Take a look at some of our recent projects. At Nordströms VVS i Dalarna AB, quality and care are always in focus.
         <br>
         Feel free to contact us if you want to know more!</p>
         <!-- Button linking to contact page -->
-        <a href="contact.html" class="btn btn-common btn-small mt-3">Contact us</a>
+        <a href="contact.html" class="btn btn-common btn-small">Contact us</a>
       </div>
     </section>
 
@@ -278,7 +280,7 @@
         </div>
       </div>
     </footer>
-
+</div>
     <!-- Bootstrap JS bundle for navbar toggling -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- Font Awesome Kit for icons -->

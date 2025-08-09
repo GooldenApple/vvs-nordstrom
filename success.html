@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content=" default-src 'self';  connect-src 'self' https://ka-f.fontawesome.com;  style-src 'self' https://cdn.jsdelivr.net https://kit.fontawesome.com 'unsafe-inline';  script-src 'self' https://cdn.jsdelivr.net https://kit.fontawesome.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net https://kit.fontawesome.com https://ka-f.fontawesome.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Nordstroms VVS in Dalarna AB offers reliable and professional plumbing services with focus on quality and customer satisfaction.">
     <meta name="keywords" content="plumbing, plumber, Dalarna, water installation, heating, sanitation, plumbing services, water leak, broken pipes, pipes, toilet, bathroom, kitchen, shower ,renovation ">
@@ -26,6 +28,7 @@
   </head>
 
   <body>
+    <div class="wrapper-main">
     <!-- Header with navigation bar -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
@@ -79,14 +82,14 @@
       <!-- Overlay to improve text readability -->
       <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
       <!-- Centered hero text -->
-      <div class="hero-text hero-text-su position-absolute top-50 start-50 translate-middle px-3 text-center">
-        <h1 class="hero-h1 fw-bold">Nordströms VVS i Dalarna AB</h1>
+      <div class="hero-text position-absolute text-center">
+        <h1 class="fw-bold">Nordströms VVS i Dalarna AB</h1>
         <p class="hero-p small">
           Committed to quality and customer satisfaction, we handle everything from routine maintenance to complex installations
           <br>— ensuring your plumbing works flawlessly with professionalism and care.
         </p>
         <!-- Button linking back to Home -->
-        <a href="index.html" aria-label="Back to Home button" class="btn btn-common btn-small mb-3">Back to Home</a>
+        <a href="index.html" aria-label="Back to Home button" class="btn btn-common btn-small">Back to Home</a>
       </div>
     </section>
 
@@ -150,7 +153,7 @@
         </div>
       </div>
     </footer>
-
+</div>
     <!-- Bootstrap JS bundle for navbar toggling -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- Font Awesome Kit for icons -->
