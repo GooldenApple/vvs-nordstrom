@@ -9,21 +9,23 @@
     <meta name="author" content="Nordstroms VVS i Dalarna AB">
     <title>Nordstroms VVS i Dalarna AB</title>
 
-    <!-- Preconnect for faster loading of external resources -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin>
 
-    <!-- Preload Bootstrap CSS to prioritize loading -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    </noscript>
-
-    <!-- Link to custom stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Favicon for browser tab -->
-    <link rel="icon" href="assets/images/favicon_io(3)/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io(3)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon_io(3)/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io(3)/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io(3)/favicon-32x32.png">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+  
+  
   </head>
 
   <body>
@@ -35,7 +37,6 @@
           <!-- Brand logo linking to homepage -->
           <a class="navbar-brand" href="index.html">
             <picture>
-              <source srcset="assets/images/favicon_io(3)/android-chrome-192x192.webp 192w" sizes="(max-width: 192px) 192px" type="image/webp">
               <img src="assets/images/favicon_io(3)/android-chrome-192x192.png" alt="Nordströms VVS logo" width="192" height="192">
             </picture>
           </a>
@@ -135,7 +136,7 @@
       <!-- About Us section with image and company info -->
       <section class="about-us-section container my-1" aria-labelledby="about-heading">
         <!-- Company vehicle image WebP with JPEG fallback -->
-      <div class="about-us-inner"></div>
+      <div class="about-us-inner">
         <div class="about-us-image">
           <picture>
                 <source srcset="assets/images/bil300.webp 300w, assets/images/bil480.webp 480w, assets/images/bil768.webp 768w," 
@@ -143,18 +144,17 @@
                 <img src="assets/images/bilpx.jpg" width="1500" height="2000" alt="Nordströms VVS car" class="img-fluid rounded">
               </picture>
         </div>
-
+      
         <!-- Text content container centered and spaced -->
         <div class="about-us-text text-center">
-          <h2 class="mb-3">About Us</h2>
-          <br>
+          <h3 class="mb-3">About Us</h3>
           <div class="mb-3">
-            <p>Nordströms VVS is a trusted family-run plumbing business with deep roots in the community.</p>
-            <p>Our experienced team combines traditional craftsmanship with modern technology to deliver efficient, reliable service that keeps your home or business running smoothly.</p>
+            <p>Nordströms VVS is a trusted family-run plumbing business with deep roots in the community.
+              Our experienced team combines traditional craftsmanship with modern technology to deliver efficient, reliable service that keeps your home or business running smoothly.</p>
           </div>
           <!-- Contact button to direct users to contact page -->
           <div class="btn-container">
-            <a href="contact.html" aria-label="contact us button" class="btn btn-common btn-small">Contact Us</a>
+            <a href="contact.html" aria-label="contact us button" class="btn btn-common">Contact Us</a>
           </div>
         </div>
       </div>  
@@ -163,22 +163,20 @@
     </main>
 
     <!-- Footer with contact info and social media links -->
-    <footer class="py-4 bg-dark">
-      <div class="container d-flex flex-column align-items-center gap-3 text-center">
-        <div class="footer-heading-container">
+    <footer class="bg-dark">
+      <div class="container d-flex flex-column align-items-center text-center">
           <h3 class="footer-heading mb-2">Contact information</h3>
-        </div>
         <!-- Contact information section -->
-      <div class="contact-info d-flex justify-content-center gap-5 flex-wrap">
-          <p class="d-flex align-items-center gap-2 mb-0">
+      <div class="contact-info d-flex justify-content-center flex-wrap">
+          <p class="d-flex align-items-center mb-0">
           <i class="fa-solid fa-phone"></i>
           <a href="tel:+46707249697" class="text-white text-decoration-none">+46 707 249 697</a>
         </p>
-        <p class="d-flex align-items-center gap-2 mb-0">
+        <p class="d-flex align-items-center mb-0">
           <i class="fa-solid fa-paper-plane"></i>
           <a href="mailto:Nordstromsvvs@gmail.com" class="text-white text-decoration-none">Nordstromsvvs@gmail.com</a>
         </p>
-        <p class="d-flex align-items-center gap-2 mb-0">
+        <p class="d-flex align-items-center mb-0">
           <i class="fa-solid fa-location-dot"></i>
           <a href="https://www.google.com/maps/place/Dalarna,+Sweden" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none" aria-label="Open Dalarna location on Google Maps">Dalarna, Sweden</a>
         </p>
@@ -188,11 +186,11 @@
         <div class="social-links justify-content-center">
           <p class="mb-3 fs-6 follow">Follow us now</p>
           <div class="d-flex gap-4 justify-content-center">
-            <a href="https://www.facebook.com/people/Nordströms-Vvs-i-Dalarna-AB/61550777361174/" target="_blank" class="text-white" aria-label="Facebook link">
-              <i class="fa-brands fa-facebook fa-lg"></i>
+            <a href="https://www.facebook.com/people/Nordströms-Vvs-i-Dalarna-AB/61550777361174/" target="_blank" aria-label="Facebook link" rel="noopener">
+              <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/nordstromsvvs" target="_blank" class="text-white" aria-label="Instagram link">
-              <i class="fa-brands fa-instagram fa-lg"></i>
+            <a href="https://www.instagram.com/nordstromsvvs" target="_blank" aria-label="Instagram link" rel="noopener">
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </div>
         </div>
@@ -201,8 +199,10 @@
     </div>
 
     <!-- Bootstrap JS bundle for navbar toggling -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
     <!-- Font Awesome Kit for icons -->
-    <script src="https://kit.fontawesome.com/c1bbf5006a.js" crossorigin="anonymous" defer></script>
+    <script src="https://kit.fontawesome.com/c1bbf5006a.js" crossorigin="anonymous"></script>
   </body>
 </html>
