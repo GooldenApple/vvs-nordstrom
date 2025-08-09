@@ -31,11 +31,11 @@
     <!-- Header containing main navigation -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
-        <div class="container">
+        <div class="container nav-container">
           <!-- Brand logo linking to homepage -->
           <a class="navbar-brand" href="index.html">
             <picture>
-              <source srcset="assets/images/favicon_io(3)/android-chrome-192x192.webp" type="image/webp">
+              <source srcset="assets/images/favicon_io(3)/android-chrome-192x192.webp 192w" sizes="(max-width: 192px) 192px" type="image/webp">
               <img src="assets/images/favicon_io(3)/android-chrome-192x192.png" alt="Nordströms VVS logo" width="192" height="192">
             </picture>
           </a>
@@ -70,76 +70,77 @@
     <main>
     
       <!-- Hero section with background image and overlay for readability -->
-      <section class="hero hero-index hero-section position-relative text-white">
+      <section class="hero hero-index hero-section position-relative">
         <!-- WebP with JPEG fallback for better performance -->
         <picture>
             <source
               srcset="assets/images/hero-images/StockCakeFlowingCopperPipes480px.webp 480w, assets/images/hero-images/StockCakeFlowingCopperPipe768px.webp 768w"
               sizes="(max-width: 600px) 480px, (max-width: 900px) 768px," type="image/webp">
             <img
-              src="assets/images/hero-images/1.jpeg" alt="Copper pipes in modern setting" width="1000" height="500" class="hero-image img-fluid">
+              src="assets/images/hero-images/2.jpg" alt="Copper pipes in modern setting" width="1000" height="500" class="hero-image img-fluid">
           </picture>
         <!-- Semi-transparent overlay to darken image for better text contrast -->
         <div class="hero-overlay position-absolute w-100 h-100"></div>
         <!-- Centered text content over hero image -->
         <div class="hero-text position-absolute text-center">
-          <h1 class="fw-bold">Nordströms VVS i Dalarna AB</h1>
-          <p class="small">
+          <h1>Nordströms VVS i Dalarna AB</h1>
+          <p>
             Committed to quality and customer satisfaction, we handle everything from routine maintenance to complex installations
-            <br>— ensuring your plumbing works flawlessly with professionalism and care.
+            — ensuring your plumbing works flawlessly with professionalism and care.
           </p>
           <!-- Call-to-action button linking to Services page -->
-          <a href="services.html" aria-label="our services button" class="btn btn-common btn-small">Our Services</a>
+          <a href="services.html" aria-label="our services button" class="btn btn-common">Our Services</a>
         </div>
       </section>
 
       <!-- Introduction section with iconography and benefit list -->
-      <section class="introduction-section container my-1 p-4 rounded shadow-sm text-center">
+      <section class="introduction-section container my-1" aria-labelledby="intro-heading">
         <!-- Main heading -->
-        <h2 class="lead fw-semibold mb-4 intro-h2">Looking for reliable, professional plumbing services in Dalarna?</h2>
+        <h2 class="lead fw-semibold mb-2 intro-h2" id="intro-heading">
+          Looking for reliable, professional plumbing services in Dalarna?
+        </h2>
         <!-- Wrench icon representing plumbing -->
-        <div class="intro-icon intro-icon-middle mb-3">
+        <div class="intro-icon intro-icon-middle mb-1">
           <i class="fa-solid fa-wrench" aria-hidden="true"></i>
         </div>
         <!-- Introductory paragraph with max-width and centered text -->
         
-        <p class="intro-p mb-3 mx-auto">
+        <p class="intro-p mb-2 mx-auto">
           At Nordströms VVS, we bring years of hands-on expertise to every project — big or small.<br>
           From repairs to new installations, we ensure quality workmanship with a personal touch.
         </p>
         <!-- Droplet icon for water -->
         <div class="intro-icon mb-3">
-          <i class="fa-solid fa-droplet" aria-hidden="true"></i>
+          <i class="fa-solid fa-droplet"aria-hidden="true"></i>
         </div>
         <!-- List of benefits with checkmark icons -->
-        <ul class="list-with-icons list-unstyled mx-auto">
-          <li class="d-flex justify-content-center align-items-center gap-2 text-muted">
+        <div class="list">
+        <ul class="list-with-icons list-unstyled">
+          <li class="d-flex justify-content-center align-items-center">
             <span><strong>Friendly experts who care about your home</strong></span>
             <i class="fa-solid fa-check"></i>
           </li>
-          <li class="d-flex justify-content-center align-items-center gap-2 text-muted">
+          <li class="d-flex justify-content-center align-items-center">
             <span><strong>Fast and reliable service</strong></span>
             <i class="fa-solid fa-check"></i>
           </li>
-          <li class="d-flex justify-content-center align-items-center gap-2 text-muted">
+          <li class="d-flex justify-content-center align-items-center">
             <span><strong>Certified and experienced plumbers</strong></span>
             <i class="fa-solid fa-check"></i>
           </li>
         </ul>
+      </div>
       </section>
 
       <!-- About Us section with image and company info -->
-      <section class="about-us-section container my-1 rounded shadow-sm d-flex align-items-center">
+      <section class="about-us-section container my-1" aria-labelledby="about-heading">
         <!-- Company vehicle image WebP with JPEG fallback -->
+      <div class="about-us-inner"></div>
         <div class="about-us-image">
           <picture>
-                <source srcset="assets/images/bil300.webp 300w, 
-                assets/images/bil480.webp 480w, 
-                assets/images/bil768.webp 768w, 
-                assets/images/bil1500.webp 1500w"
-                sizes="(max-width: 300px) 300px, (max-width: 480px) 480px, (max-width: 768px) 768px, 1500px" type="image/webp">
-                <img
-                  src="assets/images/bilpx.jpg" width="1500" height="2000" alt="Nordströms VVS car" class="img-fluid rounded">
+                <source srcset="assets/images/bil300.webp 300w, assets/images/bil480.webp 480w, assets/images/bil768.webp 768w," 
+                sizes="(max-width: 300px) 300px, (max-width: 480px) 480px, (max-width: 768px) 768px " type="image/webp">
+                <img src="assets/images/bilpx.jpg" width="1500" height="2000" alt="Nordströms VVS car" class="img-fluid rounded">
               </picture>
         </div>
 
@@ -156,6 +157,7 @@
             <a href="contact.html" aria-label="contact us button" class="btn btn-common btn-small">Contact Us</a>
           </div>
         </div>
+      </div>  
       </section>
     
     </main>
