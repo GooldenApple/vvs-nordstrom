@@ -113,6 +113,7 @@ button:focus {
   height: auto;       /* Height adjusts based on content */
   overflow: hidden;   /* Clips overflowing content */
   max-height: 28rem;  /* Maximum height ~450px */
+  
 }
 
 .hero-image {
@@ -143,7 +144,7 @@ button:focus {
 .hero-text {
   position: absolute;       /* Positioned relative to .hero */
   top: 5%;                  /* 5% from top */
-  left: 3%;                 /* 3% from left */
+  left: 5%;                 /* 3% from left */
   right: 3%;                /* 3% from right */
   margin: 0;
   max-width: 90vw;          /* Max width 90% of viewport */
@@ -358,7 +359,6 @@ h1 {
 
 .service-card .card {
   background-color: #fff8f3;
-  
   border-radius: 14px; /* keep rounded corners */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* subtle shadow */
 }
@@ -643,15 +643,14 @@ footer h3 {
     font-size: 19.2px !important; /* 1.2rem */
   }
   /*----service.html ---*/
+
   .service-card {
-    max-width: 400px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     padding: 1.5rem;
   }
-  .service-card:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  }
+ 
   
   /*----gallery.html ---*/
   /* Increase carousel image height for tablets */
@@ -752,9 +751,8 @@ footer h3 {
   }
   /* --- service.html --- */
   .service-card {
-    max-width: none;
-    margin-left: 0; /* reset centering */
-    margin-right: 0;
+    max-width: 900px;
+    
   }
   /* --- gallery.html --- */
   .gallery-image {
