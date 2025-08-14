@@ -404,13 +404,12 @@ form > div.d-flex {
 /* Mobile Gallery Carousel - Responsive Image Styling */
 #mobileGalleryCarousel {
   width: 90vw; /* Limit carousel width to 90% of viewport width */
-  max-height: auto; 
   margin: 0 auto; /* Center carousel horizontally */
   overflow: hidden; /* Hide overflow to keep clean edges */
 }
 #mobileGalleryCarousel .carousel-item img {
   width: 100%; /* Image fills full width of carousel */
-  max-height: 600px; /* Limit max height to prevent overly tall images */
+  max-height: 60vh; /* Limit max height to prevent overly tall images */
   object-fit: cover; /* Cover entire container area, cropping if needed */
   object-position: center center; /* Center image cropping */
   display: block; /* Remove inline spacing */
@@ -658,7 +657,7 @@ footer h3 {
 
   /* Increase carousel image height for tablets */
   #mobileGalleryCarousel .carousel-item img {
-    height: 600px; /* Make images taller */
+    height: 900px; /* Make images taller */
     object-fit: cover; /* Ensure images cover the container without distortion */
     width: 100%; /* Keep full width */
   }
