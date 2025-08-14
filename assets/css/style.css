@@ -179,7 +179,7 @@ h1 {
 /* Button inside hero-text */
 .hero-text a.btn {
   padding: 0.4rem 0.7rem; 
-  font-size: 0.7rem;            /* Small font size */
+  font-size: 0.8rem;            /* Small font size */
   border-radius: 6px;           /* Rounded corners */
   background-color: #8b4d2b;   
   color: white;                 
@@ -342,22 +342,25 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 .service-card h3 {
+  font-size: 1.5rem;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 .service-card p {
   text-align: center;
-  font-size: medium;
+  font-size: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 .service-card {
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
+  max-width: 250px;
+  margin: auto;
 }
-.service-card:hover {
-  transform: scale(1.1);
+
+.service-card .card {
+  background-color: #fff8f3;
+  
+  border-radius: 14px; /* keep rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* subtle shadow */
 }
 .serv-btn {
   margin-bottom: 2rem;
@@ -649,6 +652,7 @@ footer h3 {
   .service-card:hover {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   }
+  
   /*----gallery.html ---*/
   /* Increase carousel image height for tablets */
   #mobileGalleryCarousel .carousel-item img {
