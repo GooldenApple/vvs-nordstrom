@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content=" default-src 'self';  connect-src 'self' https://ka-f.fontawesome.com;  style-src 'self' https://cdn.jsdelivr.net https://kit.fontawesome.com 'unsafe-inline';  script-src 'self' https://cdn.jsdelivr.net https://kit.fontawesome.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net https://kit.fontawesome.com https://ka-f.fontawesome.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Nordstroms VVS in Dalarna AB offers reliable and professional plumbing services with focus on quality and customer satisfaction.">
+    <meta name="description" content="Nordstroms VVS in Dalarna AB offers reliable and professional plumbing services with focus on quality and customer satisfaction">
     <meta name="keywords" content="plumbing, plumber, Dalarna, water installation, heating, sanitation, plumbing services, water leak, broken pipes, pipes, toilet, bathroom, kitchen, shower ,renovation ">
     <meta name="author" content="Nordstroms VVS i Dalarna AB">
     <title>Nordstroms VVS i Dalarna AB</title>
 
-<!-- Favicon for browser tab -->
-     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io(3)/apple-touch-icon.png">
+    <!-- Favicon for browser tab -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io(3)/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon_io(3)/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io(3)/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io(3)/favicon-32x32.png">
@@ -21,6 +21,15 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Preload LCP image for faster Largest Contentful Paint -->
+    <link rel="preload"
+          as="image"
+          href="assets/images/gallery/badkar1500.webp"
+          imagesrcset="assets/images/gallery/badkar480.webp 480w, assets/images/gallery/badkar768.webp 768w, assets/images/gallery/badkar1200.webp 1200w, assets/images/gallery/badkar1500.webp 1500w"
+          imagesizes="(max-width: 991px) 100vw, (max-width: 1400px) 1200px, 1500px"
+          type="image/webp"
+          fetchpriority="high">
   </head>
 
   <body>
@@ -100,9 +109,14 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <picture>
-        <source srcset="assets/images/gallery/badkar.webp" type="image/webp">
-        <img src="assets/images/gallery/badkar.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/badkar.jpg" class="d-block w-100" width="1500" height="2000" alt="Freestanding white bathtub in elegant beige bathroom with wall lighting.">
-      </picture>
+  <source 
+    srcset="assets/images/gallery/badkar480.webp 480w, assets/images/gallery/badkar768.webp 768w, assets/images/gallery/badkar1200.webp 1200w, assets/images/gallery/badkar1500.webp 1500w"
+    sizes="(max-width: 991px) 100vw, (max-width: 1400px) 1200px, 1500px"
+    type="image/webp">
+  <img src="assets/images/gallery/badkar.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/badkar.jpg" class="d-block w-100" width="700" height="933" 
+    alt="Freestanding white bathtub in elegant beige bathroom with wall lighting." 
+    fetchpriority="high" loading="eager"> <!-- Added eager/high priority for LCP -->
+</picture>
     </div>
     <div class="carousel-item">
       <picture>
@@ -130,7 +144,8 @@
     </div>
     <div class="carousel-item">
       <picture>
-        <source srcset="assets/images/gallery/grejor.webp" type="image/webp">
+        <!-- Fix: match WebP filename with grid to avoid mismatch -->
+        <source srcset="assets/images/gallery/grejer.webp" type="image/webp">
         <img src="assets/images/gallery/grejer.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/grejer.jpg" class="d-block w-100" width="1500" height="2000" alt="Chrome pipe manifolds mounted on wall with grey stone tiles">
       </picture>
     </div>
@@ -175,6 +190,7 @@
   </div>
   </div>
     </section>
+
 <!-- Grid gallery for laptop and up hidden on smaller screens, flexbox with wrapping -->
 <div class="d-none d-lg-flex flex-wrap justify-content-center gap-3 mt-4">
   <picture>
@@ -198,7 +214,7 @@
     <img src="assets/images/gallery/golvvarme.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/golvvarme.jpg" alt="Underfloor heating pipes installed in foundation before concrete pouring." class="gallery-image rounded">
   </picture>
   <picture>
-    <source srcset="assets/images/gallery/grejor.webp" type="image/webp">
+    <source srcset="assets/images/gallery/grejer.webp" type="image/webp">
     <img src="assets/images/gallery/grejer.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/grejer.jpg" alt="Chrome pipe manifolds mounted on wall with grey stone tiles" class="gallery-image rounded">
   </picture>
   <picture>
@@ -222,6 +238,7 @@
     <img src="assets/images/gallery/ror.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/ror.jpg" alt="Copper piping system and heat pump in technical room" class="gallery-image rounded">
   </picture>
 </div>
+
     <!-- Modal for enlarged image -->
     <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -276,6 +293,7 @@
         </script>
     <!-- Font Awesome Kit for icons -->
     <script src="https://kit.fontawesome.com/c1bbf5006a.js" crossorigin="anonymous"></script>
+
 <script> // Implemented with help from ChatGPT by OpenAI
   document.addEventListener('DOMContentLoaded', () => {
     // Initialize Bootstrap modal instance for the lightbox
@@ -294,6 +312,20 @@
         lightboxImage.alt = img.alt || '';  // Set alt text for accessibility
         lightboxModal.show();  // Show the modal
       });
+    });
+
+    // Add: auto-apply lazy loading to non-LCP images (keep markup clean)
+    const carouselImgs = document.querySelectorAll('#mobileGalleryCarousel .carousel-item img');
+    carouselImgs.forEach((img, idx) => {
+      if (idx !== 0) {                 // skip first (LCP)
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.setAttribute('fetchpriority', 'low');
+      }
+    });
+    document.querySelectorAll('.gallery-image').forEach(img => {
+      img.loading = 'lazy';
+      img.decoding = 'async';
     });
   });
 </script>
