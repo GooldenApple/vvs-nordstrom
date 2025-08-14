@@ -178,7 +178,7 @@ h1 {
 }
 /* Button inside hero-text */
 .hero-text a.btn {
-  padding: 0.3125rem 0.625rem; 
+  padding: 0.4rem 0.7rem; 
   font-size: 0.7rem;            /* Small font size */
   border-radius: 6px;           /* Rounded corners */
   background-color: #8b4d2b;   
@@ -363,6 +363,8 @@ h1 {
   margin-bottom: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+
 /*--- contact.html ---*/
 .con-h2 {
   font-size: 1.1rem;
@@ -372,6 +374,16 @@ h1 {
   font-weight: 600;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+form > .mb-3 {
+  flex: 1 1 100%; /* each field full width */
+}
+
 /* --- Gallery.html --- */
 .gallery-section h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
@@ -638,6 +650,9 @@ footer h3 {
     object-fit: cover; /* Ensure images cover the container without distortion */
     width: 100%; /* Keep full width */
   }
+
+  /*--- contact.html---*/
+
    /* Form as flex container with wrapping and centered content */
   form {
     display: flex;
@@ -650,7 +665,7 @@ footer h3 {
     display: flex;
     flex-direction: column; /* Stack label and input */
     align-items: center; /* Center horizontally */
-    flex: 1 1 30%; /* Flexible width */
+    flex: 1 1 100%; /* Flexible width */
     min-width: 250px; /* Prevent too narrow */
   }
   /* Center labels of first three inputs */
@@ -763,6 +778,22 @@ footer h3 {
     display: block;
     margin: 0 auto;
   }
+
+  /*--- contact.html ---*/
+
+  /* First three fields in a row */
+  form > div.mb-3:nth-child(-n + 3) {
+    flex: 1 1 30%;
+    min-width: 250px;
+  }
+
+  /* Message field wider and centered */
+  form > div.mb-3:nth-child(4) {
+    flex: 1 1 70%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
 }
 @media (min-width: 1440px) {
   /* Wrapper main full width */
