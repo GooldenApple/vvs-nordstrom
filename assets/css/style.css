@@ -84,6 +84,7 @@ button:focus {
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
+
 /* button styles */
 .btn-common {
   background-color: #8b4d2b;
@@ -403,13 +404,13 @@ form > div.d-flex {
 /* Mobile Gallery Carousel - Responsive Image Styling */
 #mobileGalleryCarousel {
   width: 90vw; /* Limit carousel width to 90% of viewport width */
-  max-height: 320px; /* Limit max height of carousel */
+  max-height: auto; 
   margin: 0 auto; /* Center carousel horizontally */
   overflow: hidden; /* Hide overflow to keep clean edges */
 }
 #mobileGalleryCarousel .carousel-item img {
   width: 100%; /* Image fills full width of carousel */
-  max-height: 300px; /* Limit max height to prevent overly tall images */
+  max-height: 600px; /* Limit max height to prevent overly tall images */
   object-fit: cover; /* Cover entire container area, cropping if needed */
   object-position: center center; /* Center image cropping */
   display: block; /* Remove inline spacing */
@@ -419,6 +420,7 @@ form > div.d-flex {
 #mobileGalleryCarousel .carousel-item img:hover {
   transform: scale(1.05); /* zoom effect on hover */
 }
+
 /* --- Success.html --- */
 .success h2 {
   color: #24150a;
@@ -432,7 +434,8 @@ form > div.d-flex {
   max-width: 120px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
-/* Footer container */
+
+/* --- Footer --- */
 footer {
   background-color: rgba(40, 38, 38, 0.95); /* Almost opaque dark background */
   color: #ffffff;                           /* White text */
@@ -651,11 +654,11 @@ footer h3 {
     padding: 1.5rem;
   }
  
-  
   /*----gallery.html ---*/
+
   /* Increase carousel image height for tablets */
   #mobileGalleryCarousel .carousel-item img {
-    height: 700px; /* Make images taller */
+    height: 600px; /* Make images taller */
     object-fit: cover; /* Ensure images cover the container without distortion */
     width: 100%; /* Keep full width */
   }
@@ -704,6 +707,7 @@ footer h3 {
     justify-content: center; /* Center button */
   }
 }
+
 @media (min-width: 1024px) {
   /* Keep wrapper-main flexible width */
   .wrapper-main {
