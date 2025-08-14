@@ -384,6 +384,12 @@ form > .mb-3 {
   flex: 1 1 100%; /* each field full width */
 }
 
+/* Submit button container full width and centered */
+form > div.d-flex {
+  flex-basis: 100%; /* take full row */
+  justify-content: center; /* center button */
+}
+
 /* --- Gallery.html --- */
 .gallery-section h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
