@@ -24,9 +24,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-  
-  
-  </head>
 
   <body>
     <div class="wrapper-main">
@@ -74,11 +71,12 @@
       <section class="hero hero-index hero-section position-relative">
         <!-- WebP with JPEG fallback for better performance -->
         <picture>
-            <source
-              srcset="assets/images/hero-images/StockCakeFlowingCopperPipes480px.webp 480w, assets/images/hero-images/StockCakeFlowingCopperPipe768px.webp 768w"
-              sizes="(max-width: 600px) 480px, (max-width: 900px) 768px," type="image/webp">
+            <source srcset="assets/images/hero-images/StockCakeFlowingCopperPipes480px.webp 480w, 
+              assets/images/hero-images/StockCakeFlowingCopperPipe768px.webp 768w"
+              sizes="100vw" type="image/webp">
             <img
-              src="assets/images/hero-images/2.jpg" alt="Copper pipes in modern setting" width="1000" height="500" class="hero-image img-fluid">
+              src="assets/images/hero-images/2.jpg" alt="Copper pipes in modern setting" 
+              width="1000" height="500" class="hero-image img-fluid">
           </picture>
         <!-- Semi-transparent overlay to darken image for better text contrast -->
         <div class="hero-overlay position-absolute w-100 h-100"></div>
@@ -112,7 +110,7 @@
         </p>
         <!-- Droplet icon for water -->
         <div class="intro-icon mb-3">
-          <i class="fa-solid fa-droplet"aria-hidden="true"></i>
+          <i class="fa-solid fa-droplet" aria-hidden="true"></i>
         </div>
         <!-- List of benefits with checkmark icons -->
         <div class="list">
@@ -139,15 +137,17 @@
       <div class="about-us-inner">
         <div class="about-us-image">
           <picture>
-                <source srcset="assets/images/bil300.webp 300w, assets/images/bil480.webp 480w, assets/images/bil768.webp 768w," 
-                sizes="(max-width: 300px) 300px, (max-width: 480px) 480px, (max-width: 768px) 768px " type="image/webp">
+                <source srcset="assets/images/bil300.webp 300w, 
+                assets/images/bil480.webp 480w, 
+                assets/images/bil768.webp 768w" 
+                sizes="(max-width: 300px) 300px, (max-width: 480px) 480px, (max-width: 768px) 768px" type="image/webp">
                 <img src="assets/images/bilpx.jpg" width="1500" height="2000" alt="Nordströms VVS car" class="img-fluid rounded">
               </picture>
         </div>
       
         <!-- Text content container centered and spaced -->
         <div class="about-us-text text-center">
-          <h3 class="mb-3">About Us</h3>
+          <h3 class="mb-3" id="about-heading">About Us</h3>
           <div class="mb-3">
             <p>Nordströms VVS is a trusted family-run plumbing business with deep roots in the community.
               Our experienced team combines traditional craftsmanship with modern technology to deliver efficient, reliable service that keeps your home or business running smoothly.</p>

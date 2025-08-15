@@ -12,10 +12,6 @@ main, .wrapper-main {
   min-height: 100vh;
   display: block;
 }
-@font-face {
-  font-family: 'FontAwesome';
-  font-display: swap; /* Prevent flash of unstyled text */
-}
 
 /* Focus styles for accessibility on links and buttons */
 a:focus,
@@ -164,7 +160,7 @@ h1 {
   font-size: clamp(1.2rem, 5vw, 2.5rem) !important; /* Responsive font size with priority */
   font-weight: 700;        /* Bold font */
   color: #ffffff;          /* White color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  
   line-height: 1.1;        /* Tight line height */
   margin-bottom: 0.5rem;   /* Space below heading */
   white-space: normal;     /* Allows text wrapping */
@@ -176,7 +172,7 @@ h1 {
   line-height: 1.4;              /* Spacing between lines */
   margin-top: 0;            /* Remove top margin */
   margin-bottom: 0.1rem;    /* Small bottom margin */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+  
 }
 /* Button inside hero-text */
 .hero-text a.btn {
@@ -395,6 +391,7 @@ form > div.d-flex {
 }
 
 /* --- Gallery.html --- */
+
 .gallery-section h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }

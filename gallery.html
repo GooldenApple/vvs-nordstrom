@@ -26,7 +26,10 @@
     <link rel="preload"
           as="image"
           href="assets/images/gallery/badkar1500.webp"
-          imagesrcset="assets/images/gallery/badkar480.webp 480w, assets/images/gallery/badkar768.webp 768w, assets/images/gallery/badkar1200.webp 1200w, assets/images/gallery/badkar1500.webp 1500w"
+          imagesrcset="assets/images/gallery/badkar480.webp 480w, 
+          assets/images/gallery/badkar768.webp 768w, 
+          assets/images/gallery/badkar1200.webp 1200w, 
+          assets/images/gallery/badkar1500.webp 1500w"
           imagesizes="(max-width: 991px) 100vw, (max-width: 1400px) 1200px, 1500px"
           type="image/webp"
           fetchpriority="high">
@@ -76,13 +79,13 @@
     <section class="hero hero-gallery hero-section position-relative text-white">
       <!-- WebP with JPEG fallback for better performance -->
       <picture>
-        <source srcset="assets/images/hero-images/StockCakeFlowingCopperPipes480px.webp 480w, 
-                        assets/images/hero-images/StockCakeFlowingCopperPipe768px.webp 768w, 
-                        assets/images/hero-images/StockCakeFlowingCopperPipes1344px.webp 1344w" 
-                        sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1344px" 
-                        type="image/webp">
-        <img src="assets/images/hero-images/StockCake-Flowing-Copper-Pipes-145kb.jpg" alt="Copper pipes in modern setting" width="1344" height="768" class="hero-image img-fluid w-100">
-      </picture>
+            <source srcset="assets/images/hero-images/StockCakeFlowingCopperPipes480px.webp 480w, 
+              assets/images/hero-images/StockCakeFlowingCopperPipe768px.webp 768w"
+              sizes="100vw" type="image/webp">
+            <img
+              src="assets/images/hero-images/2.jpg" alt="Copper pipes in modern setting" 
+              width="1000" height="500" class="hero-image img-fluid">
+          </picture>
       <!-- Overlay to improve text readability -->
       <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
       <!-- Centered text content -->
@@ -110,12 +113,23 @@
     <div class="carousel-item active">
       <picture>
   <source 
-    srcset="assets/images/gallery/badkar480.webp 480w, assets/images/gallery/badkar768.webp 768w, assets/images/gallery/badkar1200.webp 1200w, assets/images/gallery/badkar1500.webp 1500w"
+    srcset="assets/images/gallery/badkar480.webp 480w, 
+    assets/images/gallery/badkar768.webp 768w, 
+    assets/images/gallery/badkar1200.webp 1200w, 
+    assets/images/gallery/badkar1500.webp 1500w"
     sizes="(max-width: 991px) 100vw, (max-width: 1400px) 1200px, 1500px"
     type="image/webp">
-  <img src="assets/images/gallery/badkar.jpg" data-bs-toggle="modal" data-bs-target="#lightboxModal" data-bs-image="assets/images/gallery/badkar.jpg" class="d-block w-100" width="700" height="933" 
-    alt="Freestanding white bathtub in elegant beige bathroom with wall lighting." 
-    fetchpriority="high" loading="eager"> <!-- Added eager/high priority for LCP -->
+  <img src="assets/images/gallery/badkar.jpg" 
+   srcset="assets/images/gallery/badkar48.jpg 480w,
+           assets/images/gallery/badkar76.jpg 768w,
+           assets/images/gallery/badkar120.jpg 1200w,
+           assets/images/gallery/badkar150.jpg 1500w"
+           sizes="(max-width: 991px) 100vw, (max-width: 1400px) 1200px, 1500px"
+           data-bs-toggle="modal" data-bs-target="#lightboxModal" 
+           data-bs-image="assets/images/gallery/badkar.jpg" 
+           class="d-block w-100" width="700" height="933" 
+           alt="Freestanding white bathtub in elegant beige bathroom with wall lighting." 
+           fetchpriority="high" loading="eager"> <!-- Added eager/high priority for LCP -->
 </picture>
     </div>
     <div class="carousel-item">
