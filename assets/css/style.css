@@ -43,7 +43,7 @@ button:focus {
 
 /* Size for hamburger menu icon */
 .navbar-toggler-icon {
-  width: 1.5rem; /* approx 24px */
+  width: 1.5rem;
   height: 1.5rem;
 }
 
@@ -56,7 +56,6 @@ button:focus {
 .navbar-brand img {
   height: 13vw;
   width: auto;
-  /* filter: brightness(0.8); */
 }
 
 /* Navbar link styles */
@@ -84,101 +83,105 @@ button:focus {
 /* button styles */
 .btn-common {
   background-color: #8b4d2b;
-  color: white; /* White text */
+  color: white;
   border-radius: 0.3125rem; /* Rounded corners (5px) */
   padding: 0.5rem 1rem; /* Vertical and horizontal padding */
-  font-size: 1.1rem; /* Slightly larger text */
-  border: 0.125rem solid #703d21; /* Brown border */
-  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.5); /* Shadow under the button */
-  text-decoration: none; /* Remove underline */
+  font-size: 1.1rem;
+  border: 0.125rem solid #703d21;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.5);
+  text-decoration: none;
   transition: background-color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  cursor: pointer; /* Pointer cursor on hover */
+  cursor: pointer; 
   align-self: center; /* Center button inside a flex container */
   margin-top: auto;
 }
+
 /* Hover and focus styles for better user feedback */
 .btn-common:hover,
 .btn-common:focus {
-  background-color: #7a3f1f; /* Darker background on hover/focus */
-  border-color: #69361a; /* Darker border on hover/focus */
-  box-shadow: 0 0.375rem 0.625rem rgba(0, 0, 0, 0.25); /* Increased shadow for a subtle "pressed" effect */
+  background-color: #7a3f1f;
+  border-color: #69361a;
+  box-shadow: 0 0.375rem 0.625rem rgba(0, 0, 0, 0.25); 
 }
+
 /* Hero section */
 .hero {
   position: relative; /* Allows absolute positioning of children */
   width: 100%;        /* Full width of parent */
-  height: auto;       /* Height adjusts based on content */
+  height: auto;       
   overflow: hidden;   /* Clips overflowing content */
-  max-height: 28rem;  /* Maximum height ~450px */
-  
+  max-height: 28rem;  
 }
 
 .hero-image {
   aspect-ratio: 16 / 9;     /* Maintains 16:9 aspect ratio */
-  width: 100%;              /* Full width */
-  height: auto;             /* Height adjusts to maintain ratio */
-  object-fit: cover;        /* Image covers container without distortion */
-  object-position: center;  /* Centers image within container */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
   display: block;           /* Removes inline gap */
 }
+
 .hero-image img {
-  width: 100%; /* Full width responsive */
+  width: 100%;
   height: 100%; 
   object-fit: cover; 
   display: block;
 }
+
 /* Semi-transparent overlay on hero image */
 .hero-overlay {
   position: absolute;       /* Positioned relative to .hero */
   top: 0;
   left: 0;
-  width: 100%;              /* Covers entire hero */
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 30% opacity */
   z-index: 1;               /* Behind text but above image */
 }
+
 /* Text container on top of hero */
 .hero-text {
   position: absolute;       /* Positioned relative to .hero */
-  top: 5%;                  /* 5% from top */
-  left: 5%;                 /* 3% from left */
-  right: 3%;                /* 3% from right */
+  top: 5%;
+  left: 5%;
+  right: 3%;
   margin: 0;
-  max-width: 90vw;          /* Max width 90% of viewport */
+  max-width: 90vw;
   padding: 1rem;            /* Inner padding */
-  box-sizing: border-box;   /* Includes padding in width */
-  color: #fff;              /* White text */
+  box-sizing: border-box; 
+  color: #fff;
   text-align: center;
   font-size: clamp(1rem, 3vw, 1.5rem); /* Responsive font size */
   line-height: 1.4;         /* Spacing between lines */
   overflow-wrap: break-word; /* Wrap long words */
   z-index: 2;               /* Above overlay and image */
-  transform: none;          /* No translation transform */
+  transform: none;
 }
+
 /* Heading inside hero-text */
-h1 {
+.hero-text h1 {
   font-size: clamp(1.2rem, 5vw, 2.5rem) !important; /* Responsive font size with priority */
-  font-weight: 700;        /* Bold font */
-  color: #ffffff;          /* White color */
-  
-  line-height: 1.1;        /* Tight line height */
-  margin-bottom: 0.5rem;   /* Space below heading */
-  white-space: normal;     /* Allows text wrapping */
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  white-space: normal;
 }
 
 /* Paragraphs inside hero-text */
 .hero-text p {
-  font-size: clamp(0.5rem, 3vw, 1.4rem); /* Responsive font size */
-  line-height: 1.4;              /* Spacing between lines */
-  margin-top: 0;            /* Remove top margin */
-  margin-bottom: 0.1rem;    /* Small bottom margin */
-  
+  font-size: clamp(0.5rem, 3vw, 1.4rem); 
+  line-height: 1.4;
+  margin-top: 0; 
+  margin-bottom: 0.1rem;
 }
+
 /* Button inside hero-text */
 .hero-text a.btn {
   padding: 0.4rem 0.7rem; 
-  font-size: 0.8rem;            /* Small font size */
-  border-radius: 6px;           /* Rounded corners */
+  font-size: 0.8rem; 
+  border-radius: 6px;
   background-color: #8b4d2b;   
   color: white;                 
   text-decoration: none;        
@@ -189,84 +192,96 @@ h1 {
   cursor: pointer;              
   margin-top: 0.6rem;          
 }
+
 /* Button hover and focus states */
 .hero-text a.btn:hover,
 .hero-text a.btn:focus {
   background-color: #7a3f1f;  
 }
+
 /* Introduction Section container */
 .introduction-section {
-  max-width: 100vw;        /* Full viewport width */
+  max-width: 100vw;  
   margin: 0.5rem auto;     /* Vertical margin and centered horizontally */
   padding: 0.5rem;         
   text-align: center;  
   text-shadow: none; 
 }
+
 /* Heading inside introduction */
 .intro-h2 {
   font-size: 1.2rem;
   line-height: 1.3;   
   margin-bottom: 1rem;
 }
+
 /* Paragraph inside introduction */
 .intro-p {
   font-size: 0.8rem;
   line-height: 1.5;
   margin: 0 auto 1.5rem;
-  max-width: 90vw;         /* Max width 90% of viewport */
+  max-width: 90vw;
   text-align: center;
 }
+
 /* Icons inside introduction */
 .intro-icon, .intro-icon-middle {
   font-size: 1.5rem;       /* Icon size */
-  margin: 0 auto 0.5rem;   /* Center horizontally, margin below */
+  margin: 0 auto 0.5rem;
   display: block;          /* Display block for centering */
   color: #000;
 }
+
 /* List container with icons */
 .list-with-icons {
   max-width: 90vw;
   margin-left: 0; 
-  padding-left: 0;         /* Remove default padding */
+  padding-left: 0; 
   font-size: 0.8rem;       
   list-style: none;        /* Remove default bullets */
   text-align: left;
 }
+
 /* List items flex layout */
 .list-with-icons li {
-  display: flex;           /* Flex container */
+  display: flex;
   justify-content: center;
-  align-items: center;     /* Vertically center content */
-  gap: 0.2rem;             /* Small gap between items */
+  align-items: center;
+  gap: 0.2rem; 
   padding: 0.2rem 0;
   color: #000;
 }
+
 /* Span inside list item takes full width */
 .list-with-icons li span {
   flex: 1;                 /* Take up remaining space */
   text-align: left;
 }
+
 /* Check icon inside list items */
 .list-with-icons li i.fa-check {
   font-size: 1.2rem;       /* Icon size */
   color: #000;
   flex-shrink: 0;          /* Prevent icon from shrinking */
 }
+
 /* About Us Section container */
 .about-us-section {
   max-width: 56.25rem;      /* Max width 900px */
   margin: 1rem auto 2rem auto;   /* Top 1rem, bottom 2rem, centered horizontally */
   padding: 0.5rem 2rem;     /* Vertical 0.5rem, horizontal 2rem padding */
-  min-height: 25rem; /* approx 400px but relative to font size and easier to scale */
+  min-height: 25rem;
 }
+
 /* Inner wrapper for About Us - flex container */
 .about-us-inner {
   display: flex;
   flex-direction: column;   /* Stack items vertically on mobile */
-  gap: 1rem;                /* Space between items */
-  align-items: center;      /* Center items horizontally */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253); /* Subtle text shadow */
+  gap: 1rem; 
+  align-items: center; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
+
 /* About Us image styling */
 .about-us-image img {
   width: 100%;              /* Image fills width of parent */
@@ -279,34 +294,39 @@ h1 {
   margin-bottom: 1.5rem;
   margin-bottom: 1.5rem;
 }
+
 /* About Us image container */
 .about-us-image {
   width: 100%;
   max-width: min(45vw, 250px); /* Max width: smaller of 45% viewport width or 250px */
   background-color: transparent;
-  cursor: default;          /* Default cursor on hover */
+  cursor: default;
   transition: transform 0.3s ease;
 }
+
 /* Scale image slightly on hover */
 .about-us-image:hover {
   transform: scale(1.05);
 }
+
 /* Text container in About Us */
 .about-us-text {
   width: 100%;
   text-align: center;
   padding: 0 1rem;
 }
+
 /* Heading in About Us text */
 .about-us-text h2 {
   color: #000000;
-  font-weight: 700;         /* Bold font */
-  margin-bottom: 1rem;      /* Space below heading */
+  font-weight: 700;
+  margin-bottom: 1rem; 
   border-bottom: 0.125rem solid #311c0e;
   padding-bottom: 0.25rem;
   display: inline-block;    /* Shrink to content width */
-  font-size: clamp(1.5rem, 4vw, 2rem); /* Responsive font size */
+  font-size: clamp(1.5rem, 4vw, 2rem);
 }
+
 /* Paragraphs in About Us text */
 .about-us-text p {
   color: #000000;
@@ -314,6 +334,7 @@ h1 {
   margin-bottom: 0;
   font-size: clamp(0.9rem, 3vw, 1.2rem);
 }
+
 /* Button container inside About Us text */
 .about-us-text .btn-container {
   display: flex;
@@ -356,8 +377,8 @@ h1 {
 
 .service-card .card {
   background-color: #fff8f3;
-  border-radius: 14px; /* keep rounded corners */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* subtle shadow */
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .serv-btn {
   margin-bottom: 2rem;
@@ -433,23 +454,23 @@ form > div.d-flex {
 
 /* --- Footer --- */
 footer {
-  background-color: rgba(40, 38, 38, 0.95); /* Almost opaque dark background */
-  color: #ffffff;                           /* White text */
+  background-color: rgba(40, 38, 38, 0.95);
+  color: #ffffff;
   margin-top: 0;
-  font-size: 0.9rem;                       /* Slightly larger text */
-  width: 100%;                             /* Full width */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253); /* Subtle shadow on text */
-  padding: 1rem;                          /* Padding all around */
-  text-align: center;                      /* Center text */
+  font-size: 0.9rem;
+  width: 100%; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
+  padding: 1rem;
+  text-align: center;
 }
 /* Footer inner container - flex column layout */
 footer .container {
   display: flex;
   flex-direction: column;                  /* Stack content vertically */
   align-items: center;                     /* Center items horizontally */
-  gap: 0.3rem;                            /* Space between sections */
+  gap: 0.3rem;
   max-width: 100%;
-  margin: 0 auto;                         /* Center container */
+  margin: 0 auto;
 }
 /* Footer headings */
 footer h3 {
@@ -459,11 +480,11 @@ footer h3 {
 }
 /* Contact info paragraphs styling */
 .contact-info p {
-  justify-content: center;                /* Center icons and text horizontally */
+  justify-content: center;
   gap: 0.75rem;                          /* Space between icon and text */
-  margin-top: 0.1rem;                    /* Small top margin */
+  margin-top: 0.1rem;
   margin-bottom: 0.1rem !important;     /* Small bottom margin, important */
-  padding-right: 0.5rem;                 /* Padding to right */
+  padding-right: 0.5rem;
 }
 /* Contact icons color */
 .contact-info .fa-solid {
@@ -479,13 +500,13 @@ footer h3 {
 .social-links > div {
   display: flex;                         /* Flex row */
   gap: 2rem;                            /* Space between icons */
-  justify-content: center;               /* Center horizontally */
+  justify-content: center;
 }
 /* Social media icons styling */
 .social-links i.fa-facebook,
 .social-links i.fa-instagram {
-  font-size: 2rem;                      /* Large icon size */
-  color: #fff;                         /* White icons */
+  font-size: 2rem;
+  color: #fff;
   transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover animation */
 }
 /* Hover effect for social icons */
@@ -515,12 +536,12 @@ footer h3 {
   /* Navbar navigation links aligned in a row with gap */
   .navbar-nav {
     flex-direction: row;       /* Horizontal layout */
-    gap: 16px;                /* 1rem ≈ 16px spacing */
+    gap: 16px;
   }
   /* Navbar links padding and font size */
   .navbar-nav .nav-link {
-    padding: 8px 16px;         /* Vertical 0.5rem, horizontal 1rem */
-    font-size: 16px;           /* 1rem font size */
+    padding: 8px 16px;  
+    font-size: 16px;
   }
   /* Hide hamburger menu button on tablets and up */
   .navbar-toggler {
@@ -533,16 +554,16 @@ footer h3 {
   }
   /* Hero section heading */
   h1 {
-    font-size: 40px;           /* 2.5rem ≈ 40px */
+    font-size: 40px;
     font-weight: 700;
-    margin-bottom: 32px;       /* 2rem ≈ 32px */
-    margin-top: 16px;          /* 1rem ≈ 16px */
+    margin-bottom: 32px;
+    margin-top: 16px;
   }
   /* Hero paragraph styling */
   .hero-text p {
-    font-size: 24px;           /* 1.5rem ≈ 24px */
+    font-size: 24px;
     max-width: 100%;
-    margin: 24px auto 16px;    /* top 1.5rem, bottom 1rem */
+    margin: 24px auto 16px;
     line-height: 1.5;
     white-space: normal;
   }
@@ -550,28 +571,28 @@ footer h3 {
   .hero-section .btn-common {
     margin-top: 10px !important;   
     margin-bottom: 32px !important;
-    font-size: 20.8px !important;  /* 1.3rem */
-    padding-left: 16px !important; /* 1rem */
+    font-size: 20.8px !important; 
+    padding-left: 16px !important;
     padding-right: 16px !important;
-    padding-top: 8px !important;   /* 0.5rem */
+    padding-top: 8px !important;
     padding-bottom: 8px !important;
   }
   /* Introduction section heading */
   .intro-h2 {
-    font-size: 24px;           /* 1.5rem */
+    font-size: 24px;
   }
   /* Introduction paragraph */
   .intro-p {
-    font-size: 16px;           /* 1rem */
+    font-size: 16px;
   }
   /* Introduction icons */
   .intro-icon,
   .intro-icon-middle {
-    font-size: 32px;           /* 2rem */
+    font-size: 32px;
   }
   /* List with icons font size */
   .list-with-icons {
-    font-size: 16px;           /* 1rem */
+    font-size: 16px;
   }
   /* List items styling */
   .list-with-icons li {
@@ -586,14 +607,14 @@ footer h3 {
   }
   /* Check icon inside list items */
   .list-with-icons li i.fa-check {
-    font-size: 24px;           /* 1.5rem */
+    font-size: 24px;
   }
   /* About Us inner container layout */
   .about-us-inner {
     display: flex;
     flex-direction: row;       /* Place image and text side by side */
     align-items: stretch;      /* Vertical alignment */
-    gap: 32px;                 /* 2rem spacing */
+    gap: 32px; 
   }
   /* About Us image max width */
   .about-us-image {
@@ -607,39 +628,39 @@ footer h3 {
   }
   /* About Us heading margin */
   .about-us-text h2 {
-    margin-bottom: 16px;       /* 1rem */
+    margin-bottom: 16px;
   }
   /* About Us paragraph margin and line height */
   .about-us-text p {
-    margin-top: 16px;          /* 1rem */
+    margin-top: 16px;
     line-height: 1.8;
   }
 
   /* About Us button container */
   .about-us-text .btn-container {
-    margin-top: 16px;          /* 1rem */
-    font-size: 20.8px !important;  /* 1.3rem */
-    padding-left: 16px !important; /* 1rem */
+    margin-top: 16px;
+    font-size: 20.8px !important;
+    padding-left: 16px !important; 
     padding-right: 16px !important;
-    padding-top: 8px !important;   /* 0.5rem */
+    padding-top: 8px !important;
     padding-bottom: 8px !important;
   }
   /* Contact info flex container */
   .contact-info {
     display: flex;
     justify-content: center;
-    gap: 48px;                /* 3rem */
-    font-size: 16px;          /* 1rem */
+    gap: 48px;
+    font-size: 16px;
     flex-wrap: nowrap !important;
   }
   /* Footer h3 styling */
   footer h3 {
-    margin-bottom: 2.56px !important; /* 0.1rem */
+    margin-bottom: 2.56px !important;
     font-size: 24px;
   }
   /* Social links follow text size */
   .social-links p.follow {
-    font-size: 19.2px !important; /* 1.2rem */
+    font-size: 19.2px !important;
   }
   /*----service.html ---*/
 
@@ -665,21 +686,21 @@ footer h3 {
   form {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem; /* Spacing between form groups */
+    gap: 1.5rem;
     justify-content: center;
   }
   /* First three input groups arranged vertically and centered */
   form > div.mb-3:nth-child(-n + 3) {
     display: flex;
     flex-direction: column; /* Stack label and input */
-    align-items: center; /* Center horizontally */
+    align-items: center;
     flex: 1 1 100%; /* Flexible width */
     min-width: 250px; /* Prevent too narrow */
   }
   /* Center labels of first three inputs */
   form > div.mb-3:nth-child(-n + 3) > label {
-    text-align: center; /* Center text */
-    width: 100%; /* Full container width */
+    text-align: center; 
+    width: 100%;
     margin-bottom: 0.5rem; /* Space below label */
   }
   /* Message field group as vertical flex container */
@@ -711,14 +732,14 @@ footer h3 {
   }
   /* Navbar navigation padding and gap */
   .navbar-nav {
-    padding-top: 8px;      /* 0.5rem ≈ 8px */
-    padding-bottom: 8px;   /* 0.5rem ≈ 8px */
-    gap: 32px;             /* 2rem ≈ 32px */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 32px;
   }
   /* Navbar links padding and font size */
   .navbar-nav .nav-link {
-    padding: 8px 16px;     /* 0.5rem vertical, 1rem horizontal */
-    font-size: 19.2px;     /* 1.2rem ≈ 19.2px */
+    padding: 8px 16px; 
+    font-size: 19.2px;
   }
   /* Navbar brand image size */
   .navbar-brand img {
@@ -726,20 +747,20 @@ footer h3 {
   }
   /* Introduction section heading font size */
   .intro-h2 {
-    font-size: 32px;       /* 2rem ≈ 32px */
+    font-size: 32px;
   }
   /* Introduction paragraph font size */
   .intro-p {
-    font-size: 20.8px;     /* 1.3rem ≈ 20.8px */
+    font-size: 20.8px;
   }
   /* Introduction icons size and margin */
   .intro-icon, .intro-icon-middle {
-    font-size: 35.2px;     /* 2.2rem ≈ 35.2px */
-    margin: 24px;          /* 1.5rem ≈ 24px */
+    font-size: 35.2px; 
+    margin: 24px; 
   }
   /* List with icons font size */
   .list-with-icons {
-    font-size: 17.6px;     /* 1.1rem ≈ 17.6px */
+    font-size: 17.6px;
   }
   /* List items max width */
   .list-with-icons li {
@@ -757,14 +778,14 @@ footer h3 {
   /* --- gallery.html --- */
   .gallery-image {
     max-width: 300px; /* Max width for images */
-    width: 250px; /* dixed width */
-    height: 250px; /* fixed height */
+    width: 250px;
+    height: 250px; 
     object-fit: cover; /* Crop images to fill box */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    cursor: pointer; /* Pointer cursor */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
     transition: transform 0.3s ease; /* Smooth zoom */
-    margin-bottom: 1rem; /* Space below images */
+    margin-bottom: 1rem;
   }
   .gallery-image:hover {
     transform: scale(1.05); /* Slight zoom on hover */
@@ -779,8 +800,8 @@ footer h3 {
   }
   /* Modal image styles */
   #lightboxImage {
-    max-width: 90vw; /* Max width: 90% of viewport width */
-    max-height: 80vh; /* Max height: 80% of viewport height */
+    max-width: 90vw; 
+    max-height: 80vh; 
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     display: block;
@@ -810,8 +831,8 @@ footer h3 {
   }
   /* Hero section adjustments */
   .hero {
-    max-width: 100vw;      /* Full viewport width */
-    max-height: none;      /* Remove max height */
+    max-width: 100vw;
+    max-height: none; 
     height: 450px;         /* Fixed height */
   }
 
@@ -825,33 +846,33 @@ footer h3 {
   }
   /* Hero button margin */
   .hero-text a.btn {
-    margin-top: 16px;      /* 2rem ≈ 32px */
+    margin-top: 16px;
   }
   /* Introduction section */
   .introduction-section {
-    gap: 80px;             /* 5rem ≈ 80px */
+    gap: 80px; 
   }
   /* About Us inner wrapper margin */
   .about-us-inner {
-    margin-top: 32px;      /* 2rem ≈ 32px */
+    margin-top: 32px;
   }
   /* About Us image max width */
   .about-us-image {
-    max-width: 50%;        /* Responsive percentage width */
+    max-width: 50%;
   }
   /* About Us text max width and alignment */
   .about-us-text {
-    max-width: 50%;        /* Responsive percentage width */
+    max-width: 50%;
     text-align: left;
     padding: 0;
   }
   /* About Us heading margin */
   .about-us-text h2 {
-    margin-bottom: 16px;   /* 1rem ≈ 16px */
+    margin-bottom: 16px;
   }
   /* About Us paragraph margin and line height */
   .about-us-text p {
-    margin-top: 16px;      /* 1rem ≈ 16px */
+    margin-top: 16px;
     line-height: 1.8;
     text-align: left;
   }
