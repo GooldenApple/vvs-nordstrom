@@ -389,11 +389,9 @@ button:focus {
 /*--- contact.html ---*/
 .con-h2 {
   font-size: 1.1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 .form-label {
   font-weight: 600;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 form {
   display: flex;
@@ -413,12 +411,7 @@ form > div.d-flex {
 
 /* --- Gallery.html --- */
 
-.gallery-section h2 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
-}
-.gallery-section p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
-}
+
 /* Mobile Gallery Carousel - Responsive Image Styling */
 #mobileGalleryCarousel {
   width: 90vw; /* Limit carousel width to 90% of viewport width */
@@ -441,11 +434,8 @@ form > div.d-flex {
 /* --- Success.html --- */
 .success h2 {
   color: #24150a;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
-.success p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
-}
+
 /* button max width */
 .success-btn {
   max-width: 120px;
