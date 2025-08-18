@@ -474,7 +474,7 @@ footer .container {
 }
 /* Footer headings */
 footer h3 {
-  color: #c68c4a;
+  color: #a86c29;
   margin-bottom: 0.1rem !important;     /* Small bottom margin, important to override */
   font-size: 1.3rem;
 }
@@ -485,14 +485,15 @@ footer h3 {
   margin-top: 0.1rem;
   margin-bottom: 0.1rem !important;     /* Small bottom margin, important */
   padding-right: 0.5rem;
+  color: #a86c29;
 }
 /* Contact icons color */
 .contact-info .fa-solid {
-  color: #c68c4a;
+  color: #a86c29;
 }
 /* Social links follow text */
 .social-links p.follow {
-  color: #c68c4a;
+  color: #a86c29;
   margin-top: 0.1rem !important;
   margin-bottom: 1rem !important;
 }
