@@ -371,6 +371,7 @@ button:focus {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .serv-btn {
+  margin-top: 2rem;
   margin-bottom: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -847,7 +848,7 @@ footer h3 {
   .about-us-text {
     max-width: 50%;
     text-align: left;
-    padding: 0;
+    padding: 20px;
   }
  
   .about-us-text h2 {
@@ -855,13 +856,14 @@ footer h3 {
   }
  
   .about-us-text p {
-    margin-top: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     line-height: 1.8;
     text-align: left;
   }
 
    .social-links p.follow {
-    font-size: 24px !important;
+    font-size: 20px !important;
   }
 
 }
@@ -1003,6 +1005,9 @@ footer h3 {
   }
 
   .con-p {
+    font-size: 20px;
+  }
+  .form-label {
     font-size: 20px;
   }
 
