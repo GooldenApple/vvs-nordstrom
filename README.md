@@ -31,6 +31,15 @@ The website is designed with clarity, accessibility, and trust in mind — highl
 
 ## User Experience (UX)
 
+### Project Purpose
+
+The purpose of this project is to provide **Nordströms VVS** with a professional and accessible online presence that supports both the company's goals and the needs of its users.  
+
+- **Business goals:** Increase visibility of the company, clearly present offered services, and make it easy for potential customers to get in contact.  
+- **User goals:** Quickly understand what the company does, easily find contact information, and view examples of past work for reassurance and trust.  
+
+The website therefore acts as both a **marketing tool** and a **practical communication channel**, ensuring customers can move smoothly from discovering the company to making an inquiry.
+
 ### UX Decisions
 
 - The layout is fully responsive, optimized for mobile, tablet, and desktop to ensure a great user experience on all devices.  
@@ -160,31 +169,29 @@ As an older user, I want clear and simple navigation without clutter, easy-to-fi
 
 [Color Palette](assets/images/readme/color-palette.png) 
 
-I chose a colour palette that reflects the professional, warm, and trustworthy nature of the plumbing business, inspired by natural copper and earth tones. 
-The palette includes shades of brown and copper for warmth and reliability, complemented by clean whites and deep blacks for contrast and readability.
+The chosen palette reflects professionalism and trust, inspired by natural copper and earth tones.  
+- **Copper/Brown shades** convey warmth and reliability.  
+- **White** provides clarity and clean contrast.  
+- **Black/Dark tones** enhance readability and accessibility.  
+
+This balance ensures the site is visually appealing while meeting WCAG contrast standards.  
 
 ### Typography
 
-The website uses Arial, sans-serif as the primary font to ensure high readability and simplicity across devices and screen sizes. 
-Font sizes and weights have been carefully chosen to create a clear visual hierarchy, with larger, bolder headings to capture attention and smaller, easy-to-read body text. 
-This choice supports accessibility and provides a clean, professional appearance fitting for the plumbing business.
+The website uses **Arial, sans-serif** for clarity and cross-device compatibility.  
+- **Headings** are bold and large to create a strong visual hierarchy.  
+- **Body text** is lightweight, easy to read, and optimized with relative units.  
+
+This combination ensures readability, accessibility, and a clean professional look that reflects the company’s identity.  
+
 
 ### Imagery
 
-**Hero Image:**  
-The hero image shows flowing copper pipes with a dark green/gray tiled background.   
-The image reflects the plumbing business's core services and matches the site's color palette for a cohesive design.
-This image was sourced from [StockCake](https://stockcake.com) and has been optimized for web performance using TinyPNG. 
+- **Hero Image:** Flowing copper pipes, symbolizing the core plumbing services.  
+- **About Us Image:** Company vehicle photo, representing local presence and professionalism.  
+- **Gallery Images:** High-quality examples of completed projects, showcasing craftsmanship.  
 
-**About Us Image:**  
-The About Us section features a photo of the Nordströms VVS company vehicle, symbolizing the company's local presence and commitment to professional service. 
-Images have been optimized using TinyPNG.
-
-
-**Gallery Images:**  
-The gallery features a selection of high-quality images showcasing completed plumbing projects, highlighting craftsmanship and service variety. 
-These images were provided by Nordströms VVS i Dalarna AB. 
-All images have been optimized using TinyPNG.
+All images are optimized for web, compressed for fast loading, and include descriptive `alt` text for accessibility. 
 
 ---
 
@@ -250,7 +257,8 @@ The wireframes below illustrate the planned layout and structure for each page o
 The website consists of five main pages:
 
 - **Home:**  
-  An engaging introduction to the company with a clear call-to-action button directing users to the Services page. The hero section features an appealing image and concise text to immediately communicate the company's expertise.
+  Engaging hero section with a clear call-to-action button directing users to the Services page.  
+  Introduction and "About Us" section highlight trust, professionalism, and company values.  
 
   <details>
   <summary>🏠 Homepage</summary>
@@ -269,7 +277,8 @@ The website consists of five main pages:
   </details>
 
 - **Services:**  
-  Detailed descriptions of the plumbing services offered, divided into three main categories: Water, Heating, and Sanitation. Each service card includes icons and descriptive text to enhance readability and user engagement.
+  Detailed descriptions of plumbing services, divided into three categories: **Water, Heating, and Sanitation**.  
+  Each service card includes an icon and short description for clarity. 
 
   <details>
   <summary>🔧 Services Page</summary>
@@ -280,7 +289,10 @@ The website consists of five main pages:
   </details>
 
 - **Gallery:**  
-  A responsive and accessible image gallery showcasing past projects, demonstrating the company’s craftsmanship and service range. The gallery includes a carousel for mobile/tablet devices to optimize viewing on smaller screens.
+  Responsive and accessible gallery showcasing completed projects.  
+  - Desktop: grid layout with neat spacing.  
+  - Mobile/Tablet: carousel for smooth browsing.  
+  All images include descriptive `alt` text for accessibility. 
 
   <details>
   <summary>🖼️ Gallery Page</summary>
@@ -297,8 +309,9 @@ The website consists of five main pages:
   </details>
 
 
-- **Contact:**  
-  A user-friendly contact form with required fields, input validation, and clear call-to-action buttons. The form facilitates easy submission of inquiries or service requests and improves communication between users and the company.
+- **Contact:**    
+  User-friendly form with required fields, validation, and clear labels.  
+  Includes contact information (phone, email, address) alongside the form.  
 
   <details>
   <summary>📩 Contact Page</summary>
@@ -309,7 +322,7 @@ The website consists of five main pages:
   </details>
 
 - **Success:**  
-  A confirmation page displayed after successful form submission, providing reassurance that the message has been received and informing users about next steps.
+   Confirmation page shown after form submission, providing reassurance and navigation options back to key pages.
 
   <details>
   <summary>✅ Success Page</summary>
@@ -321,80 +334,63 @@ The website consists of five main pages:
 
 ### General Features on All Pages
 
-- Fully responsive navigation bar that adapts smoothly to different screen sizes, including a hamburger menu for mobile devices.  
-- Consistent footer featuring contact information such as phone, email, physical address, and social media links.  
-- Favicon present on all pages to reinforce brand identity.  
-- Uniform styling, layout, and color scheme throughout the site to ensure a cohesive user experience.  
-- Semantic HTML5 structure for improved accessibility and SEO.  
-- Appropriate use of ARIA attributes and focus indicators to support keyboard navigation.
+- Responsive navigation bar with hamburger menu on mobile.  
+- Footer with contact info (phone, email, address, and social links).  
+- Favicon present on all pages for brand identity.  
+- Uniform styling and consistent color scheme.  
+- Semantic HTML5 structure.  
+- ARIA attributes and visible focus indicators for keyboard navigation.
 
 ### Specific Features
 
 - **Home:**  
-  - Engaging hero section with overlay and clear text.  
-  - Prominent call-to-action button leading to Services.  
-  - Brief introduction about the company and its expertise.
+  - Hero section with overlay text and CTA to service page.  
+  - Introduction and About Us section with CTA to contact page. 
 
 - **Services:**  
-  - Service cards grouped into Water, Heating, and Sanitation.  
-  - Each card features a relevant icon and short description.  
-  - Responsive layout adjusts nicely on different screen sizes.
+  - Three service cards (Water, Heating, Sanitation).  
+  - Icons + short descriptions. 
+  - CTA to contact page.
 
 - **Gallery:**  
-  - Desktop grid layout with neat spacing between images.  
-  - Mobile/tablet carousel for smooth browsing on smaller devices.  
-  - All images include descriptive alt text for accessibility.
+  - Grid layout on desktop, carousel on smaller screens.  
+  - Lightbox view for enlarged browsing with navigation arrows.  
 
 - **Contact:**  
-  - Easy-to-use form with labeled fields and required validation.  
-  - Clear submission button with hover and focus states.  
-  - Accessible markup with proper labels and ARIA attributes.
+  - Simple and accessible form with labels and validation.  
+  - Clear call-to-action button with hover/focus styles. 
 
 - **Success:**  
-  - Confirmation message after form submission.  
-  - Brief info on what happens next.  
-  - Navigation options back to key pages.
+  - - Confirmation message after form submission.  
+  - Navigation back to main pages. 
 
 
 ## Future Implementations
 
-While the current version of the website meets the project requirements and provides a professional, accessible, and responsive user experience, several features could be added in the future to enhance functionality and value for users:
+Planned improvements and features for future versions:  
 
-- **Online Booking System**  
-  A booking form allowing customers to request appointments directly through the site, integrated with email notifications.
-
-- **FAQ Section**  
-  A dedicated page or section answering common customer questions regarding services, pricing, and availability.
-
-- **Blog / News Section**  
-  A space for publishing plumbing tips, updates about the company, and news from the industry, helping improve SEO and customer engagement.
-
-- **Multi-Language Support**  
-  Adding support for both Swedish and English to make the site more accessible for a broader audience.
-
-- **Expanded Gallery**  
-  A categorized gallery to showcase projects by type (e.g., water, heating, sanitation), allowing users to filter and view relevant work examples.
-
-- **Customer Testimonials**  
-  A section showcasing feedback and reviews from satisfied customers.  
-  This would build trust and credibility for new visitors by highlighting positive experiences and recommendations.  
-  Implementation could begin with a simple static testimonial section, with potential future integration of live reviews (e.g., from Google Reviews or social media).
-
+- **Online Booking System** – direct appointment requests with email notifications.  
+- **FAQ Section** – answers to common customer questions.  
+- **Blog/News Section** – plumbing tips, updates, SEO boost.  
+- **Multi-Language Support** – Swedish + English for wider accessibility.  
+- **Expanded Gallery** – categorized by service type.  
+- **Customer Testimonials** – static section or live reviews integration.
 
 ---
 
 ## Accessibility
 
-  Accessibility has been a key focus throughout the development of this website to ensure it is usable by as many people as possible, including those with disabilities.
+  Accessibility has been a key focus during the development of this project to ensure that the website is usable by as many people as possible, including those with disabilities and older users.  
 
-- The website uses **semantic HTML5** elements to provide meaningful page structure and improve screen reader compatibility.
-- All images include **descriptive alt text** to convey content and purpose to users relying on screen readers.
-- Colour contrasts have been tested and meet **WCAG AA standards** to ensure readability for users with visual impairments.
-- The navigation and interactive elements are fully **keyboard accessible**, with clear focus indicators for ease of use.
-- **ARIA attributes** have been added where necessary to enhance assistive technology support.
-- Form fields include **associated labels** and use appropriate input types for better accessibility and user experience.
-- The site uses **relative units (em/rem)** for font sizes to allow users to adjust text size via browser settings.
-- Buttons and links have sufficient size and spacing to facilitate easy clicking and tapping, beneficial for users with motor impairments.
+
+- **Semantic HTML5** used for meaningful structure, improving screen reader compatibility.  
+- **Descriptive `alt` text** provided for all images, conveying purpose and content.  
+- **WCAG AA compliant color contrast**, tested with Lighthouse and WAVE.  
+- **Keyboard accessibility** – all interactive elements can be navigated via keyboard, with clear focus indicators.  
+- **ARIA attributes** added where necessary to improve assistive technology support.  
+- **Form labels** – all input fields have associated labels for clarity.  
+- **Relative font sizing (em/rem)** used to allow users to scale text.  
+- **Large, clickable buttons and links** with proper spacing, improving usability on touch devices and for users with motor impairments.  
 
 ---
 
@@ -417,16 +413,16 @@ While the current version of the website meets the project requirements and prov
 - **Visual Studio Code** — primary code editor, with extensions for HTML, CSS, and Git integration.  
 - **Git & GitHub** — for version control, repository hosting, and deployment via GitHub Pages.  
 - **GitHub Pages** — hosting the live website.  
-- **Google Fonts** — web-optimized typography, specifically Arial (system font fallback used).  
-- **TinyPNG** — for image compression and resizing to optimize page load times.  
+- **Google Fonts** — web-optimized typography (Arial fallback).  
+- **TinyPNG** — image compression and optimization for performance.  
 - **Squoosh** — for image optimization and compression.  
-- **AmiResponsive** — for creating responsive device mockups in project documentation.  
-- **Balsamiq** — for wireframing and creating mockups.  
+- **AmiResponsive** — created responsive mockup previews for documentation.  
+- **Balsamiq** — wireframing tool for page structure planning.  
 - **Chrome DevTools / Browser DevTools** — for debugging, layout inspection, and performance tuning.  
-- **Adobe Photoshop** — used for image editing and optimization.  
-- **Lighthouse** — for auditing performance, accessibility, SEO, and best practices.  
+- **Adobe Photoshop** — image editing and optimization.  
+- **Lighthouse** — Performance, accessibility, SEO, and best practices audits.  
 - **Favicon** — custom site icon used to reinforce brand identity in browser tabs and bookmarks.
-- **ChatGPT (OpenAI)** — AI assistant providing guidance and support with code review, documentation and text.
+- **ChatGPT (OpenAI)** — Assistanted with code review, documentation and text.
 - **Diffchecker** — used for text comparison and version tracking.
 
 ---
@@ -437,19 +433,21 @@ To keep track of development progress and tasks, a GitHub Project Board was used
 Below is a snapshot of the current board showing the different columns for Todo, In Progress, and Done tasks, including completed user stories and accessibility considerations.
 
 <details>
-<summary>Screenshot of user stories board</summary>
+<summary> Project Board Screenshot</summary>
 
 ![GitHub Project Board](assets/images/readme/user.stories.png)
 <br>
-This board helps organize tasks, visualize progress, and ensure that all user stories and project goals are properly managed throughout development.
+*The project board helped organize and prioritize tasks efficiently.*
 </details>
 
 ---
 
 ## Mockups
 
-Mockups of the website were created using the online responsive mockup generator [TechSini Multi Mockup](https://techsini.com/multi-mockup/).  
-This tool allows easy visualization of how the site looks across various devices such as desktops, tablets, and mobile phones.
+Responsive mockups of the website were created to visualize how the design adapts across devices (desktop, tablet, and mobile).  
+This provided a clear preview of the user experience before and after deployment.  
+
+The mockups were generated using the [TechSini Multi Device Mockup Generator](https://techsini.com/multi-mockup/).
 
 ---
 
@@ -457,39 +455,31 @@ This tool allows easy visualization of how the site looks across various devices
 
 ### GitHub Pages Deployment
 
-This website is deployed using **GitHub Pages**.  
-The live version of the site can be accessed at:  
-[https://gooldenapple.github.io/vvs-nordstrom/](https://gooldenapple.github.io/vvs-nordstrom/)
+This website is hosted using **GitHub Pages**.  
+The live site can be accessed at:  
+[https://gooldenapple.github.io/vvs-nordstrom/](https://gooldenapple.github.io/vvs-nordstrom/)  
 
-### How Deployment Was Done
+### Deployment Steps  
 
 1. Created a new repository on GitHub for the project.  
-2. Cloned the repository locally and connected it to Visual Studio Code.  
-3. Developed the website files locally using Visual Studio Code.  
-4. Committed and pushed changes from Visual Studio Code to the GitHub repository.  
-5. In the GitHub repository, navigated to **Settings** > **Pages**.  
-6. Set the publishing source to the `main` branch and selected the root folder.  
-7. Saved the settings, allowing GitHub Pages to publish the website automatically.  
-8. The site is now live and accessible via the GitHub Pages URL.
+2. Cloned the repository locally and developed the project using **Visual Studio Code**.  
+3. Committed and pushed changes to the `main` branch on GitHub.  
+4. In the GitHub repository, navigated to **Settings** > **Pages**.  
+5. Set the publishing source to the `main` branch and root folder.  
+6. Saved settings, allowing GitHub Pages to automatically publish the site.  
+7. The live site is available via the provided GitHub Pages URL.
 
 ### Additional Deployment Details
 
-- The `main` branch is the production branch; all live updates come from this branch.  
-- Any commit pushed to `main` automatically triggers GitHub Pages to redeploy the website.  
-- Currently, the website uses the default GitHub Pages URL. A custom domain can be configured in the future via GitHub Pages settings.  
-- If GitHub Pages experiences downtime, the site can be run locally by cloning the repository and opening the files in a browser or using a local development server.
+- The `main` branch serves as the production branch.  
+- Any commit pushed to `main` automatically redeploys the site.  
+- A custom domain can be added in the future via GitHub Pages settings.  
+- If GitHub Pages is unavailable, the project can be run locally.  
 
 
 ### Local Development
 
-  To work on the project locally:  
-1. Clone the repository to your local machine using the command:  
-git clone https://github.com/gooldenapple/vvs-nordstrom.git
-2. Open the project folder in your preferred code editor (e.g., Visual Studio Code).  
-3. Make changes and test by opening the HTML files directly in a web browser or using a local development server extension in your editor.  
-4. Commit and push changes to keep your GitHub repository updated.
-
-### What does this mean?
+To work on the project locally:
 
 1. **Clone the repo**  
 `git clone https://github.com/gooldenapple/vvs-nordstrom.git`  
@@ -508,26 +498,9 @@ When you have made changes, you save them ("commit") and send them up to GitHub 
 
 ## Testing
 
-### Manual Testing 
+Testing was conducted throughout the development process using both manual and automated methods to ensure functionality, responsiveness, and accessibility. Below are the results from validator tools, Lighthouse audits, manual feature testing, and user story testing.
 
-- The website was tested on various devices and screen sizes (desktop, tablet, mobile) to ensure responsive design and consistent layout.  
-- All navigation links and buttons were checked to confirm they function correctly on every page.  
-- The contact form was tested for required field validation, proper error handling, and successful submission flow, including redirection to the success page.  
-- The image gallery was tested for proper loading, accessibility (alt text), and responsiveness, including carousel functionality on smaller devices.  
-- Images and media files were verified for correct display and optimization to maintain fast load times.  
-- Accessibility features were manually tested, including keyboard navigation and focus indicators.
-
-### Manual Testing of Key Features
-
-| Feature              | Expected Result                                             | Action Performed                          | Actual Result                                | Status |
-|----------------------|-------------------------------------------------------------|-------------------------------------------|-----------------------------------------------|--------|
-| **Navbar**           | Collapses to hamburger on small screens                     | Resize browser to mobile width             | Hamburger menu appears and functions as expected | ✅ Pass |
-| **Hero CTA Button**  | Navigates to Services page                                  | Click "Our Services" button                | Redirects to `services.html`                   | ✅ Pass |
-| **Gallery Lightbox** | Opens enlarged image with navigation arrows                 | Click on gallery image                     | Lightbox opens, images navigable               | ✅ Pass |
-| **Contact Form**     | Validates required fields                                   | Submit empty form                          | Validation error shown                         | ✅ Pass |
-| **Contact Form**     | Redirects after successful submission                       | Submit valid form                          | Redirects to `success.html` with confirmation  | ✅ Pass |
-| **Footer Links**     | Open external resources in correct apps or new tabs(socials,contact info)| Click footer links             | Links open in new window                      | ✅ Pass |
-| **Responsive Layout**| Content adjusts for desktop, tablet, and mobile             | Test on multiple devices/simulators        | Layout adapts correctly without major issues   | ✅ Pass |
+---
 
 ### Browser Testing
 
@@ -539,14 +512,14 @@ The website was tested on multiple browsers and devices to ensure consistent per
 - **Mobile/tablet device**
 - **safari**
 
-During these tests, the site performed well across all platforms with one minor issue identified only in Microsoft Edge:  
-The contact form section had some alignment problems.  
+✅ The site performed consistently across all browsers.  
+⚠️ A minor issue in Microsoft Edge (contact form alignment) was identified and fixed.
 
-This issue is addressed and solved.
+---
 
 ### Accessibility Testing
 
-Accessibility was tested manually and with automated tools to ensure the site is usable for all visitors, including those with additional needs:
+Accessibility was validated both manually and with automated tools:
 
 - **Automated Testing:**  
   - Lighthouse accessibility audits consistently returned a score of 100.  
@@ -555,80 +528,24 @@ Accessibility was tested manually and with automated tools to ensure the site is
 - **Manual Testing:**  
   - All images include descriptive `alt` attributes.  
   - Headings (`h1–h6`) follow a logical order for screen readers.  
-  - Sufficient color contrast verified using contrast checkers.  
+  - Color contrast meets **WCAG 2.1 AA** standards  
   - All interactive elements (buttons, links, form inputs) are reachable and operable using only the keyboard.  
-  - Focus indicators are visible and clear when tabbing through the site.  
-  - Font sizes use relative units (`em`, `rem`) to support browser zooming.  
+  - Focus indicators are visible and clear when tabbing through the site.    
 
 These tests confirm that the site meets WCAG 2.1 AA standards for accessibility.
 
-## User Story Testing
-
-### Client Goals — Simple and user-friendly website
-
-| Expected Result | Action Performed | Actual Result | Status |
-|-----------------|-----------------|---------------|--------|
-| Website clearly displays key services | Load homepage and services page | Services overview visible and detailed page available | ✅ Pass |
-| Contact info visible on all pages | Inspect header and footer on all pages | Contact details consistently displayed | ✅ Pass |
-| Clean and responsive design | Test across devices and screen sizes | Layout responsive and user-friendly | ✅ Pass |
-| Navigation intuitive and consistent | Use navbar on desktop/mobile | Navbar consistent and responsive | ✅ Pass |
-| Site loads quickly | Run Lighthouse and manual tests | Optimized images, fast load | ✅ Pass |
-
 ---
-
-### First Time Visitor Goals — Understand services & view past projects
-
-| Expected Result | Action Performed | Actual Result | Status |
-|-----------------|-----------------|---------------|--------|
-| Services clearly listed on homepage and Services page | Visit homepage and `services.html` | Overview + Water/Heating/Sanitation sections present | ✅ Pass |
-| Each service has brief, easy-to-read description | Inspect `services.html` | Clear, concise descriptions provided | ✅ Pass |
-| Clear navigation to Services page | Click CTA on homepage | Directs correctly to `services.html` | ✅ Pass |
-| Gallery page accessible with project images | Navigate to `gallery.html` | Gallery grid loads as expected | ✅ Pass |
-| Gallery images include descriptive alt text | Inspect gallery HTML | All images include descriptive alt text | ✅ Pass |
-
----
-
-### Returning Visitor Goals — Up-to-date info & quick contact
-
-| Expected Result | Action Performed | Actual Result | Status |
-|-----------------|-----------------|---------------|--------|
-| Services page content is current | Review `services.html` | Services accurately listed | ✅ Pass |
-| Contact info easy to find on all pages | Check header/footer | Phone, email, and address visible | ✅ Pass |
-| Contact form functional and user-friendly | Submit test entry in form | Redirect to success page, data accepted | ✅ Pass |
-| Contact links accessible throughout site | Inspect navigation and CTAs | Prominent contact buttons on homepage/services | ✅ Pass |
-
----
-
-### Frequent Visitor Goals — Efficient inquiries & sharing
-
-| Expected Result | Action Performed | Actual Result | Status |
-|-----------------|-----------------|---------------|--------|
-| Contact form easy to locate on all devices | Check navbar/footer across pages | Form accessible on all screens | ✅ Pass |
-| Required fields validated | Submit form with missing info | Validation error displayed | ✅ Pass |
-| Confirmation or thank you page after submission | Submit valid form | Redirected to `success.html` | ✅ Pass |
-| Easy way to share/recommend company | Inspect footer for links | Social media/contact links available | ✅ Pass |
-
----
-
-### Accessibility — Older Users
-
-| Expected Result | Action Performed | Actual Result | Status |
-|-----------------|-----------------|---------------|--------|
-| Simple and uncluttered navigation | Inspect navbar/menus | Straightforward, no clutter | ✅ Pass |
-| Contact info prominent on all pages | Check header/footer | Always visible and readable | ✅ Pass |
-| Buttons large, labeled, and easy to click | Test on mobile/tablet | Buttons ≥44px with clear spacing | ✅ Pass |
-| High contrast colors for readability | Run Lighthouse/WAVE | Meets WCAG AA contrast | ✅ Pass |
-| Text size readable and scalable | Zoom text in browser | Rem/em units allow scaling | ✅ Pass |
 
 
 ### Automated Testing & Tools
 
-- Used **W3C HTML Validator** to ensure semantic and valid HTML markup.  
-- Used **W3C CSS Validator** to check for any CSS syntax errors and maintain styling consistency.  
-- Performed accessibility audits using **Lighthouse** and **WebAIM Contrast Checker** to verify compliance with WCAG AA standards for colour contrast and usability.  
-- Audited performance and best practices with **Google Lighthouse**, focusing on improving Largest Contentful Paint, image optimization, caching policies, and eliminating legacy JavaScript for modern browsers.  
-- Used **Chrome DevTools** for debugging layout issues, checking console errors, and monitoring network performance during development.
+- **W3C HTML Validator** — confirmed valid, semantic HTML after fixes.  
+- **W3C CSS Validator** — passed with no errors.  
+- **Lighthouse Audits** — tested for performance, accessibility, SEO, and best practices.  
+- **WebAIM Contrast Checker** — ensured proper color contrast.  
+- **Chrome DevTools** — used for debugging, performance checks, and responsive testing. 
 
+---
 
 ### Code Validation
 
@@ -646,11 +563,11 @@ These tests confirm that the site meets WCAG 2.1 AA standards for accessibility.
 
 
 - **HTML Validation:**  
-  All HTML files were validated using the [W3C Markup Validation Service](https://validator.w3.org/).  
-  - Several errors were found related to invalid file paths containing spaces, e.g., `favicon_io (3)/favicon.ico`. These paths has been renamed to remove spaces for compliance.  
-  - Backslashes (`\`) were used in image `srcset` attributes; these must be replaced with forward slashes (`/`) to avoid errors.  
-  - Some `<img>` elements had empty `src` attributes or missing `alt` texts, which were corrected to improve accessibility and pass validation.
-  - Some end tags were missing or stray, this was fixed by locating the issues and finding the right start tag.
+  All HTML files were validated with [W3C Markup Validation Service](https://validator.w3.org/).  
+  - Fixed invalid file paths containing spaces.  
+  - Replaced backslashes (`\`) with forward slashes (`/`).  
+  - Added missing `alt` attributes.  
+  - Corrected stray/missing end tags.
 
  <details>
 <summary>Home Page HTML validation Screenshot before</summary>
@@ -764,27 +681,99 @@ These tests confirm that the site meets WCAG 2.1 AA standards for accessibility.
 
 ---
 
+### Manual Testing 
+
+- The website was tested on various devices and screen sizes (desktop, tablet, mobile) to ensure responsive design and consistent layout.  
+- All navigation links and buttons were checked to confirm they function correctly on every page.  
+- The contact form was tested for required field validation, successful submission flow and including redirection to the success page.  
+- The image gallery was tested for proper loading, accessibility (alt text), and responsiveness, including carousel functionality on smaller devices.  
+- Images and media files were verified for correct display and optimization to maintain fast load times.  
+- Accessibility features were manually tested, including keyboard navigation and focus indicators.
+
+### Manual Testing of Key Features
+
+| Feature              | Expected                 | Action                | Result                        | Status |
+|----------------------|--------------------------|-----------------------|-------------------------------|--------|
+| **Navbar**           | Collapse on mobile       | Resize browser        | Hamburger works correctly     | ✅ |
+| **Hero CTA Button**  | Go to Services page      | Click "Our Services"  | Redirects to `services.html`  | ✅ |
+| **Gallery Lightbox** | Open image + arrows      | Click gallery item    | Lightbox opens, arrows work   | ✅ |
+| **Contact Form**     | Validation & redirect    | Submit empty/valid    | Errors handled, redirect OK   | ✅ |
+| **Footer Links**     | Open new tab/app         | Click links           | Open as expected              | ✅ |
+| **Responsive Layout**| Adapt to screen sizes    | Test across devices   | Works on desktop/tablet/mobile| ✅ |
+
+
+----
+
+## User Story Testing
+
+### Client Goals — Simple and user-friendly website
+
+| Expected | Action | Result | Status |
+|----------|--------|--------|--------|
+| Services visible | Visit homepage/services | Clear overview & details | ✅ |
+| Contact info visible | Inspect header/footer | Always shown | ✅ |
+| Responsive design | Test on devices | Layout adapts | ✅ |
+| Intuitive navigation | Use navbar | Consistent | ✅ |
+| Fast load times | Run Lighthouse | Optimized | ✅ |
+
+---
+
+### First Time Visitor Goals — Understand services & view past projects
+
+| Expected | Action | Result | Status |
+|----------|--------|--------|--------|
+| Services clear | Visit `services.html` | Water/Heating/Sanitation listed | ✅ |
+| Gallery visible | Go to `gallery.html` | Grid loads with alt text | ✅ |
+| CTA works | Click homepage button | Redirect to `services.html` | ✅ |
+
+---
+
+### Returning Visitor Goals — Up-to-date info & quick contact
+
+| Expected | Action | Result | Status |
+|----------|--------|--------|--------|
+| Up-to-date services | Check `services.html` | Accurate | ✅ |
+| Easy contact | Use form/footer | Visible & working | ✅ |
+| Contact form functional | Submit test entry | Redirect to success page | ✅ |
+
+---
+
+### Frequent Visitor Goals — Efficient inquiries & sharing
+
+| Expected | Action | Result | Status |
+|----------|--------|--------|--------|
+| Quick access to form | Check nav/footer | Accessible | ✅ |
+| Validation works | Submit incomplete form | Error displayed | ✅ |
+| Confirmation after form | Submit valid form | Redirect to `success.html` | ✅ |
+| Easy sharing | Use footer links | Social/contact visible | ✅ |
+
+---
+
+### Accessibility — Older Users
+
+| Expected | Action | Result | Status |
+|----------|--------|--------|--------|
+| Simple navigation | Inspect navbar | Uncluttered | ✅ |
+| Prominent contact info | Check footer | Always visible | ✅ |
+| Large, easy buttons | Test on mobile | clickable | ✅ |
+| High contrast text | Run WAVE/Lighthouse | Passes WCAG AA | ✅ |
+| Readable text size | Zoom in browser | Scales correctly | ✅ |
+
+----
 
 ### Known Fixes
 
-- Conducted a thorough review of all HTML and CSS code to identify and fix broken or incorrect code, links and image paths.  
-- Corrected file paths by removing spaces and replacing backslashes (\) with forward slashes (/) to comply with web standards.  
-- Optimized images with TinyPNG and Squoosh for faster loading times.  
-- Corrected FontAwesome usage to avoid legacy JavaScript warnings.  
-- Adjusted hero image position and scaling for better presentation.  
-- Fixed inconsistent heading hierarchy (`h1`, `h2`, `h3`) to improve accessibility and SEO.  
-- Added `alt` attributes to all images for improved accessibility and Lighthouse compliance.  
-- Ensured consistent use of semantic HTML5 elements (`header`, `main`, `section`, `footer`).  
-- Fixed layout issues on smaller screen sizes (mobile and tablet) with responsive CSS adjustments.  
-- Adjusted Bootstrap grid usage for better alignment and spacing.  
-- Corrected color contrast issues to meet WCAG accessibility standards.  
-- Removed unused CSS and redundant code for cleaner, more maintainable files.  
-- Improved navigation bar responsiveness and spacing on different screen sizes.  
-- Fixed missing favicon link to ensure consistent branding in browsers.  
-- Corrected `success.html` redirect and form handling consistency.
-- Implemented **lazy loading** on images to reduce initial load time and improve performance.  
-- Added **preload** for key resources (fonts, hero image) to improve render speed and Largest Contentful Paint (LCP). 
-- Eliminated **layout shifts (CLS issues)** by defining explicit image dimensions and stabilizing hero and navigation elements. 
+- ✓ Fixed broken file paths   
+- ✓ Replaced `\` with `/` in `srcset`  
+- ✓ Added missing `alt` attributes  
+- ✓ Corrected heading hierarchy (`h1–h3`)  
+- ✓ Fixed layout issues on mobile/tablet  
+- ✓ Optimized hero images & scaling  
+- ✓ Adjusted navbar spacing & responsiveness  
+- ✓ Removed unused/redundant CSS  
+- ✓ Implemented lazy loading for images  
+- ✓ Preloaded fonts & hero image  
+- ✓ Resolved CLS by defining image dimensions 
 
 
 ## Known Issues and Future Improvements
@@ -805,8 +794,7 @@ These tests confirm that the site meets WCAG 2.1 AA standards for accessibility.
 ### Code Used
 
 - Navigation bar inspired by Bootstrap’s responsive navbar components.  
-- Some JavaScript functionality, including the mobile and desktop gallery lightbox, was implemented with help from ChatGPT by OpenAI.  
-- Video: [Wrapper Classes: A Layout Foundation](https://www.youtube.com/watch?v=tr7EH48TFiE)  
+- Some JavaScript functionality, including the mobile and desktop gallery lightbox, was implemented with help from ChatGPT by OpenAI.    
 - Web development tutorials and examples referenced from **W3Schools**.  
 - Website: [https://www.w3schools.com](https://www.w3schools.com)
 

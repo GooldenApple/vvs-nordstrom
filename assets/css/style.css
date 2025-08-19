@@ -834,7 +834,7 @@ footer h3 {
   }
   /* Introduction section */
   .introduction-section {
-    gap: 80px; 
+    margin-bottom: 20px !important;
   }
   /* About Us inner wrapper margin */
   .about-us-inner {
@@ -911,11 +911,6 @@ footer h3 {
     padding-right: 40px;
   }
 
-  .introduction-section,
-  .about-us-section {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
 
   /* Introduction */
   .intro-h2 {
