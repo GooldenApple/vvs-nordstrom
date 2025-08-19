@@ -687,7 +687,7 @@ These tests confirm that the site meets WCAG 2.1 AA standards for accessibility.
 <details>
 <summary>contact Page HTML validation Screenshot</summary>
 
-![HTML Validation Report](assets/images/readme/con.vali.done.jpg)
+![HTML Validation Report](assets/images/readme/contact.vali.d.jpg)
 <br>
 *Screenshot showing the results from the W3C HTML Validator, showing no errors.*
 </details>
@@ -806,7 +806,6 @@ These tests confirm that the site meets WCAG 2.1 AA standards for accessibility.
 
 - Navigation bar inspired by Bootstrap’s responsive navbar components.  
 - Some JavaScript functionality, including the mobile and desktop gallery lightbox, was implemented with help from ChatGPT by OpenAI.  
-- Layout structure utilizing `.wrapper` class based on guidance from **Kevin Powell**.  
 - Video: [Wrapper Classes: A Layout Foundation](https://www.youtube.com/watch?v=tr7EH48TFiE)  
 - Web development tutorials and examples referenced from **W3Schools**.  
 - Website: [https://www.w3schools.com](https://www.w3schools.com)
@@ -833,8 +832,7 @@ I would like to thank everyone who has supported and contributed to this project
 - Code Institute for providing the learning environment and resources that made this project possible.  
 - The Student Care team for their ongoing support and encouragement.
 - Roman at tutor assistance, for the guidence and support.
-- Nordströms VVS for providing images and content to showcase their business. 
-- Kevin Powell for his helpful CSS tutorial.   
+- Nordströms VVS for providing images and content to showcase their business.   
 - ChatGPT (OpenAI) for guidance and assistance throughout the development process.
 - My family for supporting me during this time.  
  

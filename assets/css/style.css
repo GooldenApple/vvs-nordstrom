@@ -1,4 +1,4 @@
-/* Global styles for body */
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #fffbf6fd;
@@ -7,11 +7,6 @@ body {
   padding: 0;
 }
 
-/* Wrapper for main content */
-main, .wrapper-main {
-  min-height: 100vh;
-  display: block;
-}
 
 /* Focus styles for accessibility on links and buttons */
 a:focus,
@@ -180,7 +175,7 @@ button:focus {
 /* Button inside hero-text */
 .hero-text a.btn {
   padding: 0.4rem 0.7rem; 
-  font-size: 0.8rem; 
+  font-size: 0.9rem; 
   border-radius: 6px;
   background-color: #8b4d2b;   
   color: white;                 
@@ -279,7 +274,6 @@ button:focus {
   flex-direction: column;   /* Stack items vertically on mobile */
   gap: 1rem; 
   align-items: center; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
 /* About Us image styling */
@@ -318,7 +312,7 @@ button:focus {
 
 /* Heading in About Us text */
 .about-us-text h2 {
-  color: #000000;
+  color: #24150a;
   font-weight: 700;
   margin-bottom: 1rem; 
   border-bottom: 0.125rem solid #311c0e;
@@ -329,7 +323,7 @@ button:focus {
 
 /* Paragraphs in About Us text */
 .about-us-text p {
-  color: #000000;
+  color: #24150a;
   line-height: 1.6;
   margin-bottom: 0;
   font-size: clamp(0.9rem, 3vw, 1.2rem);
@@ -352,23 +346,19 @@ button:focus {
   font-size: 1.5rem;
   white-space: nowrap;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 .service-text p {
   color: #24150a;
   font-size: 1rem;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 .service-card h3 {
   font-size: 1.5rem;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 .service-card p {
   text-align: center;
   font-size: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 .service-card {
   max-width: 250px;
@@ -509,11 +499,8 @@ footer h3 {
 /* --- responsive adjustments ---*/
 
 /* Medium devices (≥768px) */
-@media (min-width: 768px) {
-  /* Wrapper main keeps flexible full width */
-  .wrapper-main {
-    width: 100%;
-  }
+@media screen and (min-width: 768px) {
+ 
   /* Navbar padding adjustments */
   .navbar {
     padding-top: 0;
@@ -716,11 +703,8 @@ footer h3 {
   }
 }
 
-@media (min-width: 1024px) {
-  /* Keep wrapper-main flexible width */
-  .wrapper-main {
-    width: 100%;
-  }
+@media screen and (min-width: 1024px) {
+  
   /* Navbar navigation padding and gap */
   .navbar-nav {
     padding-top: 8px;
@@ -815,11 +799,19 @@ footer h3 {
   }
 
 }
-@media (min-width: 1440px) {
-  /* Wrapper main full width */
-  .wrapper-main {
-    width: 100%;
+@media screen and (min-width: 1440px) {
+  
+
+  .navbar-nav .nav-link {
+    font-size: 20px; 
+    font-weight: 500; 
+    letter-spacing: 1px;
   }
+
+  .navbar-nav .nav-item {
+    margin-left: 24px; 
+  }
+
   /* Hero section adjustments */
   .hero {
     max-width: 100vw;
@@ -857,14 +849,184 @@ footer h3 {
     text-align: left;
     padding: 0;
   }
-  /* About Us heading margin */
+ 
   .about-us-text h2 {
     margin-bottom: 16px;
   }
-  /* About Us paragraph margin and line height */
+ 
   .about-us-text p {
     margin-top: 16px;
     line-height: 1.8;
     text-align: left;
+  }
+
+   .social-links p.follow {
+    font-size: 24px !important;
+  }
+
+}
+
+@media screen and (min-width: 1920px) {
+  
+  
+  .navbar .container {
+    max-width: 100%;   
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .navbar-nav {
+    margin-left: auto; 
+  }
+
+  .navbar-brand {
+    margin-right: auto; 
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .navbar-brand img {
+  height: 50px;
+  width: auto;
+  }
+
+  .hero-text .btn-common {
+  font-size: 25px !important;
+  padding: 10px 20px !important;  
+  
+}
+ 
+  .hero-text p {
+    font-size: 30px; 
+  }
+
+  .container {
+    max-width: 1600px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .introduction-section,
+  .about-us-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  /* Introduction */
+  .intro-h2 {
+    font-size: 30px;
+  }
+ 
+  .intro-p {
+    max-width: 980px;
+    font-size: 20px;
+  }
+
+  .intro-icon, .intro-icon-middle {
+    font-size: 35px; 
+    margin: 30px; 
+  }
+  
+  .list-with-icons li span {
+    margin-left: 30%;  
+  }
+
+  .list {
+  max-width: 1200px;   
+  }
+
+  .list-with-icons li {
+    font-size: 22px;
+    gap: 10px;
+    max-width: 80vw;
+  }
+
+  /* About us */
+  .about-us-inner {
+    display: flex;
+    align-self: stretch;
+    gap: 20px;
+  }
+
+  .about-us-image {
+    max-width: 30%;
+    margin-left: 80px;
+  }
+
+  .about-us-text h3 {
+    font-size: 40px;
+    
+  }
+  .about-us-text p {
+    font-size: 20px;
+    flex: 1;
+    padding: 50px;
+    line-height: 2.5;
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+  .about-us-text .btn.btn-common {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+/* services html */
+
+  .services h2 {
+    font-size: 40px;
+  }
+
+  .services p {
+    font-size: 20px;
+  }
+
+  service-card p {
+    font-size: 20px;
+  }
+
+  /* gallery html */
+
+  .gallery-section h2 {
+    font-size: 40px;
+  }
+
+  .gallery-section p {
+    font-size: 20px;
+  }
+
+  /* contact html */
+  .con-h2 {
+    font-size: 30px;
+  }
+
+  .con-p {
+    font-size: 20px;
+  }
+
+  /* success html */
+
+  
+
+  .success p {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  footer .footer-heading {
+    font-size: 30px;
+  }
+  .contact-info p,
+  .contact-info a {
+    font-size: 20px;
+  }
+
+  .social-links .follow {
+    font-size: 20px !important;
+  }
+  .social-links i.fa-brands {
+    font-size: 30px !important;
   }
 }
