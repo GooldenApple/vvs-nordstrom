@@ -361,7 +361,7 @@ The website consists of five main pages:
   - Clear call-to-action button with hover/focus styles. 
 
 - **Success:**  
-  - - Confirmation message after form submission.  
+  - Confirmation message after form submission.  
   - Navigation back to main pages. 
 
 

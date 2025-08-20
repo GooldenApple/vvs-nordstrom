@@ -7,6 +7,21 @@ body {
   padding: 0;
 }
 
+/* Skip link hidden off-screen by default */
+.skip-link {
+  position: absolute;
+  top: -40px; /* hidden */
+  transform: none;
+  z-index: 1000;
+  padding: 8px 12px;
+  background: #fff;
+  color: #000;
+}
+
+.skip-link:focus {
+  top: 10px; /* visible when tabbed */
+  left: 10px;
+}
 
 /* Focus styles for accessibility on links and buttons */
 a:focus,
@@ -191,7 +206,8 @@ button:focus {
 /* Button hover and focus states */
 .hero-text a.btn:hover,
 .hero-text a.btn:focus {
-  background-color: #7a3f1f;  
+  background-color: #7a3f1f; 
+ 
 }
 
 /* Introduction Section container */
@@ -312,7 +328,7 @@ button:focus {
 
 /* Heading in About Us text */
 .about-us-text h2 {
-  color: #24150a;
+  color: black;
   font-weight: 700;
   margin-bottom: 1rem; 
   border-bottom: 0.125rem solid #311c0e;
@@ -323,7 +339,7 @@ button:focus {
 
 /* Paragraphs in About Us text */
 .about-us-text p {
-  color: #24150a;
+  color: black;
   line-height: 1.6;
   margin-bottom: 0;
   font-size: clamp(0.9rem, 3vw, 1.2rem);
@@ -342,13 +358,13 @@ button:focus {
 }
 /* --- Services page styles --- */
 .service-text h2 {
-  color: #24150a;
+  color: black;
   font-size: 1.5rem;
   white-space: nowrap;
   text-align: center;
 }
 .service-text p {
-  color: #24150a;
+  color: black;
   font-size: 1rem;
   text-align: center;
 }
@@ -424,7 +440,7 @@ form > div.d-flex {
 
 /* --- Success.html --- */
 .success h2 {
-  color: #24150a;
+  color: black;
 }
 
 /* button max width */
@@ -910,7 +926,6 @@ footer h3 {
     padding-left: 40px;
     padding-right: 40px;
   }
-
 
   /* Introduction */
   .intro-h2 {
