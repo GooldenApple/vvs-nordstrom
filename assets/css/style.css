@@ -33,8 +33,7 @@ button:focus {
 /* Navbar background, padding, shadow and border */
 .navbar {
   background-color: #fffbf6fd;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding: 0.2rem 0;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.336);
   border-bottom: 1px solid #c7c6c6;
 }
@@ -48,7 +47,6 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 /* Size for hamburger menu icon */
@@ -132,13 +130,6 @@ button:focus {
   display: block;           /* Removes inline gap */
 }
 
-.hero-image img {
-  width: 100%;
-  height: 100%; 
-  object-fit: cover; 
-  display: block;
-}
-
 /* Semi-transparent overlay on hero image */
 .hero-overlay {
   position: absolute;       /* Positioned relative to .hero */
@@ -146,13 +137,13 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 30% opacity */
+  background-color: rgba(0, 0, 0, 0.3); /* overlay with 30% opacity */
   z-index: 1;               /* Behind text but above image */
 }
 
 /* Text container on top of hero */
 .hero-text {
-  position: absolute;       /* Positioned relative to .hero */
+  position: absolute;
   top: 5%;
   left: 5%;
   right: 3%;
@@ -302,15 +293,12 @@ button:focus {
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   object-fit: cover;        /* Crop image to cover container */
   margin-bottom: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 /* About Us image container */
 .about-us-image {
   width: 100%;
-  max-width: min(45vw, 250px); /* Max width: smaller of 45% viewport width or 250px */
-  background-color: transparent;
-  cursor: default;
+  max-width: min(45vw, 250px); /* smaller of 45% viewport width or 250px */
   transition: transform 0.3s ease;
 }
 
@@ -341,7 +329,6 @@ button:focus {
 .about-us-text p {
   color: black;
   line-height: 1.6;
-  margin-bottom: 0;
   font-size: clamp(0.9rem, 3vw, 1.2rem);
 }
 
@@ -349,51 +336,56 @@ button:focus {
 .about-us-text .btn-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   width: 100%;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
+  padding: 0 0.2rem;
   font-size: 1rem;
 }
-/* --- Services page styles --- */
+/* ------ Services page styles -------- */
+
+/* Headings inside services */
 .service-text h2 {
-  color: black;
   font-size: 1.5rem;
-  white-space: nowrap;
   text-align: center;
-}
-.service-text p {
   color: black;
-  font-size: 1rem;
-  text-align: center;
+  white-space: nowrap; 
 }
+
 .service-card h3 {
   font-size: 1.5rem;
   text-align: center;
+  color: black;
 }
+
+/* Paragraphs inside services */
+.service-text p,
 .service-card p {
-  text-align: center;
   font-size: 1rem;
+  text-align: center;
+  color: black;
 }
+
+/* Service card container */
 .service-card {
   max-width: 250px;
   margin: auto;
 }
 
+/* Card design */
 .service-card .card {
   background-color: #fff8f3;
   border-radius: 14px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+/* Button styling */
 .serv-btn {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0; /* shorthand for top & bottom */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 
-/*--- contact.html ---*/
+/*----- contact.html -----*/
 .con-h2 {
   font-size: 1.1rem;
 }
@@ -449,11 +441,10 @@ form > div.d-flex {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
 }
 
-/* --- Footer --- */
+/* ----- Footer ---- */
 footer {
   background-color: rgba(40, 38, 38, 0.95);
-  color: #ffffff;
-  margin-top: 0;
+  color: #fff;
   font-size: 0.9rem;
   width: 100%; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.253);
@@ -469,31 +460,36 @@ footer .container {
   max-width: 100%;
   margin: 0 auto;
 }
-/* Footer headings */
-footer h3 {
-  color: #a86c29;
-  margin-bottom: 0.1rem !important;     /* Small bottom margin, important to override */
-  font-size: 1.3rem;
-}
-/* Contact info paragraphs styling */
-.contact-info p {
-  justify-content: center;
-  gap: 0.75rem;                          /* Space between icon and text */
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem !important;     /* Small bottom margin, important */
-  padding-right: 0.5rem;
-  color: #a86c29;
-}
-/* Contact icons color */
-.contact-info .fa-solid {
-  color: #a86c29;
-}
-/* Social links follow text */
+
+/* Shared color */
+footer h3,
+.contact-info p,
+.contact-info .fa-solid,
 .social-links p.follow {
   color: #a86c29;
-  margin-top: 0.1rem !important;
-  margin-bottom: 1rem !important;
 }
+
+/* Footer headings */
+footer h3 {
+  margin-bottom: 0.1rem;     /* Small bottom margin, important to override */
+  font-size: 1.3rem;
+}
+
+/*paragraphs styling */
+.contact-info p {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;                          /* Space between icon and text */
+  margin: 0.1rem 0;     /* Small bottom margin, important */
+  padding-right: 0.5rem;
+ 
+}
+
+/* follow text */
+.social-links p.follow {
+  margin: 0.1rem 0 1rem 0;
+}
+
 /* Container for social media icons */
 .social-links > div {
   display: flex;                         /* Flex row */
@@ -547,14 +543,13 @@ footer h3 {
     height: 40px;
     width: auto;
   }
-  /* Hero section heading */
-  h1 {
+  /* Hero section */
+  .hero-text h1 {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 32px;
-    margin-top: 16px;
+    margin: 16px 0 32px;
   }
-  /* Hero paragraph styling */
+
   .hero-text p {
     font-size: 24px;
     max-width: 100%;
@@ -562,186 +557,174 @@ footer h3 {
     line-height: 1.5;
     white-space: normal;
   }
-  /* Hero section buttons */
-  .hero-section .btn-common {
-    margin-top: 10px !important;   
-    margin-bottom: 32px !important;
-    font-size: 20.8px !important; 
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+
+  .hero-section .hero-text a.btn-common {
+    margin: 10px 0 32px;   
+    font-size: 20.8px; 
+    padding: 8px 16px;
   }
   /* Introduction section heading */
   .intro-h2 {
     font-size: 24px;
   }
-  /* Introduction paragraph */
-  .intro-p {
+ 
+  .intro-p, .list-with-icons {
     font-size: 16px;
   }
-  /* Introduction icons */
+ 
   .intro-icon,
   .intro-icon-middle {
     font-size: 32px;
   }
-  /* List with icons font size */
-  .list-with-icons {
-    font-size: 16px;
-  }
+ 
   /* List items styling */
   .list-with-icons li {
     max-width: 70vw;
-    text-align: left !important;
+    text-align: left;
   }
   /* Span inside list items */
   .list-with-icons li span {
     margin-left: 30%;
-    text-align: left !important;
-    justify-content: center !important;
+    text-align: left;
   }
   /* Check icon inside list items */
   .list-with-icons li i.fa-check {
     font-size: 24px;
   }
-  /* About Us inner container layout */
+
+  /* About Us */
   .about-us-inner {
     display: flex;
     flex-direction: row;       /* Place image and text side by side */
     align-items: stretch;      /* Vertical alignment */
     gap: 32px; 
   }
-  /* About Us image max width */
+ 
   .about-us-image {
     max-width: 50%;            /* Image takes half width */
   }
-  /* About Us text max width and alignment */
+ 
   .about-us-text {
     max-width: 50%;            /* Text takes half width */
     text-align: left;
     padding: 0;
   }
-  /* About Us heading margin */
+
   .about-us-text h2 {
     margin-bottom: 16px;
   }
-  /* About Us paragraph margin and line height */
+
   .about-us-text p {
     margin-top: 16px;
     line-height: 1.8;
   }
 
-  /* About Us button container */
-  .about-us-text .btn-container {
-    margin-top: 16px;
-    font-size: 20.8px !important;
-    padding-left: 16px !important; 
-    padding-right: 16px !important;
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
+  .about-us-text .btn-container .btn {
+    margin-top: 28px;
+    font-size: 20.8px;
+    padding: 8px 16px; 
   }
+
   /* Contact info flex container */
   .contact-info {
     display: flex;
     justify-content: center;
     gap: 48px;
     font-size: 16px;
-    flex-wrap: nowrap !important;
+    flex-wrap: nowrap;
   }
   /* Footer h3 styling */
   footer h3 {
-    margin-bottom: 2.56px !important;
+    margin-bottom: 2.56px;
     font-size: 24px;
   }
   /* Social links follow text size */
   .social-links p.follow {
-    font-size: 19.2px !important;
+    font-size: 19.2px;
   }
-  /*----service.html ---*/
+
+  /*----- service.html -----*/
 
   .service-card {
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 1.5rem;
   }
  
-  /*----gallery.html ---*/
+  /*------ gallery.html ------*/
 
   /* Increase carousel image height for tablets */
   #mobileGalleryCarousel .carousel-item img {
     height: 900px; /* Make images taller */
-    object-fit: cover; /* Ensure images cover the container without distortion */
+    object-fit: cover; /* Ensure images cover the container */
     width: 100%; /* Keep full width */
   }
 
-  /*--- contact.html---*/
+  /*----- contact.html -----*/
 
-   /* Form as flex container with wrapping and centered content */
-  form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-  /* First three input groups arranged vertically and centered */
-  form > div.mb-3:nth-child(-n + 3) {
-    display: flex;
-    flex-direction: column; /* Stack label and input */
-    align-items: center;
-    flex: 1 1 100%; /* Flexible width */
-    min-width: 250px; /* Prevent too narrow */
-  }
-  /* Center labels of first three inputs */
-  form > div.mb-3:nth-child(-n + 3) > label {
-    text-align: center; 
-    width: 100%;
-    margin-bottom: 0.5rem; /* Space below label */
-  }
-  /* Message field group as vertical flex container */
-  form > div.mb-3:nth-child(4) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 70%; /* Wider than others */
-    max-width: 700px; /* Limit max width */
-    margin: 0 auto; /* Center horizontally */
-  }
-  /* Center label of message field */
-  form > div.mb-3:nth-child(4) > label {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
-  /* Submit button container full width and centered */
-  form > div.d-flex {
-    flex-basis: 100%; /* Take full row */
-    justify-content: center; /* Center button */
-  }
+/* Form as flex container with wrapping and centered content */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Base styling for all input groups */
+form > div.mb-3 {
+  display: flex;
+  flex-direction: column; /* Stack label and input */
+  align-items: center;
+}
+
+/* Labels for all input groups */
+form > div.mb-3 > label {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+/* First three input groups (name, email, subject) */
+form > div.mb-3:nth-child(-n+3) {
+  flex: 1 1 100%; /* Flexible width */
+  min-width: 250px; /* Prevent too narrow */
+}
+
+/* Message field group */
+form > div.mb-3:nth-child(4) {
+  flex: 1 1 70%;     /* Wider than others */
+  max-width: 700px;  /* Limit max width */
+  margin: 0 auto;    /* Center horizontally */
+}
+
+/* Submit button container full width and centered */
+form > div.d-flex {
+  flex-basis: 100%; /* Take full row */
+  justify-content: center;
+}
 }
 
 @media screen and (min-width: 1024px) {
   
-  /* Navbar navigation padding and gap */
   .navbar-nav {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 0;
     gap: 32px;
   }
-  /* Navbar links padding and font size */
+  
   .navbar-nav .nav-link {
     padding: 8px 16px; 
     font-size: 19.2px;
   }
-  /* Navbar brand image size */
+ 
   .navbar-brand img {
     height: 50px;          /* Fixed height */
+    width: auto;
   }
-  /* Introduction section heading font size */
+  /* Introduction section  */
   .intro-h2 {
     font-size: 32px;
   }
-  /* Introduction paragraph font size */
+ 
   .intro-p {
     font-size: 20.8px;
   }
@@ -750,11 +733,11 @@ footer h3 {
     font-size: 35.2px; 
     margin: 24px; 
   }
-  /* List with icons font size */
+  
   .list-with-icons {
     font-size: 17.6px;
   }
-  /* List items max width */
+
   .list-with-icons li {
     max-width: 70vw;       /* Responsive max width */
   }
@@ -818,7 +801,6 @@ footer h3 {
 }
 @media screen and (min-width: 1440px) {
   
-
   .navbar-nav .nav-link {
     font-size: 20px; 
     font-weight: 500; 
@@ -829,7 +811,7 @@ footer h3 {
     margin-left: 24px; 
   }
 
-  /* Hero section adjustments */
+  /* Hero section */
   .hero {
     max-width: 100vw;
     max-height: none; 
@@ -839,28 +821,28 @@ footer h3 {
   .hero-image {
   object-position: center 100%;
   }
-  /* Hero text paragraph margins */
+
   .hero-text p {
     margin-top: 32px;     
     margin-bottom: 32px;   
   }
-  /* Hero button margin */
+
   .hero-text a.btn {
     margin-top: 16px;
   }
-  /* Introduction section */
+  /* introduction */
   .introduction-section {
-    margin-bottom: 20px !important;
+    margin-bottom: 20px;
   }
   /* About Us inner wrapper margin */
   .about-us-inner {
     margin-top: 32px;
   }
-  /* About Us image max width */
+  
   .about-us-image {
     max-width: 50%;
   }
-  /* About Us text max width and alignment */
+
   .about-us-text {
     max-width: 50%;
     text-align: left;
@@ -879,13 +861,12 @@ footer h3 {
   }
 
    .social-links p.follow {
-    font-size: 20px !important;
+    font-size: 20px;
   }
 
 }
 
 @media screen and (min-width: 1920px) {
-  
   
   .navbar .container {
     max-width: 100%;   
@@ -911,11 +892,10 @@ footer h3 {
   width: auto;
   }
 
-  .hero-text .btn-common {
-  font-size: 25px !important;
-  padding: 10px 20px !important;  
-  
-}
+  .hero-text a.btn.btn-common {
+  font-size: 25px;
+  padding: 10px 20px;  
+  }
  
   .hero-text p {
     font-size: 30px; 
@@ -970,8 +950,8 @@ footer h3 {
 
   .about-us-text h3 {
     font-size: 40px;
-    
   }
+
   .about-us-text p {
     font-size: 20px;
     flex: 1;
@@ -1017,31 +997,33 @@ footer h3 {
   .con-p {
     font-size: 20px;
   }
+
   .form-label {
     font-size: 20px;
   }
 
+
   /* success html */
-
-  
-
   .success p {
     font-size: 18px;
   }
+
 
   /* Footer */
   footer .footer-heading {
     font-size: 30px;
   }
+
   .contact-info p,
   .contact-info a {
     font-size: 20px;
   }
 
   .social-links .follow {
-    font-size: 20px !important;
+    font-size: 20px;
   }
+
   .social-links i.fa-brands {
-    font-size: 30px !important;
+    font-size: 30px;
   }
 }
