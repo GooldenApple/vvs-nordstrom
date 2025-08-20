@@ -385,7 +385,7 @@ Planned improvements and features for future versions:
 
 - **Semantic HTML5** used for meaningful structure, improving screen reader compatibility.  
 - **Descriptive `alt` text** provided for all images, conveying purpose and content.  
-- **WCAG AA compliant color contrast**, tested with Lighthouse and WAVE.  
+- **WCAG AA compliant color contrast**, tested with Lighthouse and WebAIM Contrast Checker.  
 - **Keyboard accessibility** – all interactive elements can be navigated via keyboard, with clear focus indicators.  
 - **ARIA attributes** added where necessary to improve assistive technology support.  
 - **Form labels** – all input fields have associated labels for clarity.  
@@ -498,7 +498,7 @@ When you have made changes, you save them ("commit") and send them up to GitHub 
 
 ## Testing
 
-Testing was conducted throughout the development process using both manual and automated methods to ensure functionality, responsiveness, and accessibility. Below are the results from validator tools, Lighthouse audits, manual feature testing, and user story testing.
+Testing was conducted throughout the development process using both manual and automated methods to ensure functionality, responsiveness, and accessibility. Below are the results from validator tools, Lighthouse audits, NVDA screen reader, manual feature testing, and user story testing.
 
 ---
 
@@ -530,7 +530,12 @@ Accessibility was validated both manually and with automated tools:
   - Headings (`h1–h6`) follow a logical order for screen readers.  
   - Color contrast meets **WCAG 2.1 AA** standards  
   - All interactive elements (buttons, links, form inputs) are reachable and operable using only the keyboard.  
-  - Focus indicators are visible and clear when tabbing through the site.    
+  - Focus indicators are visible and clear when tabbing through the site.   
+  - **Screen Reader Testing (NVDA):**  
+    - Tested navigation, headings, links, buttons, and form flow.  
+    - Skip link was implemented to allow users to bypass navigation and jump directly to main content.  
+    - Success page (`success.html`) was enhanced with automatic focus on the main heading for better accessibility.  
+    - All focus indicators were verified for clarity and visibility.
 
 These tests confirm that the site meets WCAG 2.1 AA standards for accessibility.
 
@@ -773,7 +778,12 @@ These tests confirm that the site meets WCAG 2.1 AA standards for accessibility.
 - ✓ Removed unused/redundant CSS  
 - ✓ Implemented lazy loading for images  
 - ✓ Preloaded fonts & hero image  
-- ✓ Resolved CLS by defining image dimensions 
+- ✓ Resolved CLS by defining image dimensions
+- ✓ Increased footer text sizes for contrast compliance  
+- ✓ Added focus styles for social icons  
+- ✓ Added `rel="noopener noreferrer"` to external links 
+- ✓ Implemented skip link for keyboard navigation  
+- ✓ Validated accessibility with NVDA screen reader
 
 
 ## Known Issues and Future Improvements
